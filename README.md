@@ -35,6 +35,42 @@ Whether you're a seasoned researcher, a student beginning your journey in scienc
 - **For Students:** Explore our educational programs and find out how you can apply.
 - **For Supporters:** Your contribution can make a difference. Discover how you can help support our mission.
 
+## 🌈 Commitment to Diversity, Equity, and Inclusion (DEI)
+
+At FIRE Araştırma Eğitim Ltd. Şti., we believe that diversity, equity, and inclusion are fundamental to creating a vibrant, innovative, and productive community. We are committed to fostering an environment where all individuals feel respected, are treated fairly, and can achieve their full potential, regardless of their gender, race, ethnicity, national origin, age, sexual orientation or identity, education, or disability.
+
+### 👩‍🔬 Gender Equality
+
+We strive for gender equality at all levels of our organization, recognizing the critical importance of diverse perspectives in driving innovation in research and education. We are dedicated to ensuring equal opportunities for individuals of all genders and backgrounds.
+
+### ♿ Accessibility Commitment
+
+Ensuring the accessibility of our work is fundamental to our mission. We are dedicated to creating educational materials and research outputs that are accessible to all, including individuals with disabilities. We continually work on improving our digital content to meet current accessibility standards.
+
+## 📚 Ethical Research Practices
+
+At FIRE Araştırma Eğitim Ltd. Şti., we are deeply committed to the highest standards of integrity and ethics in all our research activities. Our dedication to ethical research is unwavering, with strict policies against any form of misconduct. We believe that ethical research is the cornerstone of genuine scientific discovery and the advancement of knowledge.
+
+### 🚫 Upholding Academic Integrity
+
+- **Plagiarism:** We strictly prohibit plagiarism in any form. All research outputs must be original, crediting all sources and contributions accurately. Our commitment to originality and authenticity extends to all stages of research, from proposal to publication.
+- **Data Fabrication and Falsification:** Fabricating data or altering results to misrepresent research findings is against our core principles. We ensure that all research data are reported honestly, accurately, and transparently.
+- **Conflict of Interest:** We require all researchers to disclose any potential conflicts of interest that might influence the research process or outcomes. Transparently managing conflicts of interest is crucial to maintain trust and integrity in our research.
+- **Authorship and Contribution:** Authorship should accurately reflect individuals' contributions to the work. We promote fairness and transparency in attributing authorship and acknowledge all contributors appropriately.
+
+### 🤝 Ethical Treatment of Participants
+
+- **Informed Consent:** Ensuring the informed consent of all participants is mandatory for any research involving human subjects. Participants must be fully informed about the nature of the research, any potential risks, and their rights to confidentiality and to withdraw from the study at any time.
+- **Privacy and Confidentiality:** We are committed to protecting the privacy and confidentiality of research participants. Personal information is handled with the utmost care, used only for the purposes consented to by the participant, and stored securely to prevent unauthorized access.
+
+### ✔️ Compliance and Oversight
+
+- **Regulatory Compliance:** All research must comply with local, national, and international laws and regulations, including but not limited to those concerning ethical standards, data protection, and human rights.
+- **Ethics Review and Approval:** Research projects, especially those involving human participants, are subject to review and approval by an ethics committee or institutional review board (IRB) to ensure compliance with ethical standards and regulatory requirements.
+
+By adhering to these principles, we aim to foster an environment of respect, integrity, and accountability. Our commitment to ethical research underpins our mission to contribute to the advancement of knowledge while respecting the rights and dignity of all individuals involved in the research process.
+
+
 ## Contact Us
 
 We are always looking for collaborators, partners, and enthusiasts to join our cause. If you're interested in learning more about our work, contributing to our projects, or have any questions, please don't hesitate to reach out.
@@ -42,4 +78,4 @@ We are always looking for collaborators, partners, and enthusiasts to join our c
 Email: [fireae24@gmail.com](mailto:fireae24@gmail.com)  
 Address: Kavaklıdere Mahallesi Esat Caddesi No 15/6 Çankaya/Ankara/Türkiye
 
-Follow us on [LinkedIn](#) | [Twitter](#) | [Facebook](#)
+Follow us on [LinkedIn](https://www.linkedin.com/company/102201413/admin/feed/posts/) 
