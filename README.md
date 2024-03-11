@@ -68,6 +68,10 @@ At FIRE Araştırma Eğitim Ltd. Şti., we are deeply committed to the highest s
 - **Regulatory Compliance:** All research must comply with local, national, and international laws and regulations, including but not limited to those concerning ethical standards, data protection, and human rights.
 - **Ethics Review and Approval:** Research projects, especially those involving human participants, are subject to review and approval by an ethics committee or institutional review board (IRB) to ensure compliance with ethical standards and regulatory requirements.
 
+## 💾 Data Protection and GDPR Compliance
+
+Protecting the personal data and privacy of our researchers, participants, and partners is of utmost importance to us. We are fully committed to GDPR compliance, ensuring that all data collection, storage, and processing practices are conducted in accordance with applicable laws and regulations, guaranteeing transparency, security, and respect for personal data.
+
 By adhering to these principles, we aim to foster an environment of respect, integrity, and accountability. Our commitment to ethical research underpins our mission to contribute to the advancement of knowledge while respecting the rights and dignity of all individuals involved in the research process.
 
 
