@@ -1,5 +1,7 @@
+<p align="center">
 
-![logofire](https://github.com/fire-ae/fire-ae.github.io/assets/162897064/66fa67e8-633e-4ed2-a23e-5fab6beeaa47)
+  ![logofire](https://github.com/fire-ae/fire-ae.github.io/assets/162897064/66fa67e8-633e-4ed2-a23e-5fab6beeaa47)
+</p>
 
 # FIRE ARAŞTIRMA EĞİTİM LTD. ŞTİ.
 
@@ -70,7 +72,7 @@ At FIRE Araştırma Eğitim Ltd. Şti., we are deeply committed to the highest s
 
 ## 💾 Data Protection and GDPR Compliance
 
-Protecting the personal data and privacy of our researchers, participants, and partners is of utmost importance to us. We are fully committed to GDPR compliance, ensuring that all data collection, storage, and processing practices are conducted in accordance with applicable laws and regulations, guaranteeing transparency, security, and respect for personal data.
+- Protecting the personal data and privacy of our researchers, participants, and partners is of utmost importance to us. We are fully committed to GDPR compliance, ensuring that all data collection, storage, and processing practices are conducted in accordance with applicable laws and regulations, guaranteeing transparency, security, and respect for personal data.
 
 By adhering to these principles, we aim to foster an environment of respect, integrity, and accountability. Our commitment to ethical research underpins our mission to contribute to the advancement of knowledge while respecting the rights and dignity of all individuals involved in the research process.
 
