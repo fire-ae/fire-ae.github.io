@@ -2,13 +2,14 @@
 
 # FIRE ARAŞTIRMA EĞİTİM LTD. ŞTİ.
 <div align="justify">
-Welcome to **FIRE Araştırma Eğitim Ltd. Şti.**, an independent scientific research company dedicated to advancing the frontiers of knowledge. At FIRE, we are committed to conducting groundbreaking research, training the next generation of researchers, creating high-quality educational materials, and supporting the scientific community through funding opportunities.
+Welcome to FIRE Araştırma Eğitim Ltd. Şti., an independent scientific research company dedicated to advancing the frontiers of knowledge. At FIRE, we are committed to conducting groundbreaking research, training the next generation of researchers, creating high-quality educational materials, and supporting the scientific community through funding opportunities.
 </div>
 
 ## About Us
 <div align="justify">
-**FIRE Araştırma Eğitim Ltd. Şti.** aspires to advance the borders of humanity's knowledge corpus. Founded with the vision to empower and inspire, our mission is to contribute to the global research landscape through rigorous scientific investigation and comprehensive educational programs. Though we are at the beginning of our journey, our ambition is to become a beacon of knowledge and discovery in the scientific world.
+FIRE Araştırma Eğitim Ltd. Şti. aspires to advance the borders of humanity's knowledge corpus. Founded with the vision to empower and inspire, our mission is to contribute to the global research landscape through rigorous scientific investigation and comprehensive educational programs. Though we are at the beginning of our journey, our ambition is to become a beacon of knowledge and discovery in the scientific world.
 </div>
+<br>
 
 - [Corporate Responsibilities](corp-responsibility.md)
 - [Research Projects](research.md)
@@ -70,23 +71,22 @@ At FIRE Araştırma Eğitim Ltd. Şti., we are deeply committed to the highest s
 </div>
 
 ### 🚫 Upholding Academic Integrity
-<div align="justify">
-- **Plagiarism:** We strictly prohibit plagiarism in any form. All research outputs must be original, crediting all sources and contributions accurately. Our commitment to originality and authenticity extends to all stages of research, from proposal to publication.
-- **Data Fabrication and Falsification:** Fabricating data or altering results to misrepresent research findings is against our core principles. We ensure that all research data are reported honestly, accurately, and transparently.
-- **Conflict of Interest:** We require all researchers to disclose any potential conflicts of interest that might influence the research process or outcomes. Transparently managing conflicts of interest is crucial to maintain trust and integrity in our research.
-- **Authorship and Contribution:** Authorship should accurately reflect individuals' contributions to the work. We promote fairness and transparency in attributing authorship and acknowledge all contributors appropriately.
-</div>
+
+- **Plagiarism:** <div align="justify"> We strictly prohibit plagiarism in any form. All research outputs must be original, crediting all sources and contributions accurately. Our commitment to originality and authenticity extends to all stages of research, from proposal to publication.</div>
+- **Data Fabrication and Falsification:** <div align="justify"> Fabricating data or altering results to misrepresent research findings is against our core principles. We ensure that all research data are reported honestly, accurately, and transparently.</div>
+- **Conflict of Interest:** <div align="justify"> We require all researchers to disclose any potential conflicts of interest that might influence the research process or outcomes. Transparently managing conflicts of interest is crucial to maintain trust and integrity in our research.</div>
+- **Authorship and Contribution:** <div align="justify"> Authorship should accurately reflect individuals' contributions to the work. We promote fairness and transparency in attributing authorship and acknowledge all contributors appropriately. </div>
 
 ### 🤝 Ethical Treatment of Participants
-<div align="justify">
-- **Informed Consent:** Ensuring the informed consent of all participants is mandatory for any research involving human subjects. Participants must be fully informed about the nature of the research, any potential risks, and their rights to confidentiality and to withdraw from the study at any time.
-- **Privacy and Confidentiality:** We are committed to protecting the privacy and confidentiality of research participants. Personal information is handled with the utmost care, used only for the purposes consented to by the participant, and stored securely to prevent unauthorized access.
+
+- **Informed Consent:** <div align="justify">Ensuring the informed consent of all participants is mandatory for any research involving human subjects. Participants must be fully informed about the nature of the research, any potential risks, and their rights to confidentiality and to withdraw from the study at any time.</div>
+- **Privacy and Confidentiality:** <div align="justify">We are committed to protecting the privacy and confidentiality of research participants. Personal information is handled with the utmost care, used only for the purposes consented to by the participant, and stored securely to prevent unauthorized access.
 </div>
 
 ### ✔️ Compliance and Oversight
-<div align="justify">
-- **Regulatory Compliance:** All research must comply with local, national, and international laws and regulations, including but not limited to those concerning ethical standards, data protection, and human rights.
-- **Ethics Review and Approval:** Research projects, especially those involving human participants, are subject to review and approval by an ethics committee or institutional review board (IRB) to ensure compliance with ethical standards and regulatory requirements.
+
+- **Regulatory Compliance:** <div align="justify">All research must comply with local, national, and international laws and regulations, including but not limited to those concerning ethical standards, data protection, and human rights.</div>
+- **Ethics Review and Approval:** <div align="justify">Research projects, especially those involving human participants, are subject to review and approval by an ethics committee or institutional review board (IRB) to ensure compliance with ethical standards and regulatory requirements.
 </div>
 
 ## 💾 Data Protection and GDPR Compliance
