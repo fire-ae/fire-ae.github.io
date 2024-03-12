@@ -10,6 +10,7 @@ Welcome to **FIRE Araştırma Eğitim Ltd. Şti.**, an independent scientific re
 **FIRE Araştırma Eğitim Ltd. Şti.** aspires to advance the borders of humanity's knowledge corpus. Founded with the vision to empower and inspire, our mission is to contribute to the global research landscape through rigorous scientific investigation and comprehensive educational programs. Though we are at the beginning of our journey, our ambition is to become a beacon of knowledge and discovery in the scientific world.
 </div>
 
+- [Corporate Responsibilities](corp-responsibility.md)
 - [Research Projects](research.md)
 - [Reference Materials](ref-materials.md)
 - [Codes/Software/Data](codes-data.md)
