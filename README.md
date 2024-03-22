@@ -13,10 +13,7 @@ FIRE Araştırma Eğitim Ltd. Şti. aspires to advance the borders of humanity's
 
 - [Corporate Responsibilities](corp-responsibility.md)
 - [Research Projects](research.md)
-- [Reference Materials](ref-materials.md)
-- [Codes/Software/Data](codes-data.md)
 - [Researcher Training / Research Enhancer](ttrainer-enhancer.md)
-- [Archive](archive.md)
 
 
 ## Our Services
