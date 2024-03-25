@@ -8,8 +8,9 @@ You can reach the Gender Equality Plan of FIRE Araştırma Eğitim Ltd. Şti. fr
 
 ## Diversity, Equity, and Inclusion (DEI)
 
+You can reach the Diversity, Equity, Inclusion Statement of FIRE Araştırma Eğitim Ltd. Şti. from the link file below:
 
-
+[Diversity, Equity, Inclusion Statement as of March 2024](DEI.pdf)
 
 ## Accessibility of Research and Materials
 
