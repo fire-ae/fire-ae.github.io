@@ -53,7 +53,7 @@ Moreover, additional licenses, copyright issues, and terms of uses should be car
 
 ## Research Project Conduct Workflow
 
-As of March 2024, the current expected basic workflow of a Research Project of FIRE Araştırma Eğitim Ltd. Şti. follows this linear workflow:
+As of March 2024, the current expected basic workflow of a Research Project of FIRE Araştırma Eğitim Ltd. Şti. follows this linear workflow (see the [Research](research.md) page for detailed and full workflow with links to the corresponding repositories, servers, and journals):
 
 1-) Determining an area of interest within a field not foreign to the Researcher's experiences and skills.
 2-) Extensive literature review, gap analysis, and reporting this gap analysis and potential future studies in a Preprint server present in [Preprint Citation Index of Clarivate](https://clarivate.com/products/scientific-and-academic-research/research-discovery-and-workflow-solutions/preprint-citation-index/). 
