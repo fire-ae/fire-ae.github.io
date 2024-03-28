@@ -1,3 +1,6 @@
+[<Return to Main Page](README.md)
+<br>
+
 This page lists corporate responsibility-focused statements and documents.
 
 ## Gender Equality Plan
