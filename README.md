@@ -14,7 +14,7 @@ FIRE Araştırma Eğitim Ltd. Şti. aspires to advance the borders of humanity's
 - [Corporate Responsibilities](corp-responsibility.md)
 - [The Way of Research in FIRE AE](sci-res.md)
 - [Research Projects](research.md)
-- [Researcher Training / Research Enhancer](ttrainer-enhancer.md)
+- [Researcher Training / Research Enhancer](trainer-enhancer.md)
 
 <br>
 
