@@ -19,6 +19,7 @@ This sub-project utilizes statistical and digital image analysis techniques, ava
 <div align="justify">
    In this arXiv preprint, seven real JWST MIRI F770W images were examined with unWISE catalog sources located on them. Eliminating pixel digital numbers (intensities) below a certain percentage, i.e. retaining the top 0.3% of values, and derivative images were utilized to source mask more unWISE catalog objects without resulting in erroneous detections. A combination of value-sliced fraction images and derivative image methods looks quite promising.
 </div>
+
 2. [2023 October Conference Beyond_BookofAbstract Page 31/42 for Güray Hatipoğlu Abstract](https://www.etu.edu.tr/)
 <div align="justify">
    In this conference presentation, the results of applying Singular Spectrum Analysis to the simulated image of 100 celestial signals in varying shapes and luminosities with various added noises were explained. Later, several applications of this method to real JWST MIRI F770W results were also presented, with a slightly better capture of cataloged objects compared to the standard Photutils PSF Photometry with default values.
