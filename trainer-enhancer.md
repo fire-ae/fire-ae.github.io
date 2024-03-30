@@ -5,7 +5,11 @@ Currently, FIRE Araştırma Eğitim Ltd. Şti. has two different categories in R
 
 ## Researcher Training (mostly based on European Competence Framework for Researchers)
 
+<div align="justify">
+ 
 Conventional training (graduate research and similar programs in undergraduate) unfortunately does not provide many skills, critical in both academic and other sectors. As a result, a European Competence Framework for Researchers was developed after several extensive works and expert opinions. 
+
+</div>
 
 ResearchComp is an excellent framework for the career development and skill improvement of current and prospective researchers.
 
@@ -19,15 +23,30 @@ ResearchComp is an excellent framework for the career development and skill impr
 
 --[IFISR Turkish translation for Annex-5, ResearchComp competence descriptions](https://drive.google.com/file/d/1c1SOQ4fhm9L-zjAlccOjdY5wbrkhV1qw/view?usp=drive_link)
 
+<div align="justify">
  
 FIRE Araştırma Eğitim Ltd. Şti. devises a training program for researchers and researcher candidate. It will be based on ResearchComp described above, and additional specific requirements decided after personal communications and expert judgments. More information will be provided as soon as it will be complete and ready for implementation.
 
+</div>
+
 ## Research Enhancement
 
+<div align="justify">
+ 
 Research Enhancement will take place mainly in two ways, first one is provision of funds, the second one is teaching/suporting research studies with additional data, code, method, literature review, study, insight, and collaboration, and facilitate their research processes. One demo application of the latter case can be seen below:
+
+</div>
 
 [Data of Surface Water Quality in Türkiye](https://docs.google.com/document/d/18drToIuqP-8vUEdL0aGyy_iYfHkEw-oIp1Goz1osvus/edit?usp=sharing)
 
+<div align="justify">
+ 
 In this case, scattered and hard-to-reach surface water quality data from studies conducted in Türkiye was collected in Tables with important metadata regarding what is available. That public document is expected to give a direction/idea to the researchers interested in this topic, especially for Türkiye case, where unfortunately data availability is not sufficient.
 
+</div>
+
+<div align="justify">
+ 
 One may also check the repositories of [torna4o](https://github.com/torna4o/) and [fire-ae](https://github.com/fire-ae/) in github on finding useful codes for their studies. 
+
+</div>
