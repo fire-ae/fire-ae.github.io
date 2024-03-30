@@ -22,12 +22,12 @@ FIRE Araştırma Eğitim Ltd. Şti. aspires to advance the borders of humanity's
 
 ### Research
 <div align="justify">
-We conduct independent scientific research across a wide range of disciplines, especially fundamental and interdisciplinary works in hard and applied sciences. Our projects are driven by curiosity, rigor, and the pursuit of knowledge. Active projects can be seen from Research Projects page above.
+FIRE Araştırma Eğitim Ltd. Şti. conducts independent scientific research across a wide range of disciplines, especially fundamental and interdisciplinary works in hard and applied sciences. Its projects are driven by curiosity, rigor, and the pursuit of knowledge. Active projects can be seen from Research Projects page above.
 </div> 
 
 ### Education
 <div align="justify">
-We are dedicated to the education and training of researchers and researcher candidates. Our programs range from undergraduate workshops to graduate-level training programs, all designed to equip new scientists with the tools they need to succeed, reduce the precarious state of researcher career, and empower them.
+FIRE Araştırma Eğitim is dedicated to the education and training of researchers and researcher candidates. Its programs range from undergraduate workshops to graduate-level training programs, all designed to equip new scientists with the tools they need to succeed, reduce the precarious state of researcher career, and empower them.
 </div>
 
 ### Reference Materials
