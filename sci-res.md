@@ -3,13 +3,25 @@
 
 ## Researcher Assessment/Evaluation
 
+FIRE Araştırma Eğitim Ltd. Şti. (hereinafter Company) looks for reseacrher who can and will successfully follow the Research Project Conduct Workflow defined below. Theoretically, one can still achieve this with zero experience, yet there are still several basic criteria to select candidate Company contracting researchers (active as of March 30, 2024):
 
+1-) Being first author in a scientific peer-reviewed journal indexed in either of the following Claviarate Analytics indices: Science Citation Index Expanded, Social Sciences Citation Index, Emerging Sources Citation Index, Arts & Humanities Citation Index. 
 
+2-) Holding an undergraduate or a graduate degree relevant/near to the research field the researcher would like to apply for support/funding
+
+3-) Being able to communicate comfortably in at least one of the following languages: Turkish, English
+
+Researchers meeting these criteria will be able to pitch ideas with a form later provided in this page, via e-mail to fireae24@gmail.com. Currently, Company does not have a budget for funding so the form is unavailable.
 
 ## Research Idea/Project/Result Assessment/Evaluation
 
+When a researcher meeting the criteria described above sends a research project idea, the required fund and justifications, there are not really many reasons to reject the idea. 
 
+On the other hand, results will definitely be evaluated, but it is again a simple check. Checkpoints defined in Research Project Conduct Workflow is necessary and sufficient criteria in terms of research output. Needless to say, a research project must follow the requirements and rules described in national and international legislation, as well as conditions described in [Corporate Resonsibilities](corp-responsibility.md) regarding gender equality, diversity, equity, and inclusion, data/method availability/accessibility and other commonsense. 
 
+A researcher with a misconduct, illegal activity will be reported through the relevant legal mechanisms.
+
+A researcher who did not have any misconduct but was unable to achieve the set goals of the Contract with the Company will NOT be penalized, but it should be understandable that future funding requests from the same person/entity will most probably be rejected. Moreover, in the annual activity report of the Company, that resource allocation and unsuccessful output creation will also be reported in a single sentence with only objective facts, without any derogatory claims and such. 
 
 ## Research Project Conduct Workflow
 
@@ -22,7 +34,7 @@ This step is crucial. Even though in the first instance it might seem self-destr
 
 3-) Proving that the candidate researcher for the future project has the required resources, or that person can attain those requirements with the available support of FIRE Araştırma Eğitim Ltd. Şti. This does not require extensive methodology explanation and similar issues. Such rigidity had, in many instances of Güray Hatipoğlu's experiences, resulted in problems in reporting period expectations of the funder institution. Worse still, cases of methodology and research study stealing may be possible. Hence, The Company would rather like to see the methodology in a peer reviewed conference presentation or scientific publication in a peer-reviewed respectable journal, with of course, acknowledging the support of the Company in case it is present.
 
-The Company aims to advance the boundaries of scientific knowledge of humanity, and this mandates the availability and accessibility of the outputs. A directory of respectable  open-access journals in different fiels, not requiring an article processing charge or anything of the sort will be kept up-to-date and the contracted researchers will be expected to publish their research in them, or at the very least, in such journals. In other words, researchers might suggest addition of a journal to the list and make her/his publications in that place. 
+The Company aims to advance the boundaries of scientific knowledge of humanity, and this mandates the availability and accessibility of the outputs. A directory of respectable  open-access journals in different fields, not requiring an article processing charge or anything of the sort will be kept up-to-date and the contracted researchers will be expected to publish their research in them, or at the very least, in such journals. In other words, researchers might suggest addition of a journal to the list and make her/his publications in that place. 
 Furthermore, a separate document and guidelines will be provided for accessibility. Currently, color-blind friendly images, clearly captioned graphs, tables, and figures, and a well-written manuscript will be considered sufficiently accessible.
 
 4-) Until any other update, when Step 3 is complete, the authors/researchers will be deemed successful and this will be an important assessment criterion in deciding future fund requests
