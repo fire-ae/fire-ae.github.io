@@ -22,27 +22,27 @@ FIRE Araştırma Eğitim Ltd. Şti. aspires to advance the borders of humanity's
 
 ### Research
 <div align="justify">
-We conduct independent scientific research across a wide range of disciplines, especially fundamental and interdisciplinary works in hard and applied sciences. Our projects are driven by curiosity, rigor, and the pursuit of knowledge.
-</div>
+We conduct independent scientific research across a wide range of disciplines, especially fundamental and interdisciplinary works in hard and applied sciences. Our projects are driven by curiosity, rigor, and the pursuit of knowledge. Active projects can be seen from Research Projects page above.
+</div> 
 
 ### Education
 <div align="justify">
-We are dedicated to the education and training of researchers at all levels. Our programs range from undergraduate workshops to graduate-level courses, all designed to equip new scientists with the tools they need to succeed, reduce the precarious state of researcher career, and empower them.
+We are dedicated to the education and training of researchers and researcher candidates. Our programs range from undergraduate workshops to graduate-level training programs, all designed to equip new scientists with the tools they need to succeed, reduce the precarious state of researcher career, and empower them.
 </div>
 
 ### Reference Materials
 <div align="justify">
-Our team works tirelessly to produce high-quality reference materials for both graduate and undergraduate levels, aiming to support and enrich the academic community.
+FIRE Araştırma Eğitim Ltd. Şti plans to produce high-quality reference materials for both graduate and undergraduate levels, aiming to support and enrich the academic community with available and accessible resources.
 </div>
 
 ### Funding
 <div align="justify">
-Understanding the challenges of securing research funding, we offer grants and financial support to promising researchers and projects.
+Understanding the challenges of securing research funding, FIRE Araştırma Eğitim Ltd. Şti will offer grants and financial support to promising researchers and their projects.
 </div>
 
 ## Get Involved
 <div align="justify">
-Whether you're a seasoned researcher, a student beginning your journey in science, or someone passionate about supporting scientific advancement, there are many ways to get involved with FIRE Araştırma Eğitim Ltd. ŞtI.:
+Whether you're a seasoned researcher, a student beginning your journey in science, or someone passionate about supporting scientific advancement, there are many ways to get involved with FIRE Araştırma Eğitim Ltd. Şti.:
 </div>
 
 - **For Researchers:** Learn more about our funding opportunities and current research projects.
@@ -51,41 +51,41 @@ Whether you're a seasoned researcher, a student beginning your journey in scienc
 
 ## 🌈 Commitment to Diversity, Equity, and Inclusion (DEI)
 <div align="justify">
-At FIRE Araştırma Eğitim Ltd. Şti., we believe that diversity, equity, and inclusion are fundamental to creating a vibrant, innovative, and productive community. We are committed to fostering an environment where all individuals feel respected, are treated fairly, and can achieve their full potential, regardless of their gender, race, ethnicity, national origin, age, sexual orientation or identity, education, or disability.
+At FIRE Araştırma Eğitim Ltd. Şti., diversity, equity, and inclusion are fundamental to creating a vibrant, innovative, and productive community. It is crucial to foster an environment where all individuals feel respected, are treated fairly, and can achieve their full potential, regardless of their gender, race, ethnicity, national origin, age, sexual orientation or identity, education, or disability. Hence, the contracts, trainees, collaborators will never be selected or discriminated according to these characteristics.
 </div>
 
 ### 👩‍🔬 Gender Equality
 <div align="justify">
-We strive for gender equality at all levels of our organization, recognizing the critical importance of diverse perspectives in driving innovation in research and education. We are dedicated to ensuring equal opportunities for individuals of all genders and backgrounds.
+All genders are equal according to FIRE Araştırma Eğitim Ltd. Şti, and it recognizes the critical importance of diverse perspectives in driving innovation in research and education. It is dedicated to ensuring equal opportunities for individuals of all genders and backgrounds.
 </div>
 
 ### ♿ Accessibility Commitment
 <div align="justify">
-Ensuring the accessibility of our work is fundamental to our mission. We are dedicated to creating educational materials and research outputs that are accessible to all, including individuals with disabilities. We continually work on improving our digital content to meet current accessibility standards.
+Ensuring the accessibility of data, research outputs, and reference materials is fundamental to the mission of FIRE Araştırma Eğitim Ltd. Şti. Educational materials and research outputs will be prepared so as to make them accessible to all, including individuals with disabilities. The digital content and aforementioned documents will be according to the current accessibility standards.
 </div>
 
 ## 📚 Ethical Research Practices
 <div align="justify">
-At FIRE Araştırma Eğitim Ltd. Şti., we are deeply committed to the highest standards of integrity and ethics in all our research activities. Our dedication to ethical research is unwavering, with strict policies against any form of misconduct. We believe that ethical research is the cornerstone of genuine scientific discovery and the advancement of knowledge.
+At FIRE Araştırma Eğitim Ltd. Şti., all research activities will abide with the highest standards of integrity and ethics. The Company's dedication to ethical research is unwavering, with strict policies against any form of misconduct. Ethical research is the cornerstone of genuine scientific discovery and the advancement of knowledge.
 </div>
 
 ### 🚫 Upholding Academic Integrity
 
 - **Plagiarism:**
 <div align="justify"> 
-We strictly prohibit plagiarism in any form. All research outputs must be original, crediting all sources and contributions accurately. Our commitment to originality and authenticity extends to all stages of research, from proposal to publication.
+Any kind of plagiarism is strictly forbidden. All research outputs must be original, should credit all sources and contributions accurately. The commitment to originality and authenticity extends to all stages of research, from proposal to publication.
 </div>
 <br>
 
 - **Data Fabrication and Falsification:** 
 <div align="justify"> 
-Fabricating data or altering results to misrepresent research findings is against our core principles. We ensure that all research data are reported honestly, accurately, and transparently.
+Fabricating data or altering results to misrepresent research findings is against the core principles of FIRE Araştırma Eğitim Ltd. Şti. All research data are to be reported honestly, accurately, and transparently, and research activities related to FIRE Araştırma Eğitim Ltd. Şti are no exception to this.
 </div>
 <br>
 
 - **Conflict of Interest:**
 
-<div align="justify"> We require all researchers to disclose any potential conflicts of interest that might influence the research process or outcomes. Transparently managing conflicts of interest is crucial to maintain trust and integrity in our research.
+<div align="justify"> All researchers are to disclose any potential conflicts of interest that might influence the research process or outcomes. Transparently managing conflicts of interest is crucial to maintain trust and integrity in our research.
 </div>
 <br>
 
@@ -98,12 +98,12 @@ Fabricating data or altering results to misrepresent research findings is agains
 ### 🤝 Ethical Treatment of Participants
 
 - **Informed Consent:**
-<div align="justify">Ensuring the informed consent of all participants is mandatory for any research involving human subjects. Participants must be fully informed about the nature of the research, any potential risks, and their rights to confidentiality and to withdraw from the study at any time.
+<div align="justify">In case of studying directly humans or collecting data from them, ensuring the informed consent of all participants is mandatory for any research involving human subjects. Participants must be fully informed about the nature of the research, any potential risks, and their rights to confidentiality and to withdraw from the study at any time.
 </div>
 <br>
 
 - **Privacy and Confidentiality:** 
-<div align="justify">We are committed to protecting the privacy and confidentiality of research participants. Personal information is handled with the utmost care, used only for the purposes consented to by the participant, and stored securely to prevent unauthorized access.
+<div align="justify">Privacy and confidentiality of research participants are to be protected in FIRE Araştırma Eğitim Ltd. Şti, with the exception of reporting any kind of illegal activity according to the current legislation. Personal information is handled with the utmost care, used only for the purposes consented to by the participant, and stored securely to prevent unauthorized access.
 </div>
 <br>
 
@@ -121,18 +121,18 @@ Fabricating data or altering results to misrepresent research findings is agains
 
 ## 💾 Data Protection and GDPR Compliance
 <div align="justify">
-Protecting the personal data and privacy of our researchers, participants, and partners is of utmost importance to us. We are fully committed to GDPR compliance, ensuring that all data collection, storage, and processing practices are conducted in accordance with applicable laws and regulations, guaranteeing transparency, security, and respect for personal data.
+Protecting the personal data and privacy of our researchers, participants, and partners is of utmost importance. FIRE Araştırma Eğitim Ltd. Şti. is fully committed to GDPR compliance, ensuring that all data collection, storage, and processing practices are conducted in accordance with applicable laws and regulations, guaranteeing transparency, security, and respect for personal data.
 </div>
 <br>
 
 <div align="justify">
-By adhering to these principles, we aim to foster an environment of respect, integrity, and accountability. Our commitment to ethical research underpins our mission to contribute to the advancement of knowledge while respecting the rights and dignity of all individuals involved in the research process.
+By adhering to these principles, the Company aims to foster an environment of respect, integrity, and accountability. The commitment to ethical research underpins this mission to contribute to the advancement of knowledge while respecting the rights and dignity of all individuals involved in the research process.
 </div>
 <br>
 
 ## Contact Us
 <div align="justify">
-We are always looking for collaborators, partners, and enthusiasts to join our cause. If you're interested in learning more about our work, contributing to our projects, or have any questions, please don't hesitate to reach out.
+Collaborators, partners, and enthusiasts to join or communicate with FIRE Araştırma Eğitim Ltd. Şti. are always welcome. If you're interested in learning more about the Company's work, contributing to its projects, or have any questions, please don't hesitate to reach out.
 </div>
 
 Email: [fireae24@gmail.com](mailto:fireae24@gmail.com)  
