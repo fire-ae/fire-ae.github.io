@@ -96,4 +96,8 @@ As of March 2024, FIRE Araştırma Eğitim Ltd. Şti. finds it adequate to follo
 
 </div>
 
+<div align="justify">
+  
 In general, plagiarism, data fabrication and falsification, improper or nonexistent citation/acknowledgment of scientific research and data, incorrect authorship assignment practices (e.g. authorship without any contribution to the study) and many other problems, in fact against the common sense, are prohibited from the Company's perspective, too. Data, publication, image, or any other resources' copyright and licenses should be in line with the use purposes of them in the corresponding research study.
+
+</div>
