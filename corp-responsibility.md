@@ -63,7 +63,11 @@ It is crucial to comply with these regulations as not only it is a good practice
 
 </div>
 
+<div align="justify">
+  
 Moreover, additional licenses, copyright issues, and terms of uses should be carefully checked for every data, code, software, text utilization. As for FIRE Araştırma Eğitim Ltd. Şti., the materials used and/or published are either self-sourced or public license, and expected to be so. 
+
+</div>
 
 ## Research Ethics
 
