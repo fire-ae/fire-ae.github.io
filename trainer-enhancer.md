@@ -9,6 +9,8 @@ Conventional training (graduate research and similar programs in undergraduate) 
 
 ResearchComp is an excellent framework for the career development and skill improvement of current and prospective researchers.
 
+![Araştırma Yetisi - ResearchComp Turkish Translation](arastirmayetisi2.png)
+
 -[The original EC Office of Publication document for ResearchComp](https://op.europa.eu/en/publication-detail/-/publication/5c8c86d8-3025-11ed-975d-01aa75ed71a1/language-en)
 
 --[IFISR Turkish translation](https://drive.google.com/file/d/1-CfhhoyUoVkKf3YCi0aPGYr7kUZ-2dP3/view?usp=sharing)
