@@ -30,4 +30,4 @@ Research Enhancement will take place mainly in two ways, first one is provision 
 
 In this case, scattered and hard-to-reach surface water quality data from studies conducted in Türkiye was collected in Tables with important metadata regarding what is available. That public document is expected to give a direction/idea to the researchers interested in this topic, especially for Türkiye case, where unfortunately data availability is not sufficient.
 
-One may also check the repositories of torna4o and fire-ae in github on finding useful codes for their studies. 
+One may also check the repositories of [torna4o](https://github.com/torna4o/) and [fire-ae](https://github.com/fire-ae/) in github on finding useful codes for their studies. 
