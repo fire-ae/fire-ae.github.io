@@ -74,9 +74,11 @@ Moreover, additional licenses, copyright issues, and terms of uses should be car
 <div align="justify">
   
 As of March 2024, FIRE Araştırma Eğitim Ltd. Şti. finds it adequate to follow the guidelines of Council of Science Editors on research publication specific ethical issues in reporting scientific outputs. Full text of the up-to-date version can be retrieved below:
+</div>
+
 [Council of Science Editors' Guidelines](https://www.councilscienceeditors.org/recommendations-for-promoting-integrity-in-scientific-journal-publications)
 
-</div>
+
 
 <div align="justify">
   
