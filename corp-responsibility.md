@@ -18,12 +18,11 @@ You can reach the Diversity, Equity, Inclusion Statement of FIRE Araştırma Eğ
 ## Accessibility of Research and Materials
 
 A separate guidance and statement document will be prepared for this section. Currently, concise image/table captions, clear writing, color-blind friendly figures are strongly recommended. 
-
-<div align="justify">
   
-One place to consult is W3C's Web Access Initiative's [Web Content Accessibility Guide](https://www.w3.org/WAI/standards-guidelines/wcag/). Another place to follow is Cornell University's arXiv's webinars on the subject. 
+One place to consult is W3C's Web Access Initiative's Web Content Accessibility Guide:
+[Web Content Accessibility Guide](https://www.w3.org/WAI/standards-guidelines/wcag/). 
 
-</div> 
+Another place to follow is Cornell University's arXiv's webinars on the subject. 
 
 ## Availability of Research and Materials
 
