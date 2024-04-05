@@ -2,7 +2,7 @@
 
 # FIRE ARAŞTIRMA EĞİTİM LTD. ŞTİ.
 <div align="justify">
-Welcome to FIRE Araştırma Eğitim Ltd. Şti., an independent scientific research company dedicated to advancing the frontiers of knowledge. At FIRE, we are committed to conducting groundbreaking research, training the next generation of researchers, creating high-quality educational materials, and supporting the scientific community through funding opportunities.
+Welcome to FIRE Araştırma Eğitim Ltd. Şti., an independent scientific research company dedicated to advancing the frontiers of knowledge. It is a limited liability company based in Ankara, Türkiye and founded in February, 2024. At FIRE, we are committed to conducting groundbreaking research, training the next generation of researchers, creating high-quality educational materials, and supporting the scientific community through funding opportunities.
 </div>
 
 ## About
