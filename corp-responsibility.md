@@ -3,6 +3,17 @@
 
 This page lists corporate responsibility-focused statements and documents.
 
+## Mission
+
+FIRE Araştırma Eğitim Ltd. Şti. aims to make scientific research less of a bureaucratic, financial, personal challenge, inequality enhancer entity to more open, encompassing, progressive, agile without compromising from the quality and advancement it already brought and likely to bring.
+
+
+## Vision
+
+FIRE Araştırma Eğitim Ltd. Şti. sees itself as a key player in discovering new information, knowledge, insight; train scientific researchers, and make high-quality scientific research more accessible and available to all. It will conduct research studies, enhance other researchers' works, fund research directly, and create/provide training/education material.
+
+
+
 ## Gender Equality Plan
 
 You can reach the Gender Equality Plan of FIRE Araştırma Eğitim Ltd. Şti. from the link file below:
