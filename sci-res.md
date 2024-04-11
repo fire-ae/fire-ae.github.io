@@ -3,7 +3,7 @@
 
 ## Literature Review
 
-FIRE Araştırma Eğitim Ltd. Şti. (hereinafter Company)'s approach on literature review, and how it will do it can be seen from the following [literature review approach of FIRE-AE]()
+FIRE Araştırma Eğitim Ltd. Şti. (hereinafter Company)'s approach on literature review, and how it will do it can be seen from the following [literature review approach of FIRE-AE](rev.pdf)
 
 ## Researcher Assessment/Evaluation
 
