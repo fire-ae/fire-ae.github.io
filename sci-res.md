@@ -1,11 +1,15 @@
 [<Return to Main Page](README.md)
 <br>
 
+## Literature Review
+
+FIRE Araştırma Eğitim Ltd. Şti. (hereinafter Company)'s approach on literature review, and how it will do it can be seen from the following [literature review approach of FIRE-AE]()
+
 ## Researcher Assessment/Evaluation
 
 <div align="justify">
   
-FIRE Araştırma Eğitim Ltd. Şti. (hereinafter Company) looks for reseacrher who can and will successfully follow the Research Project Conduct Workflow defined below. Theoretically, one can still achieve this with zero experience, yet there are still several basic criteria to select candidate Company contracting researchers (active as of March 30, 2024):
+The Company looks for reseacrher who can and will successfully follow the Research Project Conduct Workflow defined below. Theoretically, one can still achieve this with zero experience, yet there are still several basic criteria to select candidate Company contracting researchers (active as of March 30, 2024):
 
 </div>
 
