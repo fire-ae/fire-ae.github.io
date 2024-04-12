@@ -24,3 +24,9 @@ This sub-project utilizes statistical and digital image analysis techniques, ava
 <div align="justify">
    In this conference presentation, the results of applying Singular Spectrum Analysis to the simulated image of 100 celestial signals in varying shapes and luminosities with various added noises were explained. Later, several applications of this method to real JWST MIRI F770W results were also presented, with a slightly better capture of cataloged objects compared to the standard Photutils PSF Photometry with default values.
 </div>
+
+# EUROPEAN UNION Call for Proposals Partner Search Listings
+
+- [Expanding Academia-Enterprise Collaborations - HORIZON-EIE-2024-CONNECT-02-01](https://ec.europa.eu/info/funding-tenders/opportunities/portal/screen/opportunities/topic-details/horizon-eie-2024-connect-02-01)
+-
+-
