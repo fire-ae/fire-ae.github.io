@@ -27,6 +27,8 @@ This sub-project utilizes statistical and digital image analysis techniques, ava
 
 # EUROPEAN UNION Call for Proposals Partner Search Listings
 
+Here is the list of Call for Proposals FIRE Araştırma Eğitim Ltd. Şti is within the partner search list:
+
 - [Expanding Academia-Enterprise Collaborations - HORIZON-EIE-2024-CONNECT-02-01](https://ec.europa.eu/info/funding-tenders/opportunities/portal/screen/opportunities/topic-details/horizon-eie-2024-connect-02-01)
 -
 -
