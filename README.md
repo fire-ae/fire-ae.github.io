@@ -1,5 +1,7 @@
 ![logofire](https://github.com/fire-ae/fire-ae.github.io/assets/162897064/66fa67e8-633e-4ed2-a23e-5fab6beeaa47)
 
+FIRE - Fundamental and Interdisciplinary REsearch
+
 # FIRE ARAŞTIRMA EĞİTİM LTD. ŞTİ.
 <div align="justify">
 Welcome to FIRE Araştırma Eğitim Ltd. Şti., an independent scientific research company dedicated to advancing the frontiers of knowledge. It is a limited liability company based in Ankara, Türkiye and founded in February, 2024. FIRE is committed to conducting groundbreaking research, training the next generation of researchers, creating high-quality educational materials, and supporting the scientific community through funding opportunities.
@@ -48,6 +50,11 @@ Whether you're a seasoned researcher, a student beginning your journey in scienc
 - **For Researchers:** Learn more about our funding opportunities and current research projects.
 - **For Students:** Explore our educational programs and find out how you can apply.
 - **For Supporters:** Your contribution can make a difference. Discover how you can help support our mission.
+
+## Contracts by FIRE Araştırma Eğitim Ltd. Şti. to generate fund
+
+- [2024/03 - Active] - Non-Key Modelling Expert for NFB Engineerng and Consultancy Inc. for their work in "TECHNICAL ASSISTANCE ON PREPARATION OF RIVER BASIN MANAGEMENT PLANS FOR SIX BASINS PROJECT"
+
 
 ## 🌈 Commitment to Diversity, Equity, and Inclusion (DEI)
 <div align="justify">
@@ -137,5 +144,4 @@ Collaborators, partners, and enthusiasts to join or communicate with FIRE Araşt
 
 Email: [fireae24@gmail.com](mailto:fireae24@gmail.com)  
 Address: Kavaklıdere Mahallesi Esat Caddesi No 15/6 Çankaya/Ankara/Türkiye
-
 Follow us on [LinkedIn](https://www.linkedin.com/company/102201413/) 
