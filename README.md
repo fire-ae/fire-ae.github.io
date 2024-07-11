@@ -1,4 +1,4 @@
-![logofire - card-visite -white.png](https://github.com/fire-ae/fire-ae.github.io/blob/main/logofire%20-%20card-visite%20-white.png)
+![logofire.png](https://github.com/fire-ae/fire-ae.github.io/blob/main/logofire.png)
 
 FIRE - Fundamental and Interdisciplinary REsearch
 
