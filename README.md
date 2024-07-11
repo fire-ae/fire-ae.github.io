@@ -1,4 +1,4 @@
-![logofire.png](https://github.com/fire-ae/fire-ae.github.io/blob/main/logofire.png)
+![logofire.png](https://github.com/fire-ae/fire-ae.github.io/blob/main/logofire.png?raw=true)
 
 FIRE - Fundamental and Interdisciplinary REsearch
 
