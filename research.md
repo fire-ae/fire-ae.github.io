@@ -1,7 +1,11 @@
 [<Return to Main Page](README.md)
 <br>
 
+<img src="https://github.com/fire-ae/fire-ae.github.io/blob/main/files.png" width="500" height="500" />
+
+
 # ACTIVE RESEARCH PROJECTS
+
 
 # Research Project: Enhancing Point Source Detection in Astronomical Images
 
