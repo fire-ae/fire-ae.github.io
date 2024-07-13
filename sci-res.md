@@ -3,9 +3,13 @@
 
 ## Literature Review
 
+<img src="https://github.com/fire-ae/fire-ae.github.io/blob/main/bunchofbooks.jpg" width="300" height="500" />
+
 FIRE Araştırma Eğitim Ltd. Şti. (hereinafter Company)'s approach on literature review, and how it will do it can be seen from the following [literature review approach of FIRE-AE](rev.pdf)
 
 ## Researcher Assessment/Evaluation
+
+<img src="https://github.com/fire-ae/fire-ae.github.io/blob/main/book-magnif.PNG" width="300" height="300" />
 
 <div align="justify">
   
@@ -62,7 +66,8 @@ As of March 2024, the current expected basic workflow of a Research Project of F
 <div align="justify">
   
 1-) Determining an area of interest within a field not foreign to the Researcher's experiences and skills.
-2-) Extensive literature review, gap analysis, and reporting this gap analysis and potential future studies in a Preprint server present in [Preprint Citation Index of Clarivate](https://clarivate.com/products/scientific-and-academic-research/research-discovery-and-workflow-solutions/preprint-citation-index/). 
+2-) Extensive literature review, gap analysis, and reporting this gap analysis and potential future studies in a Preprint server present in 
+[Preprint Citation Index of Clarivate](https://clarivate.com/products/scientific-and-academic-research/research-discovery-and-workflow-solutions/preprint-citation-index/). 
 
 </div>
 
