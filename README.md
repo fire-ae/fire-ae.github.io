@@ -20,6 +20,10 @@ FIRE Araştırma Eğitim Ltd. Şti. aspires to advance the borders of humanity's
 
 <br>
 
+
+## Contracts by FIRE Araştırma Eğitim Ltd. Şti. to generate fund
+
+- [2024/03 - Active] - Non-Key Modelling Expert for NFB Engineerng and Consultancy Inc. for their work in "TECHNICAL ASSISTANCE ON PREPARATION OF RIVER BASIN MANAGEMENT PLANS FOR SIX BASINS PROJECT"
 ## Our Services
 
 ### Research
@@ -50,10 +54,6 @@ Whether you're a seasoned researcher, a student beginning your journey in scienc
 - **For Researchers:** Learn more about our funding opportunities and current research projects.
 - **For Students:** Explore our educational programs and find out how you can apply.
 - **For Supporters:** Your contribution can make a difference. Discover how you can help support our mission.
-
-## Contracts by FIRE Araştırma Eğitim Ltd. Şti. to generate fund
-
-- [2024/03 - Active] - Non-Key Modelling Expert for NFB Engineerng and Consultancy Inc. for their work in "TECHNICAL ASSISTANCE ON PREPARATION OF RIVER BASIN MANAGEMENT PLANS FOR SIX BASINS PROJECT"
 
 
 ## 🌈 Commitment to Diversity, Equity, and Inclusion (DEI)
