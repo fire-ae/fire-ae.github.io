@@ -48,12 +48,12 @@ Understanding the challenges of securing research funding, FIRE Araştırma Eği
 
 ## Get Involved
 <div align="justify">
-Whether you're a seasoned researcher, a student beginning your journey in science, or someone passionate about supporting scientific advancement, there are many ways to get involved with FIRE Araştırma Eğitim Ltd. Şti.:
+Whether you're a seasoned researcher, a student beginning your journey in science, or someone demanding a superior level of knowledge/insight in fundamental and applied sciences, there are many ways to get involved with FIRE Araştırma Eğitim Ltd. Şti.:
 </div>
 
 - **For Researchers:** Learn more about our funding opportunities and current research projects.
 - **For Students:** Explore our educational programs and find out how you can apply.
-- **For Supporters:** Your contribution can make a difference. Discover how you can help support our mission.
+- **For Service Requesters:** You can check out our services and how we operate, and contact FIRE Araştırma Eğitim Ltd. Şti. for further details. Not only will you get state-of-the-art insight, you will also contribute to advancing the scientific frontier.
 
 
 ## 🌈 Commitment to Diversity, Equity, and Inclusion (DEI)
