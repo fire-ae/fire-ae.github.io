@@ -8,3 +8,18 @@
     max-width: 100%; /* Optional: Ensure the image is responsive */
     height: auto; /* Optional: Maintain the aspect ratio */
 }
+
+body {
+    font-family: Arial, sans-serif; /* Choose a clean, readable font */
+    line-height: 1.6; /* Improve readability */
+    padding: 20px; /* Add some space around the content */
+}
+
+.content {
+    max-width: 800px; /* Limit the width of your content (800px is a common choice) */
+    margin: 0 auto; /* Center the content */
+    padding: 20px; /* Add padding inside the content area */
+    background-color: #f4f4f4; /* Optional: Add a light background color */
+    border-radius: 8px; /* Optional: Add rounded corners for a softer look */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Optional: Add a subtle shadow for depth */
+}
