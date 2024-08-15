@@ -1,0 +1,10 @@
+/* My second .css attempt after so many years of not using it*/
+
+.image-container {
+    text-align: center; /* Align the image to the center */
+}
+
+.image-container img {
+    max-width: 100%; /* Optional: Ensure the image is responsive */
+    height: auto; /* Optional: Maintain the aspect ratio */
+}
