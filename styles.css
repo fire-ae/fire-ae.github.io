@@ -32,7 +32,7 @@ body {
     max-width: 900px; /* Set a maximum width for the entire page content */
     margin: 40px auto; /* Center the container and add space on top/bottom */
     padding: 20px; /* Add padding inside the container */
-    background-color: #f4f4f4; /* Subtle gray shade for the content area */
+    background-color: #FFFFFF; /* Subtle gray shade for the content area */
     border-radius: 8px; /* Rounded corners for a softer look */
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
 }
