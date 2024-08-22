@@ -5,7 +5,7 @@ body {
     line-height: 1.6;
     margin: 0;
     padding: 0;
-    color: 999999;
+    color: #999999;
     background-color: #000000; /* Optional: Light background for the entire page */
 }
 
@@ -22,7 +22,7 @@ body {
     max-width: 800px; /* Limit the width of your content (800px is a common choice) */
     margin: 0 auto; /* Center the content */
     padding: 20px; /* Add padding inside the content area */
-    color: 999999;
+    color: #999999;
     background-color: #000000; /* Optional: Add a light background color */
     border-radius: 8px; /* Optional: Add rounded corners for a softer look */
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Optional: Add a subtle shadow for depth */
@@ -34,7 +34,7 @@ body {
     max-width: 900px; /* Set a maximum width for the entire page content */
     margin: 40px auto; /* Center the container and add space on top/bottom */
     padding: 20px; /* Add padding inside the container */
-    color: 999999;
+    color: #999999;
     background-color: #000000; /* Subtle gray shade for the content area */
     border-radius: 8px; /* Rounded corners for a softer look */
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
