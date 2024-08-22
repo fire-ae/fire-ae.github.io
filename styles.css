@@ -25,7 +25,7 @@ body {
     color: #999999;
     background-color: #000000; /* Optional: Add a light background color */
     border-radius: 8px; /* Optional: Add rounded corners for a softer look */
-    box-shadow: 0 0 10px rgba(50, 50, 50, 0.1); /* Optional: Add a subtle shadow for depth */
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.2); /* Optional: Add a subtle shadow for depth */
 }
 
 
