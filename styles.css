@@ -21,7 +21,7 @@ body {
     max-width: 800px; /* Limit the width of your content (800px is a common choice) */
     margin: 0 auto; /* Center the content */
     padding: 20px; /* Add padding inside the content area */
-    background-color: #f4f4f4; /* Optional: Add a light background color */
+    background-color: #FFFFFF; /* Optional: Add a light background color */
     border-radius: 8px; /* Optional: Add rounded corners for a softer look */
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Optional: Add a subtle shadow for depth */
 }
