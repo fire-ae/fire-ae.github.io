@@ -9,6 +9,28 @@ body {
     background-color: #000000; /* Optional: Light background for the entire page */
 }
 
+.navbar {
+    overflow: hidden;
+    background-color: #333; /* dark gray background for navbar */
+    border-bottom: 2px solid #fff; /* white border at the bottom */
+    display: flex;
+    justify-content: space-between; /* spread out the links */
+}
+
+.navbar a {
+    float: left;
+    display: block;
+    color: #fff; /* white text color */
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.navbar a:hover {
+    background-color: #575757; /* slightly lighter gray on hover */
+}
+
 .image-container {
     text-align: center; /* Align the image to the center */
 }
