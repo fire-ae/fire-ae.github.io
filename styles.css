@@ -14,21 +14,25 @@ body {
     background-color: #333; /* dark gray background for navbar */
     border-bottom: 2px solid #fff; /* white border at the bottom */
     display: flex;
-    justify-content: space-between; /* spread out the links */
+    align-items: center; /* align items vertically */
 }
 
 .navbar a {
-    float: left;
     display: block;
     color: #fff; /* white text color */
     text-align: center;
-    padding: 14px 20px;
+    padding: 10px 15px;
     text-decoration: none;
-    font-size: 17px;
+    font-size: 15px; /* smaller font size */
 }
 
 .navbar a:hover {
     background-color: #575757; /* slightly lighter gray on hover */
+}
+
+.navbar-logo {
+    height: 40px; /* adjust as needed */
+    margin-right: 15px; /* space between logo and first link */
 }
 
 .image-container {
