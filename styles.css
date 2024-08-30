@@ -10,12 +10,13 @@ body {
 }
 
 .navbar-container {
-    max-width: 900px; /* Match the width of the page container */
-    margin: 0 auto; /* Center the navbar container */
+    max-width: 900px;
+    margin: 0 auto;
+    border-radius: 8px; /* Add rounded corners */
+    overflow: hidden; /* Ensure the content inside doesn't overflow the rounded corners */
 }
 
 .navbar {
-    overflow: hidden;
     background-color: #333;
     border-bottom: 2px solid #fff;
     display: flex;
