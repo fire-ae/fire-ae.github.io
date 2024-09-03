@@ -95,6 +95,14 @@ body {
     margin: 0 auto; /* Center the image within the container */
 }
 
+a {
+    color: #FFA500; /* Light orange color */
+}
+
+a:hover {
+    color: #FF8C00; /* Slightly darker orange on hover */
+}
+
 /* Default button-like styles for mobile */
 @media (max-width: 768px) {
     .content, .contentshort, .page-container {
