@@ -91,3 +91,43 @@ body {
     display: block; /* Center image if it's alone in a block */
     margin: 0 auto; /* Center the image within the container */
 }
+
+/* For tablets and smaller devices */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar a {
+        padding: 8px 10px;
+        font-size: 12px;
+    }
+
+    .content, .contentshort, .page-container {
+        max-width: 90%; /* Adjust the content width for smaller screens */
+        padding: 15px;
+        margin: 20px auto; /* Adjust margins */
+    }
+}
+
+/* For mobile phones */
+@media (max-width: 480px) {
+    .navbar {
+        padding: 5px;
+    }
+
+    .navbar a {
+        padding: 5px 8px;
+        font-size: 12px; /* Smaller font size for mobile */
+    }
+
+    .navbar-logo {
+        height: 30px; /* Smaller logo for mobile */
+    }
+
+    .content, .contentshort, .page-container {
+        padding: 10px;
+        margin: 10px auto; /* Smaller margins */
+    }
+}
