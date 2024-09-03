@@ -95,42 +95,34 @@ body {
     margin: 0 auto; /* Center the image within the container */
 }
 
-/* For tablets and smaller devices */
+/* Default button-like styles for mobile */
 @media (max-width: 768px) {
-    .navbar {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-
-    .navbar a {
-        padding: 8px 10px;
-        font-size: 12px;
-    }
-
     .content, .contentshort, .page-container {
-        max-width: 90%; /* Adjust the content width for smaller screens */
+        display: block;
         padding: 15px;
-        margin: 20px auto; /* Adjust margins */
+        margin: 10px auto;
+        text-align: center;
+        color: #ffffff; /* Change text color to white for contrast */
+        background-color: #333333; /* Dark background to mimic a button */
+        border-radius: 20px; /* More rounded corners for a button-like look */
+        border: 3px solid #ffffff; /* Thicker, more visible border */
+        box-shadow: 0 0 10px rgba(255, 255, 255, 0.5); /* Subtle shadow */
+        transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth hover effect */
+    }
+
+    /* Add a hover effect for mobile, if applicable */
+    .content:hover, .contentshort:hover, .page-container:hover {
+        background-color: #575757; /* Slightly lighter on hover */
+        transform: scale(1.02); /* Slight zoom-in effect */
     }
 }
 
-/* For mobile phones */
+/* Further tweaks for very small screens */
 @media (max-width: 480px) {
-    .navbar {
-        padding: 5px;
-    }
-
-    .navbar a {
-        padding: 5px 8px;
-        font-size: 12px; /* Smaller font size for mobile */
-    }
-
-    .navbar-logo {
-        height: 30px; /* Smaller logo for mobile */
-    }
-
     .content, .contentshort, .page-container {
         padding: 10px;
-        margin: 10px auto; /* Smaller margins */
+        margin: 5px auto;
+        font-size: 14px; /* Smaller font for better fit */
+        border-radius: 25px; /* Extra rounded corners for smaller screens */
     }
 }
