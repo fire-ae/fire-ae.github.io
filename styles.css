@@ -123,33 +123,14 @@ a:hover {
         background-color: #575757; /* Slightly lighter on hover */
         transform: scale(1.02); /* Slight zoom-in effect */
     }
-        .navbar {
-        flex-direction: column; /* Stack items vertically */
-        align-items: flex-start; /* Align items to the left */
-    }
-
     .navbar a {
-        width: 100%; /* Full width for each link */
+        flex-basis: 100%; /* Make each link take up full width */
         padding: 10px 0; /* Adjust padding for better spacing */
         text-align: left; /* Align text to the left */
     }
 
-    .navbar-toggle {
-        display: block; /* Show the hamburger icon */
-        cursor: pointer;
-        color: #fff;
-        font-size: 18px;
-        padding: 10px 15px;
-    }
-
-    .navbar-links {
-        display: none; /* Hide links initially */
-        width: 100%;
-    }
-
-    .navbar-links.active {
-        display: flex; /* Show links when active */
-        flex-direction: column;
+    .navbar {
+        flex-direction: column; /* Stack navbar items vertically */
     }
 }
 
@@ -161,32 +142,13 @@ a:hover {
         font-size: 14px; /* Smaller font for better fit */
         border-radius: 25px; /* Extra rounded corners for smaller screens */
     }
-        .navbar {
-        flex-direction: column; /* Stack items vertically */
-        align-items: flex-start; /* Align items to the left */
-    }
-
     .navbar a {
-        width: 100%; /* Full width for each link */
+        flex-basis: 100%; /* Make each link take up full width */
         padding: 10px 0; /* Adjust padding for better spacing */
         text-align: left; /* Align text to the left */
     }
 
-    .navbar-toggle {
-        display: block; /* Show the hamburger icon */
-        cursor: pointer;
-        color: #fff;
-        font-size: 18px;
-        padding: 10px 15px;
-    }
-
-    .navbar-links {
-        display: none; /* Hide links initially */
-        width: 100%;
-    }
-
-    .navbar-links.active {
-        display: flex; /* Show links when active */
-        flex-direction: column;
+    .navbar {
+        flex-direction: column; /* Stack navbar items vertically */
     }
 }
