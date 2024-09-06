@@ -96,11 +96,11 @@ body {
 }
 
 a {
-    color: #FFA500; /* Light orange color */
+    color: #b86902; /* Light orange color */
 }
 
 a:hover {
-    color: #FF8C00; /* Slightly darker orange on hover */
+    color: #8a5004; /* Slightly darker orange on hover */
 }
 
 /* Default button-like styles for mobile */
