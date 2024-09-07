@@ -20,6 +20,8 @@ body {
     background-color: #333;
     border-bottom: 2px solid #fff;
     display: flex;
+    flex-wrap: wrap; /* Allows items to wrap to the next line */
+    justify-content: flex-start; /* Align items to the start */
     align-items: center;
 }
 
@@ -30,6 +32,12 @@ body {
     padding: 10px 15px;
     text-decoration: none;
     font-size: 14px;
+    max-width: 200px; /* Adjust as needed */
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap; /* Prevent text wrapping */
+    flex: 1 1 auto; /* Allows items to grow and shrink */
+    min-width: 100px; /* Minimum width for each item */
 }
 
 .navbar a:hover {
