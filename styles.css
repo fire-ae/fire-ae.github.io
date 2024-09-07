@@ -132,6 +132,17 @@ a:hover {
     .navbar {
         flex-direction: column; /* Stack navbar items vertically */
     }
+    .navbar #google_translate_element {
+        width: 100%;
+        text-align: center;
+        padding: 10px 0;
+    }
+
+    #google_translate_element select {
+        width: 90%; /* Make the dropdown full width on small screens */
+        padding: 8px 12px;
+        font-size: 16px; /* Match the larger font size for mobile */
+    }
 }
 
 /* Further tweaks for very small screens */
@@ -150,27 +161,40 @@ a:hover {
 
     .navbar {
         flex-direction: column; /* Stack navbar items vertically */
+
+    
+    .navbar #google_translate_element {
+        padding: 8px 0;
+    }
+
+    #google_translate_element select {
+        font-size: 14px;
+        padding: 6px 10px;
+    }
     }
 
 /* Google Translate  */
-#google_translate_element {
-    display: flex;
-    justify-content: flex-end; /* Align the dropdown to the right */
-    margin-top: 10px; /* Add some space above the element */
-    margin-right: 20px; /* Add some space to the right of the element */
+.navbar #google_translate_element {
+    margin-left: auto; /* Pushes it to the right side of the navbar */
+    padding: 10px 15px;
+    display: inline-block;
 }
 
 #google_translate_element select {
-    background-color: #333; /* Dark background for dropdown */
-    color: #fff; /* Light text for visibility */
-    border: 2px solid #BEC2CB; /* Border to match the theme */
-    padding: 5px;
-    font-size: 14px; /* Ensure text size is consistent */
-    border-radius: 8px; /* Rounded corners */
+    background-color: #333; /* Same background color as the navbar */
+    color: #fff; /* White text color for contrast */
+    border: none; /* Remove borders */
+    padding: 5px 10px; /* Add padding */
+    border-radius: 5px; /* Add rounded corners */
+    font-size: 14px; /* Match font size of the navbar */
 }
 
 #google_translate_element select:hover {
-    background-color: #575757; /* Change color on hover */
-    color: #f7dc0f; /* Light text color on hover */
+    background-color: #575757; /* Hover effect to match navbar hover */
+    cursor: pointer; /* Pointer cursor to indicate it's clickable */
+}
+
+#google_translate_element select:focus {
+    outline: none; /* Remove focus outline for cleaner look */
 }
 }
