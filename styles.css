@@ -173,6 +173,11 @@ a:hover {
     }
     }
 
+
+#google_translate_element {
+    display: inline-block;
+}
+    
 /* Google Translate  */
 .navbar #google_translate_element {
     margin-left: auto; /* Pushes it to the right side of the navbar */
