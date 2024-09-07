@@ -185,20 +185,31 @@ a:hover {
     display: inline-block;
 }
 
-#google_translate_element select {
-    background-color: #333; /* Dark background for dropdown */
-    color: #f7dc0f; /* Yellow text for readability */
-    border: 1px solid #f7dc0f; /* Optional: Add a yellow border */
-    padding: 5px;
+.goog-te-gadget-icon {
+    display: none !important;
 }
 
-.goog-te-gadget-icon {
-    display: none; /* Hide the default Google Translate icon */
+/* Style the Google Translate gadget */
+#google_translate_element {
+    background-color: #333 !important; /* Dark background */
+    border: none !important; /* Remove any borders */
+    border-radius: 8px;
+}
+
+#google_translate_element select {
+    background-color: #333 !important; /* Dark background for dropdown */
+    color: #f7dc0f !important; /* Yellow text for readability */
+    border: 1px solid #f7dc0f !important; /* Yellow border */
+}
+
+#google_translate_element .goog-te-combo {
+    background-color: #333 !important; /* Dark background for dropdown */
+    color: #f7dc0f !important; /* Yellow text color */
 }
 
 .goog-te-gadget {
-    color: #f7dc0f; /* Set the text color to match your theme */
-    background-color: #333; /* Darken the background of the Google Translate bar */
+    color: #f7dc0f !important; /* Set the text color to match your theme */
+    background-color: #333 !important; /* Darken the background of the Google Translate bar */
     border-radius: 8px;
     padding: 5px;
 }
