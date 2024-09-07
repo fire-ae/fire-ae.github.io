@@ -10,7 +10,7 @@ body {
 }
 
 .navbar-container {
-    max-width: 900px;
+    max-width: 950px;
     margin: 0 auto;
     border-radius: 8px; /* Add rounded corners */
     overflow: hidden; /* Ensure the content inside doesn't overflow the rounded corners */
