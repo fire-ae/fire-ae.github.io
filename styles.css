@@ -10,7 +10,7 @@ body {
 }
 
 .navbar-container {
-    max-width: 950px;
+    max-width: 1020px;
     margin: 0 auto;
     border-radius: 8px; /* Add rounded corners */
     overflow: hidden; /* Ensure the content inside doesn't overflow the rounded corners */
@@ -186,12 +186,30 @@ a:hover {
 }
 
 #google_translate_element select {
-    background-color: #333; /* Same background color as the navbar */
-    color: #fff; /* White text color for contrast */
-    border: none; /* Remove borders */
-    padding: 5px 10px; /* Add padding */
-    border-radius: 5px; /* Add rounded corners */
-    font-size: 14px; /* Match font size of the navbar */
+    background-color: #333; /* Dark background for dropdown */
+    color: #f7dc0f; /* Yellow text for readability */
+    border: 1px solid #f7dc0f; /* Optional: Add a yellow border */
+    padding: 5px;
+}
+
+.goog-te-gadget-icon {
+    display: none; /* Hide the default Google Translate icon */
+}
+
+.goog-te-gadget {
+    color: #f7dc0f; /* Set the text color to match your theme */
+    background-color: #333; /* Darken the background of the Google Translate bar */
+    border-radius: 8px;
+    padding: 5px;
+}
+
+.goog-te-gadget select {
+    border-radius: 5px; /* Rounded corners for dropdown */
+}
+
+.goog-te-gadget .goog-te-combo {
+    color: #f7dc0f; /* Dropdown text color */
+    background-color: #333; /* Dark dropdown background */
 }
 
 #google_translate_element select:hover {
