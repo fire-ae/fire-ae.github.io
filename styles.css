@@ -151,4 +151,26 @@ a:hover {
     .navbar {
         flex-direction: column; /* Stack navbar items vertically */
     }
+
+/* Google Translate  */
+#google_translate_element {
+    display: flex;
+    justify-content: flex-end; /* Align the dropdown to the right */
+    margin-top: 10px; /* Add some space above the element */
+    margin-right: 20px; /* Add some space to the right of the element */
+}
+
+#google_translate_element select {
+    background-color: #333; /* Dark background for dropdown */
+    color: #fff; /* Light text for visibility */
+    border: 2px solid #BEC2CB; /* Border to match the theme */
+    padding: 5px;
+    font-size: 14px; /* Ensure text size is consistent */
+    border-radius: 8px; /* Rounded corners */
+}
+
+#google_translate_element select:hover {
+    background-color: #575757; /* Change color on hover */
+    color: #f7dc0f; /* Light text color on hover */
+}
 }
