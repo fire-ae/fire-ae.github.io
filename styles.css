@@ -6,7 +6,9 @@ body {
     margin: 0;
     padding: 0;
     color: #f7dc0f;
-    background-color: #000000;
+    background: url('img.png') repeat center center fixed;
+    background-size: cover;
+    opacity: 0.5; /* Set the overall opacity */
 }
 
 .navbar-container {
@@ -63,7 +65,7 @@ body {
     margin: 0 auto; /* Center the content */
     padding: 20px; /* Add padding inside the content area */
     color: #f7dc0f;
-    background-color: #000000;
+    background-color: rgba(0, 0, 0, 0.9); /* 90% opacity */
     border: 2px solid #BEC2CB;
     border-radius: 11px; /* Optional: Add rounded corners for a softer look */
     box-shadow: 0 0 10px rgba(255, 255, 255, 0.3); /* Optional: Add a subtle shadow for depth */
@@ -74,7 +76,7 @@ body {
     margin: 0 auto; /* Center the content */
     padding: 20px; /* Add padding inside the content area */
     color: #f7dc0f;
-    background-color: #000000;
+    background-color: rgba(0, 0, 0, 0.9); /* 90% opacity */
     border: 2px solid #BEC2CB;
     border-radius: 11px; /* Optional: Add rounded corners for a softer look */
     box-shadow: 0 0 10px rgba(255, 255, 255, 0.3); /* Optional: Add a subtle shadow for depth */
@@ -86,7 +88,7 @@ body {
     margin: 40px auto; /* Center the container and add space on top/bottom */
     padding: 20px; /* Add padding inside the container */
     color: #f7dc0f;
-    background-color: #000000;
+    background-color: rgba(0, 0, 0, 0.9); /* 90% opacity */
     border: 2px solid #BEC2CB;
     border-radius: 11px; /* Rounded corners for a softer look */
     box-shadow: 0 0 15px rgba(255, 255, 255, 0.3); /* Subtle shadow for depth */
