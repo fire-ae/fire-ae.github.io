@@ -6,7 +6,7 @@ body {
     margin: 0;
     padding: 0;
     color: #f7dc0f;
-    background: url('img.png') repeat center center fixed;
+    background: url('pia12066.jpg') repeat center center fixed;
     background-size: cover;
     opacity: 0.5; /* Set the overall opacity */
 }
@@ -56,6 +56,7 @@ body {
 }
 
 .image-container img {
+    opacity: 0.9; /* Set the image opacity to 90% */
     max-width: 100%; /* Optional: Ensure the image is responsive */
     height: auto; /* Optional: Maintain the aspect ratio */
 }
