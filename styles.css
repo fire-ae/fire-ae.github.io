@@ -8,7 +8,6 @@ body {
     color: #f7dc0f;
     background: url('pia12066.jpg') repeat center center fixed;
     background-size: cover;
-    opacity: 0.3; /* Set the overall opacity */
 }
 
 .navbar-container {
