@@ -42,6 +42,10 @@ body {
     min-width: 100px; /* Minimum width for each item */
 }
 
+.page-container, .content, .contentshort p, h1, h2, h3, a {
+    opacity: 1; /* Ensure text opacity is 100% */
+}
+
 .navbar a:hover {
     background-color: #000000;
 }
