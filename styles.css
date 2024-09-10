@@ -8,7 +8,7 @@ body {
     color: #f7dc0f;
     background: url('pia12066.jpg') repeat center center fixed;
     background-size: cover;
-    opacity: 0.5; /* Set the overall opacity */
+    opacity: 0.3; /* Set the overall opacity */
 }
 
 .navbar-container {
@@ -56,7 +56,7 @@ body {
 }
 
 .image-container img {
-    opacity: 0.9; /* Set the image opacity to 90% */
+    opacity: 0.92; /* Set the image opacity to 90% */
     max-width: 100%; /* Optional: Ensure the image is responsive */
     height: auto; /* Optional: Maintain the aspect ratio */
 }
@@ -66,7 +66,7 @@ body {
     margin: 0 auto; /* Center the content */
     padding: 20px; /* Add padding inside the content area */
     color: #f7dc0f;
-    background-color: rgba(0, 0, 0, 0.9); /* 90% opacity */
+    background-color: rgba(0, 0, 0, 0.92); /* 90% opacity */
     border: 2px solid #BEC2CB;
     border-radius: 11px; /* Optional: Add rounded corners for a softer look */
     box-shadow: 0 0 10px rgba(255, 255, 255, 0.3); /* Optional: Add a subtle shadow for depth */
@@ -77,7 +77,7 @@ body {
     margin: 0 auto; /* Center the content */
     padding: 20px; /* Add padding inside the content area */
     color: #f7dc0f;
-    background-color: rgba(0, 0, 0, 0.9); /* 90% opacity */
+    background-color: rgba(0, 0, 0, 0.92); /* 90% opacity */
     border: 2px solid #BEC2CB;
     border-radius: 11px; /* Optional: Add rounded corners for a softer look */
     box-shadow: 0 0 10px rgba(255, 255, 255, 0.3); /* Optional: Add a subtle shadow for depth */
@@ -89,7 +89,7 @@ body {
     margin: 40px auto; /* Center the container and add space on top/bottom */
     padding: 20px; /* Add padding inside the container */
     color: #f7dc0f;
-    background-color: rgba(0, 0, 0, 0.9); /* 90% opacity */
+    background-color: rgba(0, 0, 0, 0.92); /* 90% opacity */
     border: 2px solid #BEC2CB;
     border-radius: 11px; /* Rounded corners for a softer look */
     box-shadow: 0 0 15px rgba(255, 255, 255, 0.3); /* Subtle shadow for depth */
