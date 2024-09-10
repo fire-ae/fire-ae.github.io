@@ -133,7 +133,7 @@ a:hover {
         opacity: 1; /* Adjust opacity for mobile */
     }
 
-    .content, .contentshort, .page-container, .image-container {
+    .content, .contentshort, .page-container {
         display: block;
         padding: 15px;
         margin: 10px auto;
@@ -142,10 +142,14 @@ a:hover {
         background-color: rgba(51, 51, 51, 0.4); /* Adjust background opacity */
         border-radius: 20px;
         border: 3px solid #ffffff;
-        box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+        box-shadow: 0 0 10px rgba(255, 255, 255, 0.4);
         transition: background-color 0.3s ease, transform 0.3s ease;
     }
-
+    .image-container img {
+        opacity: 0.4; /* Set the image opacity to 40% */
+        max-width: 100%; /* Optional: Ensure the image is responsive */
+        height: auto; /* Optional: Maintain the aspect ratio */
+    }
     /* Add a hover effect for mobile, if applicable */
     .content:hover, .contentshort:hover, .page-container:hover {
         background-color: rgba(87, 87, 87, 0.4); /* Slightly lighter on hover */
@@ -187,15 +191,22 @@ a:hover {
         opacity: 1; /* Lower opacity for very small screens */
     }
 
-    .content, .contentshort, .page-container, image-container {
+    .content, .contentshort, .page-container {
         padding: 10px;
         margin: 5px auto;
         font-size: 14px;
         background-color: rgba(51, 51, 51, 0.4); /* Adjust background opacity */
         border-radius: 25px;
         border: 3px solid #ffffff;
-        box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+        box-shadow: 0 0 10px rgba(255, 255, 255, 0.4);
     }
+
+    .image-container img {
+        opacity: 0.4; /* Set the image opacity to 40% */
+        max-width: 100%; /* Optional: Ensure the image is responsive */
+        height: auto; /* Optional: Maintain the aspect ratio */
+    }
+    
     .navbar a {
         flex-basis: 100%; /* Make each link take up full width */
         padding: 10px 0; /* Adjust padding for better spacing */
