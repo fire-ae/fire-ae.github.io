@@ -119,6 +119,29 @@ a:hover {
     color: #8a5004; /* Slightly darker orange on hover */
 }
 
+.issue-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columns */
+    gap: 20px;
+    justify-items: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.issue-cover {
+    width: 200px;
+    height: 300px; /* Adjust according to image ratio */
+    filter: grayscale(100%);
+    transition: filter 0.5s ease;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Optional for effect */
+}
+
+.issue-cover:hover {
+    filter: grayscale(0%);
+}
+
+
 /* Default button-like styles for mobile */
 @media (max-width: 768px) {
     body{
