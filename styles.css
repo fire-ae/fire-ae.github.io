@@ -122,14 +122,14 @@ a:hover {
 .issue-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr); /* 3 columns */
-    gap: 20px;
+    gap: 10px;
     justify-items: center;
     align-items: center;
     margin-top: 20px;
 }
 
 .issue-cover {
-    width: 200px;
+    width: 210px;
     height: 300px; /* Adjust according to image ratio */
     filter: grayscale(100%);
     transition: filter 0.5s ease;
