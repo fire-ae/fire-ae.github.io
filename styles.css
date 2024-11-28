@@ -5,7 +5,7 @@ body {
     line-height: 1.6;
     margin: 0;
     padding: 0;
-    color: #f7dc0f; /* Ensure full opacity for text color */
+    color: #d6d6d6; /* Ensure full opacity for text color */
     position: relative;
     background: url('pia12066.jpg') repeat center center fixed;
     background-size: cover;
@@ -70,9 +70,9 @@ body {
     max-width: 800px; /* Limit the width of your content (800px is a common choice) */
     margin: 0 auto; /* Center the content */
     padding: 20px; /* Add padding inside the content area */
-    color: #f7dc0f;
+    color: #d6d6d6;
     background-color: rgba(0, 0, 0, 0.4); /* 40% opacity */
-    border: 2px solid #BEC2CB;
+    border: 2px solid #d6d6d6;
     border-radius: 11px; /* Optional: Add rounded corners for a softer look */
     box-shadow: 0 0 10px rgba(255, 255, 255, 0.3); /* Optional: Add a subtle shadow for depth */
 }
@@ -81,9 +81,9 @@ body {
     max-width: 500px; /* Limit the width of your content */
     margin: 0 auto; /* Center the content */
     padding: 20px; /* Add padding inside the content area */
-    color: #f7dc0f;
+    color: #d6d6d6;
     background-color: rgba(0, 0, 0, 0.4); /* 40% opacity */
-    border: 2px solid #BEC2CB;
+    border: 2px solid #d6d6d6;
     border-radius: 11px; /* Optional: Add rounded corners for a softer look */
     box-shadow: 0 0 10px rgba(255, 255, 255, 0.3); /* Optional: Add a subtle shadow for depth */
 }
@@ -93,9 +93,9 @@ body {
     max-width: 900px; /* Set a maximum width for the entire page content */
     margin: 40px auto; /* Center the container and add space on top/bottom */
     padding: 20px; /* Add padding inside the container */
-    color: #f7dc0f;
+    color: #d6d6d6;
     background-color: rgba(0, 0, 0, 0.4); /* 40% opacity */
-    border: 2px solid #BEC2CB;
+    border: 2px solid #d6d6d6;
     border-radius: 11px; /* Rounded corners for a softer look */
     box-shadow: 0 0 15px rgba(255, 255, 255, 0.3); /* Subtle shadow for depth */
 }
@@ -161,10 +161,10 @@ a:hover {
         padding: 15px;
         margin: 10px auto;
         text-align: justify;
-        color: #ffffff;
+        color: #d6d6d6;
         background-color: rgba(0, 0, 0, 0.4); /* Adjust background opacity */
         border-radius: 20px;
-        border: 3px solid #ffffff;
+        border: 3px solid #d6d6d6;
         box-shadow: 0 0 10px rgba(255, 255, 255, 0.4);
         transition: background-color 0.3s ease, transform 0.3s ease;
     }
@@ -220,7 +220,7 @@ a:hover {
         font-size: 14px;
         background-color: rgba(0, 0, 0, 0.4); /* Adjust background opacity */
         border-radius: 25px;
-        border: 3px solid #ffffff;
+        border: 3px solid #d6d6d6;
         box-shadow: 0 0 10px rgba(255, 255, 255, 0.4);
     }
 
@@ -275,8 +275,8 @@ a:hover {
 
 #google_translate_element select {
     background-color: #333 !important; /* Dark background for dropdown */
-    color: #f7dc0f !important; /* Yellow text for readability */
-    border: 1px solid #f7dc0f !important; /* Yellow border */
+    color: #d6d6d6 !important; /* Yellow text for readability */
+    border: 1px solid #d6d6d6 !important; /* Yellow border */
 }
 
 #google_translate_element .goog-te-combo {
@@ -296,12 +296,12 @@ a:hover {
 }
 
 .goog-te-gadget .goog-te-combo {
-    color: #f7dc0f; /* Dropdown text color */
+    color: #d6d6d6; /* Dropdown text color */
     background-color: #333; /* Dark dropdown background */
 }
 
 #google_translate_element select:hover {
-    background-color: #575757; /* Hover effect to match navbar hover */
+    background-color: #d6d6d6; /* Hover effect to match navbar hover */
     cursor: pointer; /* Pointer cursor to indicate it's clickable */
 }
 
