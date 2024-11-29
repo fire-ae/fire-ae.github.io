@@ -1,152 +1,379 @@
-<h1 id="remote-sensing-resolutions">Remote Sensing Resolutions</h1>
-<h2 id="spatial-resolution">Spatial Resolution</h2>
-<p>Spatial resolution refers to the smallest object that a sensor can
-detect on the ground, typically expressed as the size of a single pixel
-in the image. For instance, a spatial resolution of 1 meter means that
-one pixel represents a 1x1 meter area on the ground. High spatial
-resolution is crucial for applications requiring detailed imagery, such
-as urban planning or precision agriculture. Conversely, low spatial
-resolution is often acceptable for applications like weather monitoring,
-where broad coverage is more important than fine detail. Advances in
-satellite technologies have significantly improved spatial resolution,
-with some modern systems achieving sub-meter resolution. However, higher
-resolution often comes at the cost of reduced coverage area, low
-radiometric resolution or increased data volume. Selecting an
-appropriate spatial resolution depends on the specific requirements of
-the study or application<span class="citation"
-data-cites="smith2007remote"></span>.</p>
-<h2 id="spectral-resolution">Spectral Resolution</h2>
-<p>Spectral resolution defines a sensor’s ability to distinguish between
-different wavelengths of light, typically measured by the number and
-width of spectral bands. Sensors with high spectral resolution, such as
-hyperspectral sensors, can detect subtle differences in material
-properties by capturing hundreds of narrow spectral bands. This
-capability is essential for applications like vegetation analysis,
-mineral mapping, and water quality assessment. In contrast,
-multispectral sensors, with fewer and broader bands, are suitable for
-general-purpose imaging and cost-effective monitoring. Higher spectral
-resolution, however, often involves trade-offs, such as increased data
-complexity and processing requirements. Recent technological
-advancements have enabled better integration of spectral data with
-machine learning techniques, enhancing analytical precision. Selecting
-the right spectral resolution involves balancing the need for detailed
-spectral information with the constraints of data storage and processing
-capabilities<span class="citation"
-data-cites="jensen2000remote"></span>.</p>
-<h2 id="radiometric-resolution">Radiometric Resolution</h2>
-<p>Radiometric resolution describes a sensor’s ability to measure
-variations in the intensity of radiation it receives. It is determined
-by the number of bits used to represent the data, with higher bit depths
-allowing finer discrimination between intensity levels. For example, an
-8-bit sensor can distinguish 256 levels, while a 16-bit sensor can
-differentiate over 65,000 levels. This resolution is critical for
-detecting subtle variations in reflectance, particularly in applications
-like thermal imaging or climate studies. Higher radiometric resolution
-enhances the sensor’s ability to detect slight changes in surface
-properties, enabling more precise analysis. However, it also results in
-larger data sizes, requiring efficient storage and processing
-strategies. The choice of radiometric resolution depends on the study’s
-sensitivity requirements and data handling capabilities. Recent
-innovations are pushing the boundaries, enabling more precise
-radiometric analyses in remote sensing<span class="citation"
-data-cites="campbell2002introduction"></span>.<br />
-In general, there are trade-offs between choosing a higher spatial
-resolution, higher spectral resolution, and higher radiometric
-resolution, where increasing one will decrease the other two.</p>
-<h2 id="temporal-resolution">Temporal Resolution</h2>
-<p>Temporal resolution, also called revisit time, refers to the
-frequency with which a sensor captures images of the same area, often
-measured in days. It is a critical factor for monitoring dynamic
-processes, such as vegetation growth, urban expansion, or disaster
-response. High temporal resolution, such as daily or sub-daily revisits,
-allows for near-real-time analysis, making it essential for applications
-like weather forecasting and crop monitoring. Conversely, low temporal
-resolution is sufficient for studies requiring long-term trend analysis,
-such as glacier retreat or deforestation. Advances in satellite
-constellations, such as those by commercial providers, have drastically
-improved temporal resolution by enabling multiple revisits per day.
-However, higher temporal resolution often involves trade-offs in spatial
-or spectral resolution due to system limitations. Balancing these
-resolutions is key to designing effective monitoring strategies.
-Emerging technologies, such as unmanned aerial vehicles (UAV) or CubeSat
-satellite chains, further complement satellite systems, enhancing
-temporal resolution for localized studies<span class="citation"
-data-cites="johnson2020temporal"></span>.</p>
-<h2 id="combination-of-resolutions">Combination of Resolutions</h2>
-<p>To analyze if an object can be resolved by a sensor, we evaluate the
-spatial, radiometric, and spectral criteria:</p>
-<h3 id="spatial-resolution-1">Spatial Resolution</h3>
-<p>An object is resolvable if its dimension (<span
-class="math inline">\(D\)</span>) is larger than the sensor’s Ground
-Sampling Distance (GSD): <span class="math display">\[D \geq \text{GSD}
-= \frac{H}{f} \cdot p\]</span></p>
-<h3 id="radiometric-resolution-1">Radiometric Resolution</h3>
-<p>Contrast between the object and background is essential. The object
-is resolvable if: <span class="math display">\[C = \frac{I_{\text{obj}}
-- I_{\text{background}}}{I_{\text{background}}} \geq
-\frac{1}{2^n}\]</span> where <span class="math inline">\(n\)</span> is
-the sensor’s radiometric resolution in bits.</p>
-<h3 id="spectral-resolution-1">Spectral Resolution</h3>
-<p>Two objects are resolvable spectrally if the difference in their
-wavelengths exceeds the sensor’s bandwidth: <span
-class="math display">\[\Delta \lambda \leq |\lambda_1 -
-\lambda_2|\]</span></p>
-<h3 id="combined-resolving-condition">Combined Resolving Condition</h3>
-<p>An object can be resolved when all conditions are satisfied: <span
-class="math display">\[D \geq \text{GSD}, \quad C \geq \frac{1}{2^n},
-\quad \Delta \lambda \leq |\lambda_1 - \lambda_2|\]</span> This combined
-analysis improves our understanding of sensor capabilities and the
-limits of detectability.</p>
-<h1 id="current-remote-sensing-missions">Current Remote Sensing
-Missions</h1>
-<p>We can roughly categorize current missions as active and passive
-remote sensing operations. The active ones are radar and lidar, while
-the passive ones are multispectral/hyperspectral, thermal, and
-accelerometer-based ones. Active remote sensing can operate both day and
-night, and in the case of radar, it can also penetrate clouds and
-provide virtually gap-free dataset on its revisit time. Passive remote
-sensing collects the light reflected from the surface or region/object
-of interest (except accelerometer where no light is collected, but the
-acceleration or deceleration of the twin satellite is the measure) and
-require cloud-free conditions.</p>
-<h2 id="multispectral-imaging-msi">Multispectral Imaging (MSI)</h2>
-<p>Multispectral imaging has multiple, but not so many, different
-wavelength windows in their sensors and record the light in these
-windows in separete detectors. Landsat and Sentinel-2 satellite series
-(especially Landsat-5 and 8, and Sentinel-2) have been widely used MSI
-missions providing consistent global data<span class="citation"
-data-cites="drusch2012sentinel"></span>.</p>
-<h2 id="accelerometer">Accelerometer</h2>
-<p>Accelerometer missions like GRACE measure gravity field variations,
-aiding hydrology and geophysics<span class="citation"
-data-cites="tapley2004grace"></span>. Comparatively, they are the lowest
-altitude orbit satellites among earth observation satellites.</p>
-<h2 id="hyperspectral-imaging">Hyperspectral Imaging</h2>
-<p>This kind of remote sensing technique is the most similar to taking a
-spectrum of a material in the laboratory, with quite narrow wavelength
-windows and high number of different bins to distinguish even minute
-dissimilarities. Even though low number of missions and even lower
-amount of data are available, they are of very high value in
-classification tasks. The HySIS mission by ISRO delivers hyperspectral
-data for mineral exploration<span class="citation"
-data-cites="kumar2020hysis"></span>.</p>
-<h2 id="thermal-imaging">Thermal Imaging</h2>
-<p>Another beneficial sensor gives information regarding the temperature
-of the respective surface. Thermal sensors on Landsat-8 provide land
-surface temperature data. Applications include urban heat mapping. <span
-class="citation" data-cites="wang2020thermal"></span>.</p>
-<h2 id="radar">Radar</h2>
-<p>Radar is an active remote sensing operation, in which a
-microwave-length light is generated and sent to the object/region of
-interest and the received refleted signal from this carry different
-types of information from the point of reflection. Synthetic Aperture
-Radar (SAR) missions like Sentinel-1 are crucial for all-weather
-observations. <span class="citation"
-data-cites="torres2012sentinel1"></span>. For most tasks, the radar
-signals sent and received are not influenced remarkably by clouds.</p>
-<h2 id="lidar">Lidar</h2>
-<p>Lidar is similar to radar, but they use 532 or 1064 nm wavelength
-lasers, in which the 532 can also penetrate water to some extend. NASA’s
-ICESat-2 provides high-resolution elevation data, important for
-cryosphere studies. <span class="citation"
-data-cites="markus2017icesat2"></span>.</p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Remote Sensing Training Chapter 2: Resolutions and Missions</title>
+    <script type="text/javascript">
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement({
+                pageLanguage: 'en',
+                includedLanguages: 'tr,en,fr,lt,es,de,cs',
+                layout: google.translate.TranslateElement.InlineLayout.SIMPLE
+            }, 'google_translate_element');
+        }
+    </script>
+    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+    <script>
+    document.addEventListener("DOMContentLoaded", function() {
+        const style = document.createElement('style');
+        style.textContent = `
+            .goog-te-gadget-icon { display: none !important; }
+            #google_translate_element { background-color: #333 !important; border: none !important; border-radius: 8px; }
+            #google_translate_element select { background-color: #333 !important; color: #f7dc0f !important; border: 1px solid #f7dc0f !important; }
+            #google_translate_element .goog-te-combo { background-color: #333 !important; color: #f7dc0f !important; }
+            .goog-te-gadget { background-color: #333 !important; color: #f7dc0f !important; }
+        `;
+        document.head.appendChild(style);
+    });
+    </script>
+    <link rel="stylesheet" href="styles.css"> <!-- My lovely CSS file -->
+      <!-- Google Analytics -->
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-QBEVP0CB1V"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-QBEVP0CB1V');
+</script>
+  <!-- End Google Analytics -->
+</head>
+<body>
+    <div class="navbar-container">
+        <div class="navbar">
+            <a href="index.html">
+                <img src="logofireb.png" alt="Logo" class="navbar-logo">
+            </a>
+            <a href="corp-responsibility.html">Corporate Responsibilities</a>
+            <a href="impact.html">Theory of Change</a>
+            <a href="sci-res.html">Research Method</a>
+            <a href="research.html">Research Projects</a>
+            <a href="trainer-enhancer.html">Training Method</a>
+            <a href="training.html">Trainings</a>
+            <a href="livingkit.html">Resources</a>
+            <a href="ascend.html">Periodicals</a>
+            <a href="news.html">News</a>
+            <a href="actlog.html">Activity Log</a>
+            <div id="google_translate_element"></div>
+        </div>
+    </div>
+
+<h2>Author: Güray Hatipoğlu and ChatGPT 4.0o (with plenty of semantic units to ogpon) </h2>
+  <h3>FIRE Araştırma Eğitim Ltd. Şti.</h3>
+  <h3>Living document - Last update 2024-11-29 (YYYY-MM-DD)</h3>
+
+
+<a href="rs-ch1-intro.html">RS Training Chapter 1: Introduction</a>
+<a href="rs-ch2-resolution.html">RS Training Chapter 2: Resolutions and Missions</a>
+<a href="rs-ch3-providers.html">RS Training Chapter 3: Key Providers</a>
+<a href="rs-ch4-practice.html">RS Training Chapter 4: Practical Aspects</a>
+<br>
+
+<h1 id="remote-sensing-resolutions">Remote Sensing Resolutions</h1>
+
+<h2 id="spatial-resolution">Spatial Resolution</h2>
+
+<p>Spatial resolution refers to the smallest object that a sensor can
+
+detect on the ground, typically expressed as the size of a single pixel
+
+in the image. For instance, a spatial resolution of 1 meter means that
+
+one pixel represents a 1x1 meter area on the ground. High spatial
+
+resolution is crucial for applications requiring detailed imagery, such
+
+as urban planning or precision agriculture. Conversely, low spatial
+
+resolution is often acceptable for applications like weather monitoring,
+
+where broad coverage is more important than fine detail. Advances in
+
+satellite technologies have significantly improved spatial resolution,
+
+with some modern systems achieving sub-meter resolution. However, higher
+
+resolution often comes at the cost of reduced coverage area, low
+
+radiometric resolution or increased data volume. Selecting an
+
+appropriate spatial resolution depends on the specific requirements of
+
+the study or application<span class="citation"
+
+data-cites="smith2007remote"></span>.</p>
+
+<h2 id="spectral-resolution">Spectral Resolution</h2>
+
+<p>Spectral resolution defines a sensor’s ability to distinguish between
+
+different wavelengths of light, typically measured by the number and
+
+width of spectral bands. Sensors with high spectral resolution, such as
+
+hyperspectral sensors, can detect subtle differences in material
+
+properties by capturing hundreds of narrow spectral bands. This
+
+capability is essential for applications like vegetation analysis,
+
+mineral mapping, and water quality assessment. In contrast,
+
+multispectral sensors, with fewer and broader bands, are suitable for
+
+general-purpose imaging and cost-effective monitoring. Higher spectral
+
+resolution, however, often involves trade-offs, such as increased data
+
+complexity and processing requirements. Recent technological
+
+advancements have enabled better integration of spectral data with
+
+machine learning techniques, enhancing analytical precision. Selecting
+
+the right spectral resolution involves balancing the need for detailed
+
+spectral information with the constraints of data storage and processing
+
+capabilities<span class="citation"
+
+data-cites="jensen2000remote"></span>.</p>
+
+<h2 id="radiometric-resolution">Radiometric Resolution</h2>
+
+<p>Radiometric resolution describes a sensor’s ability to measure
+
+variations in the intensity of radiation it receives. It is determined
+
+by the number of bits used to represent the data, with higher bit depths
+
+allowing finer discrimination between intensity levels. For example, an
+
+8-bit sensor can distinguish 256 levels, while a 16-bit sensor can
+
+differentiate over 65,000 levels. This resolution is critical for
+
+detecting subtle variations in reflectance, particularly in applications
+
+like thermal imaging or climate studies. Higher radiometric resolution
+
+enhances the sensor’s ability to detect slight changes in surface
+
+properties, enabling more precise analysis. However, it also results in
+
+larger data sizes, requiring efficient storage and processing
+
+strategies. The choice of radiometric resolution depends on the study’s
+
+sensitivity requirements and data handling capabilities. Recent
+
+innovations are pushing the boundaries, enabling more precise
+
+radiometric analyses in remote sensing<span class="citation"
+
+data-cites="campbell2002introduction"></span>.<br />
+
+In general, there are trade-offs between choosing a higher spatial
+
+resolution, higher spectral resolution, and higher radiometric
+
+resolution, where increasing one will decrease the other two.</p>
+
+<h2 id="temporal-resolution">Temporal Resolution</h2>
+
+<p>Temporal resolution, also called revisit time, refers to the
+
+frequency with which a sensor captures images of the same area, often
+
+measured in days. It is a critical factor for monitoring dynamic
+
+processes, such as vegetation growth, urban expansion, or disaster
+
+response. High temporal resolution, such as daily or sub-daily revisits,
+
+allows for near-real-time analysis, making it essential for applications
+
+like weather forecasting and crop monitoring. Conversely, low temporal
+
+resolution is sufficient for studies requiring long-term trend analysis,
+
+such as glacier retreat or deforestation. Advances in satellite
+
+constellations, such as those by commercial providers, have drastically
+
+improved temporal resolution by enabling multiple revisits per day.
+
+However, higher temporal resolution often involves trade-offs in spatial
+
+or spectral resolution due to system limitations. Balancing these
+
+resolutions is key to designing effective monitoring strategies.
+
+Emerging technologies, such as unmanned aerial vehicles (UAV) or CubeSat
+
+satellite chains, further complement satellite systems, enhancing
+
+temporal resolution for localized studies<span class="citation"
+
+data-cites="johnson2020temporal"></span>.</p>
+
+<h2 id="combination-of-resolutions">Combination of Resolutions</h2>
+
+<p>To analyze if an object can be resolved by a sensor, we evaluate the
+
+spatial, radiometric, and spectral criteria:</p>
+
+<h3 id="spatial-resolution-1">Spatial Resolution</h3>
+
+<p>An object is resolvable if its dimension (<span
+
+class="math inline">\(D\)</span>) is larger than the sensor’s Ground
+
+Sampling Distance (GSD): <span class="math display">\[D \geq \text{GSD}
+
+= \frac{H}{f} \cdot p\]</span></p>
+
+<h3 id="radiometric-resolution-1">Radiometric Resolution</h3>
+
+<p>Contrast between the object and background is essential. The object
+
+is resolvable if: <span class="math display">\[C = \frac{I_{\text{obj}}
+
+- I_{\text{background}}}{I_{\text{background}}} \geq
+
+\frac{1}{2^n}\]</span> where <span class="math inline">\(n\)</span> is
+
+the sensor’s radiometric resolution in bits.</p>
+
+<h3 id="spectral-resolution-1">Spectral Resolution</h3>
+
+<p>Two objects are resolvable spectrally if the difference in their
+
+wavelengths exceeds the sensor’s bandwidth: <span
+
+class="math display">\[\Delta \lambda \leq |\lambda_1 -
+
+\lambda_2|\]</span></p>
+
+<h3 id="combined-resolving-condition">Combined Resolving Condition</h3>
+
+<p>An object can be resolved when all conditions are satisfied: <span
+
+class="math display">\[D \geq \text{GSD}, \quad C \geq \frac{1}{2^n},
+
+\quad \Delta \lambda \leq |\lambda_1 - \lambda_2|\]</span> This combined
+
+analysis improves our understanding of sensor capabilities and the
+
+limits of detectability.</p>
+
+<h1 id="current-remote-sensing-missions">Current Remote Sensing
+
+Missions</h1>
+
+<p>We can roughly categorize current missions as active and passive
+
+remote sensing operations. The active ones are radar and lidar, while
+
+the passive ones are multispectral/hyperspectral, thermal, and
+
+accelerometer-based ones. Active remote sensing can operate both day and
+
+night, and in the case of radar, it can also penetrate clouds and
+
+provide virtually gap-free dataset on its revisit time. Passive remote
+
+sensing collects the light reflected from the surface or region/object
+
+of interest (except accelerometer where no light is collected, but the
+
+acceleration or deceleration of the twin satellite is the measure) and
+
+require cloud-free conditions.</p>
+
+<h2 id="multispectral-imaging-msi">Multispectral Imaging (MSI)</h2>
+
+<p>Multispectral imaging has multiple, but not so many, different
+
+wavelength windows in their sensors and record the light in these
+
+windows in separete detectors. Landsat and Sentinel-2 satellite series
+
+(especially Landsat-5 and 8, and Sentinel-2) have been widely used MSI
+
+missions providing consistent global data<span class="citation"
+
+data-cites="drusch2012sentinel"></span>.</p>
+
+<h2 id="accelerometer">Accelerometer</h2>
+
+<p>Accelerometer missions like GRACE measure gravity field variations,
+
+aiding hydrology and geophysics<span class="citation"
+
+data-cites="tapley2004grace"></span>. Comparatively, they are the lowest
+
+altitude orbit satellites among earth observation satellites.</p>
+
+<h2 id="hyperspectral-imaging">Hyperspectral Imaging</h2>
+
+<p>This kind of remote sensing technique is the most similar to taking a
+
+spectrum of a material in the laboratory, with quite narrow wavelength
+
+windows and high number of different bins to distinguish even minute
+
+dissimilarities. Even though low number of missions and even lower
+
+amount of data are available, they are of very high value in
+
+classification tasks. The HySIS mission by ISRO delivers hyperspectral
+
+data for mineral exploration<span class="citation"
+
+data-cites="kumar2020hysis"></span>.</p>
+
+<h2 id="thermal-imaging">Thermal Imaging</h2>
+
+<p>Another beneficial sensor gives information regarding the temperature
+
+of the respective surface. Thermal sensors on Landsat-8 provide land
+
+surface temperature data. Applications include urban heat mapping. <span
+
+class="citation" data-cites="wang2020thermal"></span>.</p>
+
+<h2 id="radar">Radar</h2>
+
+<p>Radar is an active remote sensing operation, in which a
+
+microwave-length light is generated and sent to the object/region of
+
+interest and the received refleted signal from this carry different
+
+types of information from the point of reflection. Synthetic Aperture
+
+Radar (SAR) missions like Sentinel-1 are crucial for all-weather
+
+observations. <span class="citation"
+
+data-cites="torres2012sentinel1"></span>. For most tasks, the radar
+
+signals sent and received are not influenced remarkably by clouds.</p>
+
+<h2 id="lidar">Lidar</h2>
+
+<p>Lidar is similar to radar, but they use 532 or 1064 nm wavelength
+
+lasers, in which the 532 can also penetrate water to some extend. NASA’s
+
+ICESat-2 provides high-resolution elevation data, important for
+
+cryosphere studies. <span class="citation"
+
+data-cites="markus2017icesat2"></span>.</p>
+</body>
+</html>
+
