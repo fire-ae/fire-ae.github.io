@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A comprehensive guide to analytical modeling in remote sensing.">
+    <title>Remote Sensing Training Modelling: Empirical Modelling</title>
+    <script type="text/javascript">
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement({
+                pageLanguage: 'en',
+                includedLanguages: 'tr,en,fr,lt,es,de,cs',
+                layout: google.translate.TranslateElement.InlineLayout.SIMPLE
+            }, 'google_translate_element');
+        }
+    </script>
+    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+    <script>
+    document.addEventListener("DOMContentLoaded", function() {
+        const style = document.createElement('style');
+        style.textContent = `
+            .goog-te-gadget-icon { display: none !important; }
+            #google_translate_element { background-color: #333 !important; border: none !important; border-radius: 8px; }
+            #google_translate_element select { background-color: #333 !important; color: #f7dc0f !important; border: 1px solid #f7dc0f !important; }
+            #google_translate_element .goog-te-combo { background-color: #333 !important; color: #f7dc0f !important; }
+            .goog-te-gadget { background-color: #333 !important; color: #f7dc0f !important; }
+        `;
+        document.head.appendChild(style);
+    });
+    </script>
+    <link rel="stylesheet" href="styles.css"> <!-- My lovely CSS file -->
+      <!-- Google Analytics -->
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-QBEVP0CB1V"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-QBEVP0CB1V');
+</script>
+  <!-- End Google Analytics -->
+</head>
+<body>
+    <div class="navbar-container">
+        <div class="navbar">
+            <a href="index.html">
+                <img src="logofireb.png" alt="Logo" class="navbar-logo">
+            </a>
+            <a href="corp-responsibility.html">Corporate Responsibilities</a>
+            <a href="impact.html">Theory of Change</a>
+            <a href="sci-res.html">Research Method</a>
+            <a href="research.html">Research Projects</a>
+            <a href="trainer-enhancer.html">Research Enhancer</a>
+            <a href="training.html">Trainings</a>
+            <a href="livingkit.html">Resources</a>
+            <a href="ascend.html">Periodicals</a>
+            <a href="news.html">News</a>
+            <a href="actlog.html">Activity Log</a>
+            <div id="google_translate_element"></div>
+        </div>
+    </div>
+<div class="page-container">
+    
+<h2>Author: Güray Hatipoğlu and ChatGPT 4.0o (with plenty of semantic units to ogpon) </h2>
+    <br>
+  <h3>FIRE Araştırma Eğitim Ltd. Şti.</h3>
+    <br>
+  <h3>Living document - Last update 2024-12-26 (YYYY-MM-DD)</h3>
+<br>
+
+<a href="modelling_rs_intro.html">RS Training Modelling: Introduction</a>
+    <br>
+<a href="modelling_rs_analytic.html">RS Training Modelling: Analytical-Physical Modelling</a>
+    <br>
+<a href="modelling_rs_semianalytic.html">RS Training Modelling: Semi-analytical Modelling</a>
+    <br>
+<a href="modelling_rs_empirical.html">RS Training Modelling: Empirical</a>
+    <br>
+<br>
+</div>
+<div class="page-container">
+    <header>
+        <h1>Empirical Modeling in Remote Sensing</h1>
+        <nav>
+            <ul>
+                <li><a href="#introduction">Introduction</a></li>
+                <li><a href="#principles">Principles</a></li>
+                <li><a href="#techniques">Key Techniques</a></li>
+                <li><a href="#examples">Practical Examples</a></li>
+                <li><a href="#applications">Applications</a></li>
+                <li><a href="#tools">Tools and Software</a></li>
+                <li><a href="#resources">Further Reading</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="introduction">
+        <h2>Introduction</h2>
+        <p>Empirical modeling in remote sensing relies on the statistical relationship between measured spectral data and the target variables of interest. These models often use regression techniques, machine learning, or neural networks to derive insights directly from training datasets without incorporating physical principles explicitly.</p>
+    </section>
+
+    <section id="principles">
+        <h2>Principles</h2>
+        <p>The guiding principles of empirical modeling include:</p>
+        <ul>
+            <li><strong>Data-Driven:</strong> Relationships are established based solely on available training data.</li>
+            <li><strong>Model Generalization:</strong> Ensuring the model can predict unseen data accurately by avoiding overfitting.</li>
+            <li><strong>Validation and Testing:</strong> Employing techniques like cross-validation to assess model performance.</li>
+        </ul>
+    </section>
+
+    <section id="techniques">
+        <h2>Key Techniques</h2>
+        <p>Common techniques used in empirical modeling:</p>
+        <ul>
+            <li><strong>Linear and Non-Linear Regression:</strong> Estimating relationships between spectral features and biophysical parameters.</li>
+            <li><strong>Machine Learning:</strong> Algorithms such as Random Forests, Support Vector Machines, and Gradient Boosting for complex patterns.</li>
+            <li><strong>Neural Networks:</strong> Deep learning models for high-dimensional data and feature extraction.</li>
+            <li><strong>Dimensionality Reduction:</strong> Principal Component Analysis (PCA) or feature selection to manage large datasets.</li>
+        </ul>
+    </section>
+
+    <section id="examples">
+        <h2>Practical Examples</h2>
+        <p>Examples of empirical models applied in remote sensing:</p>
+        <ul>
+            <li><strong>Crop Yield Prediction:</strong> Using vegetation indices (e.g., NDVI, EVI) and regression models to estimate agricultural productivity.</li>
+            <li><strong>Urban Heat Island Analysis:</strong> Relating Land Surface Temperature (LST) to urbanization patterns through Random Forest models.</li>
+            <li><strong>Forest Biomass Estimation:</strong> Training neural networks with spectral data and field measurements to predict biomass density.</li>
+            <li><strong>Water Quality Assessment:</strong> Mapping turbidity or dissolved organic matter using reflectance values and regression models.</li>
+        </ul>
+    </section>
+
+    <section id="applications">
+        <h2>Applications</h2>
+        <p>Empirical modeling supports diverse applications:</p>
+        <ul>
+            <li><strong>Precision Agriculture:</strong> Optimizing crop management practices through yield estimation and stress detection.</li>
+            <li><strong>Disaster Management:</strong> Identifying flood extents or burnt areas using satellite-derived indices.</li>
+            <li><strong>Land Use Classification:</strong> Mapping land cover types through supervised classification techniques.</li>
+            <li><strong>Environmental Monitoring:</strong> Tracking pollutants and ecological changes using time-series analysis.</li>
+        </ul>
+    </section>
+
+    <section id="tools">
+        <h2>Tools and Software</h2>
+        <p>Popular tools for empirical modeling include:</p>
+        <ul>
+            <li><a href="https://scikit-learn.org/">Scikit-learn</a>: A Python library for machine learning and statistical analysis.</li>
+            <li><a href="https://earthengine.google.com/">Google Earth Engine</a>: Cloud-based platform for large-scale data analysis and modeling.</li>
+            <li><a href="https://keras.io/">Keras</a> and <a href="https://www.tensorflow.org/">TensorFlow</a>: Frameworks for implementing deep learning models.</li>
+            <li><a href="https://www.qgis.org/">QGIS</a>: Offers supervised classification tools for land cover analysis.</li>
+        </ul>
+    </section>
+
+    <section id="resources">
+        <h2>Further Reading</h2>
+        <p>Additional resources for empirical modeling:</p>
+        <ul>
+            <li><a href="https://www.mdpi.com/journal/remotesensing">Remote Sensing Journal</a>: Papers on machine learning applications in remote sensing.</li>
+            <li><a href="https://www.sciencedirect.com/journal/remote-sensing-of-environment">Remote Sensing of Environment</a>: Articles on empirical modeling methods and case studies.</li>
+            <li><a href="https://towardsdatascience.com/">Towards Data Science</a>: Tutorials on machine learning and neural networks.</li>
+        </ul>
+    </section>
+</div>
+    <footer>
+        <p><a href="#top">Back to top</a></p>
+    </footer>
+</body>
+</html>

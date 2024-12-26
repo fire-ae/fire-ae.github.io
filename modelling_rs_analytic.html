@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A comprehensive guide to analytical modeling in remote sensing.">
+    <title>Remote Sensing Training Modelling: Empirical Modelling</title>
+    <script type="text/javascript">
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement({
+                pageLanguage: 'en',
+                includedLanguages: 'tr,en,fr,lt,es,de,cs',
+                layout: google.translate.TranslateElement.InlineLayout.SIMPLE
+            }, 'google_translate_element');
+        }
+    </script>
+    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+    <script>
+    document.addEventListener("DOMContentLoaded", function() {
+        const style = document.createElement('style');
+        style.textContent = `
+            .goog-te-gadget-icon { display: none !important; }
+            #google_translate_element { background-color: #333 !important; border: none !important; border-radius: 8px; }
+            #google_translate_element select { background-color: #333 !important; color: #f7dc0f !important; border: 1px solid #f7dc0f !important; }
+            #google_translate_element .goog-te-combo { background-color: #333 !important; color: #f7dc0f !important; }
+            .goog-te-gadget { background-color: #333 !important; color: #f7dc0f !important; }
+        `;
+        document.head.appendChild(style);
+    });
+    </script>
+    <link rel="stylesheet" href="styles.css"> <!-- My lovely CSS file -->
+      <!-- Google Analytics -->
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-QBEVP0CB1V"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-QBEVP0CB1V');
+</script>
+  <!-- End Google Analytics -->
+</head>
+<body>
+    <div class="navbar-container">
+        <div class="navbar">
+            <a href="index.html">
+                <img src="logofireb.png" alt="Logo" class="navbar-logo">
+            </a>
+            <a href="corp-responsibility.html">Corporate Responsibilities</a>
+            <a href="impact.html">Theory of Change</a>
+            <a href="sci-res.html">Research Method</a>
+            <a href="research.html">Research Projects</a>
+            <a href="trainer-enhancer.html">Research Enhancer</a>
+            <a href="training.html">Trainings</a>
+            <a href="livingkit.html">Resources</a>
+            <a href="ascend.html">Periodicals</a>
+            <a href="news.html">News</a>
+            <a href="actlog.html">Activity Log</a>
+            <div id="google_translate_element"></div>
+        </div>
+    </div>
+<div class="page-container">
+    
+<h2>Author: Güray Hatipoğlu and ChatGPT 4.0o (with plenty of semantic units to ogpon) </h2>
+    <br>
+  <h3>FIRE Araştırma Eğitim Ltd. Şti.</h3>
+    <br>
+  <h3>Living document - Last update 2024-12-26 (YYYY-MM-DD)</h3>
+<br>
+
+<a href="modelling_rs_intro.html">RS Training Modelling: Introduction</a>
+    <br>
+<a href="modelling_rs_analytic.html">RS Training Modelling: Analytical-Physical Modelling</a>
+    <br>
+<a href="modelling_rs_semianalytic.html">RS Training Modelling: Semi-analytical Modelling</a>
+    <br>
+<a href="modelling_rs_empirical.html">RS Training Modelling: Empirical</a>
+    <br>
+<br>
+</div>
+<div class="page-container">
+    <header>
+        <h1>Analytical-Physical Modeling in Remote Sensing</h1>
+        <nav>
+            <ul>
+                <li><a href="#introduction">Introduction</a></li>
+                <li><a href="#principles">Principles</a></li>
+                <li><a href="#techniques">Key Techniques</a></li>
+                <li><a href="#applications">Applications</a></li>
+                <li><a href="#tools">Tools and Software</a></li>
+                <li><a href="#resources">Further Reading</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="introduction">
+        <h2>Introduction</h2>
+        <p>Analytical-physical modeling in remote sensing is a foundational approach that relies on the principles of physics to simulate the interaction of electromagnetic radiation with the Earth's surface and atmosphere. It serves as a critical tool for accurately interpreting remote sensing data and developing correction algorithms.</p>
+    </section>
+
+    <section id="principles">
+        <h2>Principles</h2>
+        <p>The core principles of analytical-physical modeling include:</p>
+        <ul>
+            <li><strong>Radiative Transfer:</strong> Modeling the propagation of electromagnetic waves through the atmosphere and interaction with surfaces. <a href="https://en.wikipedia.org/wiki/Radiative_transfer">Learn more</a>.</li>
+            <li><strong>Bidirectional Reflectance Distribution Function (BRDF):</strong> Describing how light is scattered by surfaces.</li>
+            <li><strong>Atmospheric Correction:</strong> Removing atmospheric effects to retrieve surface reflectance.</li>
+            <li><strong>Energy Balance Equations:</strong> Modeling the exchange of energy between the land surface and atmosphere.</li>
+        </ul>
+    </section>
+
+    <section id="techniques">
+        <h2>Key Techniques</h2>
+        <p>Analytical-physical modeling employs various techniques and frameworks, including:</p>
+        <ul>
+            <li><strong>Canopy Reflectance Models:</strong> Simulating vegetation reflectance, such as the <a href="https://modis.gsfc.nasa.gov/">MODIS Leaf Reflectance Model</a>.</li>
+            <li><strong>Atmospheric Radiative Transfer Codes:</strong> Tools like <a href="https://atmcorr.gsfc.nasa.gov/">6S</a> (Second Simulation of a Satellite Signal in the Solar Spectrum) and <a href="https://www.rt-solutions.com/software/modtran.html">MODTRAN</a>.</li>
+            <li><strong>Thermal Emission Models:</strong> Modeling surface temperature and emissivity.</li>
+            <li><strong>Ocean Reflectance Models:</strong> Analyzing water-leaving radiance and its components.</li>
+        </ul>
+    </section>
+
+    <section id="applications">
+        <h2>Applications</h2>
+        <p>Analytical-physical modeling is pivotal in various remote sensing applications, including:</p>
+        <ul>
+            <li>Deriving accurate surface reflectance and albedo.</li>
+            <li>Monitoring atmospheric constituents like aerosols and water vapor.</li>
+            <li>Quantifying energy fluxes for climate studies.</li>
+            <li>Mapping vegetation properties such as chlorophyll content and canopy structure.</li>
+            <li>Analyzing water quality parameters in inland and coastal waters.</li>
+        </ul>
+    </section>
+
+    <section id="tools">
+        <h2>Tools and Software</h2>
+        <p>Key tools and software for analytical-physical modeling include:</p>
+        <ul>
+            <li><a href="https://www.qgis.org/">QGIS</a>: A powerful GIS tool supporting atmospheric correction plugins.</li>
+            <li><a href="https://www.r-project.org/">R</a>: Statistical computing for radiative transfer models.</li>
+            <li><a href="https://modis.gsfc.nasa.gov/">MODIS Tools</a>: Access to MODIS surface reflectance products.</li>
+            <li><a href="https://www.gdal.org/">GDAL</a>: Geospatial data manipulation libraries.</li>
+            <li><a href="https://hyspex.no/software">HySpex</a>: Tools for hyperspectral data analysis.</li>
+        </ul>
+    </section>
+
+    <section id="resources">
+        <h2>Further Reading</h2>
+        <p>Recommended readings and resources:</p>
+        <ul>
+            <li><a href="https://www.mdpi.com/journal/remotesensing">Remote Sensing Journal</a> - Articles on analytical modeling.</li>
+            <li><a href="https://earthdata.nasa.gov/">NASA Earthdata</a> - Guides on atmospheric correction.</li>
+            <li><a href="https://www.sciencedirect.com/journal/remote-sensing-of-environment">Remote Sensing of Environment</a> - High-impact publications.</li>
+            <li><a href="https://modtran.spectral.com/">MODTRAN Official</a> - Atmospheric radiative transfer resources.</li>
+        </ul>
+    </section>
+</div>
+    <footer>
+        <p><a href="#top">Back to top</a></p>
+    </footer>
+</body>
+</html>

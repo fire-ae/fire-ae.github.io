@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A comprehensive guide to analytical modeling in remote sensing.">
+    <title>Remote Sensing Training Modelling: Empirical Modelling</title>
+    <script type="text/javascript">
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement({
+                pageLanguage: 'en',
+                includedLanguages: 'tr,en,fr,lt,es,de,cs',
+                layout: google.translate.TranslateElement.InlineLayout.SIMPLE
+            }, 'google_translate_element');
+        }
+    </script>
+    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+    <script>
+    document.addEventListener("DOMContentLoaded", function() {
+        const style = document.createElement('style');
+        style.textContent = `
+            .goog-te-gadget-icon { display: none !important; }
+            #google_translate_element { background-color: #333 !important; border: none !important; border-radius: 8px; }
+            #google_translate_element select { background-color: #333 !important; color: #f7dc0f !important; border: 1px solid #f7dc0f !important; }
+            #google_translate_element .goog-te-combo { background-color: #333 !important; color: #f7dc0f !important; }
+            .goog-te-gadget { background-color: #333 !important; color: #f7dc0f !important; }
+        `;
+        document.head.appendChild(style);
+    });
+    </script>
+    <link rel="stylesheet" href="styles.css"> <!-- My lovely CSS file -->
+      <!-- Google Analytics -->
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-QBEVP0CB1V"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-QBEVP0CB1V');
+</script>
+  <!-- End Google Analytics -->
+</head>
+<body>
+    <div class="navbar-container">
+        <div class="navbar">
+            <a href="index.html">
+                <img src="logofireb.png" alt="Logo" class="navbar-logo">
+            </a>
+            <a href="corp-responsibility.html">Corporate Responsibilities</a>
+            <a href="impact.html">Theory of Change</a>
+            <a href="sci-res.html">Research Method</a>
+            <a href="research.html">Research Projects</a>
+            <a href="trainer-enhancer.html">Research Enhancer</a>
+            <a href="training.html">Trainings</a>
+            <a href="livingkit.html">Resources</a>
+            <a href="ascend.html">Periodicals</a>
+            <a href="news.html">News</a>
+            <a href="actlog.html">Activity Log</a>
+            <div id="google_translate_element"></div>
+        </div>
+    </div>
+<div class="page-container">
+    
+<h2>Author: Güray Hatipoğlu and ChatGPT 4.0o (with plenty of semantic units to ogpon) </h2>
+    <br>
+  <h3>FIRE Araştırma Eğitim Ltd. Şti.</h3>
+    <br>
+  <h3>Living document - Last update 2024-12-26 (YYYY-MM-DD)</h3>
+<br>
+
+<a href="modelling_rs_intro.html">RS Training Modelling: Introduction</a>
+    <br>
+<a href="modelling_rs_analytic.html">RS Training Modelling: Analytical-Physical Modelling</a>
+    <br>
+<a href="modelling_rs_semianalytic.html">RS Training Modelling: Semi-analytical Modelling</a>
+    <br>
+<a href="modelling_rs_empirical.html">RS Training Modelling: Empirical</a>
+    <br>
+<br>
+</div>
+<div class="page-container">
+    <header>
+        <h1>Semi-Analytical Modeling in Remote Sensing</h1>
+        <nav>
+            <ul>
+                <li><a href="#introduction">Introduction</a></li>
+                <li><a href="#principles">Principles</a></li>
+                <li><a href="#techniques">Key Techniques</a></li>
+                <li><a href="#examples">Practical Examples</a></li>
+                <li><a href="#applications">Applications</a></li>
+                <li><a href="#tools">Tools and Software</a></li>
+                <li><a href="#resources">Further Reading</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="introduction">
+        <h2>Introduction</h2>
+        <p>Semi-analytical (or semi-empirical) modeling combines analytical principles with empirical data to enhance the interpretation of remote sensing observations. These models use physical insights to constrain the relationships between measured signals and derived geophysical parameters, while empirical components improve adaptability to specific conditions.</p>
+    </section>
+
+    <section id="principles">
+        <h2>Principles</h2>
+        <p>The principles of semi-analytical modeling revolve around:</p>
+        <ul>
+            <li><strong>Fusion of Physics and Empiricism:</strong> Combining radiative transfer with observational datasets.</li>
+            <li><strong>Parameterization:</strong> Defining key variables such as vegetation indices or water quality indicators.</li>
+            <li><strong>Simplified Assumptions:</strong> Simplifying complex physical models for broader application.</li>
+        </ul>
+    </section>
+
+    <section id="techniques">
+        <h2>Key Techniques</h2>
+        <p>Techniques in semi-analytical modeling include:</p>
+        <ul>
+            <li><strong>Vegetation Indices:</strong> Algorithms like NDVI and EVI derived from canopy reflectance properties. <a href="https://earthobservatory.nasa.gov/features/MeasuringVegetation/measuring_vegetation_2.php">Learn more</a>.</li>
+            <li><strong>Bio-optical Models:</strong> Linking water-leaving radiance to chlorophyll-a concentration in oceanography.</li>
+            <li><strong>Radiative Transfer Simplifications:</strong> Using approximations such as single-layer atmospheric models.</li>
+            <li><strong>Soil-Adjusted Indices:</strong> Reducing soil influence on vegetation metrics, e.g., SAVI (Soil-Adjusted Vegetation Index).</li>
+        </ul>
+    </section>
+
+    <section id="examples">
+        <h2>Practical Examples</h2>
+        <p>Examples of semi-analytical models in remote sensing:</p>
+        <ul>
+            <li><strong>Normalized Difference Vegetation Index (NDVI):</strong> NDVI = (NIR - Red) / (NIR + Red), where NIR and Red are reflectances in the near-infrared and red bands, respectively. Widely used for vegetation monitoring.</li>
+            <li><strong>Chlorophyll-a Estimation:</strong> Algorithms like OC4 for oceanic applications: Chl-a = a × (Rrs(443)/Rrs(555))^b, where Rrs is remote-sensing reflectance.</li>
+            <li><strong>LAI Estimation:</strong> Leaf Area Index (LAI) from MODIS using semi-empirical relationships between canopy reflectance and LAI values.</li>
+        </ul>
+    </section>
+
+    <section id="applications">
+        <h2>Applications</h2>
+        <p>Semi-analytical models are extensively applied in:</p>
+        <ul>
+            <li>Vegetation monitoring through indices like NDVI, EVI, and SAVI.</li>
+            <li>Water quality assessments for parameters like turbidity, chlorophyll-a, and total suspended matter.</li>
+            <li>Crop yield predictions by relating remote sensing observations to growth models.</li>
+            <li>Climate studies by parameterizing land surface models.</li>
+        </ul>
+    </section>
+
+    <section id="tools">
+        <h2>Tools and Software</h2>
+        <p>Key tools for implementing semi-analytical models:</p>
+        <ul>
+            <li><a href="https://www.qgis.org/">QGIS</a>: Supports vegetation index calculations using raster analysis tools.</li>
+            <li><a href="https://modis.gsfc.nasa.gov/">MODIS Data Products</a>: Offers global datasets for NDVI, LAI, and more.</li>
+            <li><a href="https://seadas.gsfc.nasa.gov/">SeaDAS</a>: Tools for bio-optical modeling and oceanographic data analysis.</li>
+            <li><a href="https://earthengine.google.com/">Google Earth Engine</a>: Cloud-based platform for large-scale data analysis, including vegetation and water quality indices.</li>
+        </ul>
+    </section>
+
+    <section id="resources">
+        <h2>Further Reading</h2>
+        <p>Explore more on semi-analytical modeling:</p>
+        <ul>
+            <li><a href="https://www.mdpi.com/journal/remotesensing">Remote Sensing Journal</a> - Case studies on semi-analytical approaches.</li>
+            <li><a href="https://oceancolor.gsfc.nasa.gov/">NASA OceanColor</a> - Resources for bio-optical modeling.</li>
+            <li><a href="https://www.sciencedirect.com/journal/remote-sensing-of-environment">Remote Sensing of Environment</a> - Research articles on semi-empirical models.</li>
+        </ul>
+    </section>
+</div>
+    <footer>
+        <p><a href="#top">Back to top</a></p>
+    </footer>
+</body>
+</html>
