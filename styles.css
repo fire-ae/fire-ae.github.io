@@ -43,6 +43,25 @@ body {
     min-width: 100px; /* Minimum width for each item */
 }
 
+.top {
+  --offset: 50px; 
+  
+  position: sticky;
+  bottom: 20px;      
+  margin-right:10px; 
+  place-self: end;
+  margin-top: calc(100vh + var(--offset));
+  
+  /* visual styling */
+  text-decoration: none;
+  padding: 10px;
+  font-family: sans-serif;
+  color: #fff;
+  background: #000;
+  border-radius: 100px;
+  white-space: nowrap;
+}
+
 .page-container, .content, .contentshort p, h1, h2, h3, a {
     opacity: 1; /* Ensure text opacity is 100% */
 }
