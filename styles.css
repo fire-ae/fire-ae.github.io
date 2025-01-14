@@ -193,6 +193,26 @@ a:hover {
         max-width: 100%; /* Optional: Ensure the image is responsive */
         height: auto; /* Optional: Maintain the aspect ratio */
     }
+
+    .top {
+      --offset: 50px; 
+      
+      position: sticky;
+      bottom: 20px;
+      right: 20px;
+      margin-right:10px; 
+      place-self: end;
+      margin-top: calc(100vh + var(--offset));
+      
+      /* visual styling */
+      text-decoration: none;
+      padding: 10px;
+      font-family: Arial, sans-serif;
+      color: #CC8400;
+      background: #FFFFFF;
+      border-radius: 100px;
+      white-space: nowrap;
+    }
     /* Add a hover effect for mobile, if applicable */
     .content:hover, .contentshort:hover, .page-container:hover {
         background-color: rgba(0, 0, 0, 0.4); /* Slightly lighter on hover */
@@ -243,7 +263,26 @@ a:hover {
         border: 3px solid #d6d6d6;
         box-shadow: 0 0 10px rgba(255, 255, 255, 0.4);
     }
-
+    .top {
+      --offset: 50px; 
+      
+      position: sticky;
+      bottom: 20px;
+      right: 20px;
+      margin-right:10px; 
+      place-self: end;
+      margin-top: calc(100vh + var(--offset));
+      
+      /* visual styling */
+      text-decoration: none;
+      padding: 10px;
+      font-family: Arial, sans-serif;
+      color: #CC8400;
+      background: #FFFFFF;
+      border-radius: 100px;
+      white-space: nowrap;
+    }
+    
     .image-container img {
         opacity: 0.4; /* Set the image opacity to 40% */
         max-width: 100%; /* Optional: Ensure the image is responsive */
