@@ -160,7 +160,19 @@ a:hover {
 .issue-cover:hover {
     filter: grayscale(0%);
 }
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 0.8s ease-out forwards;
+    animation-delay: 0.2s;
+}
 
+@keyframes fadeInUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
 
 /* Default button-like styles for mobile */
 @media (max-width: 768px) {
