@@ -4,6 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FIRE Araştırma Eğitim Ltd. Şti. - What FIRE-AE Delivers - Solutions, Services, Products</title>
+    <script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const faders = document.querySelectorAll('.fade-in');
+    
+        const appearOptions = {
+            threshold: 0.1,
+            rootMargin: "0px 0px -100px 0px"
+        };
+    
+        const appearOnScroll = new IntersectionObserver(function (entries, observer) {
+            entries.forEach(entry => {
+                if (!entry.isIntersecting) return;
+                entry.target.classList.add("appear");
+                observer.unobserve(entry.target);
+            });
+        }, appearOptions);
+    
+        faders.forEach(fader => appearOnScroll.observe(fader));
+    });
+    </script>
     <script type="text/javascript">
         function googleTranslateElementInit() {
             new google.translate.TranslateElement({
@@ -59,6 +79,15 @@
             <div id="google_translate_element"></div>
         </div>
     </div>
+<nav class="sticky-nav">
+    <ul>
+        <li><a href="#land">Land</a></li>
+        <li><a href="#litpat">Literature</a></li>
+        <li><a href="#drr">DRR</a></li>
+        <li><a href="#astro">Astrophysics</a></li>
+        <li><a href="#training">Training</a></li>
+    </ul>
+</nav>
 <div class="page-container">
     <br>
     <div class="image-container fade-in">
@@ -74,7 +103,7 @@
     </div>
 
     <div class="content fade-in">
-        <h3>📡 Land Suitability & Earth Observations</h3>
+        <h3 id="land">📡 Land Suitability & Earth Observations</h3>
         <ul>
             <li>Suitability mapping: agriculture, energy, urban zones</li>
             <li>Custom SAR/optical fusion analysis (Sentinel-1/2)</li>
@@ -83,7 +112,7 @@
     </div>
 
     <div class="content fade-in">
-        <h3>📚 Literature & Patent Research</h3>
+        <h3 id="litpat">📚 Literature & Patent Research</h3>
         <ul>
             <li>Concise literature synthesis in EO and astrophysics</li>
             <li>Patent/IP search support for early-stage innovation</li>
@@ -92,7 +121,7 @@
     </div>
 
     <div class="content fade-in">
-        <h3>🔥 Disaster Risk Mapping (Beta)</h3>
+        <h3 id="drr">🔥 Disaster Risk Mapping (Beta)</h3>
         <ul>
             <li>Initial work on drought–flood–fire risk indicators</li>
             <li>Land-climate interactions using EO and open data</li>
@@ -101,16 +130,7 @@
     </div>
 
     <div class="content fade-in">
-        <h3>🛰️ Astrophysics Data Services (Upcoming)</h3>
-        <ul>
-            <li>Light curve/time-series management for stellar systems</li>
-            <li>Initial support for image preprocessing and anomaly scans</li>
-            <li>Preview tools available in late 2025</li>
-        </ul>
-    </div>
-
-    <div class="content fade-in">
-        <h3>🎓 Training & Skill Transfer</h3>
+        <h3 id="training">🎓 Training & Skill Transfer</h3>
         <p align="justify">
             Practical training using free/open-source tools in satellite remote sensing, scientific coding, and geospatial data intelligence.
         </p>
@@ -118,7 +138,16 @@
             <img src="https://github.com/fire-ae/fire-ae.github.io/blob/main/training-thumb.jpg?raw=true" alt="Training Thumbnail">
         </a>
     </div>
-
+    
+    <div class="content fade-in">
+        <h3 id="astro">🛰️ Astrophysics Data Services (Upcoming)</h3>
+        <ul>
+            <li>Light curve/time-series management for stellar systems</li>
+            <li>Initial support for image preprocessing and anomaly scans</li>
+            <li>Preview tools available in late 2025</li>
+        </ul>
+    </div>
+    
     <br>
     <a href="#" class="top">Back to Top &#8593;</a>
 </div>
