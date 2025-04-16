@@ -64,9 +64,12 @@ body {
 }
 
 .sticky-nav a {
-    color: #d6d6d6;
+    color: #ffffff;
     text-decoration: none;
     font-weight: bold;
+    font-size: 18px; /* Increased font size */
+    letter-spacing: 0.5px;
+    transition: color 0.3s ease;
 }
 
 .sticky-nav a:hover {
