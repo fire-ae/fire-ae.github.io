@@ -1,1 +1,94 @@
+import json
+import os
+from datetime import datetime
+import feedparser
+from waybackpy import WaybackMachineSaveAPI, WaybackError
+from jinja2 import Environment, FileSystemLoader
 
+# ---- Configuration ----
+ARCHIVE_FILE = "fire_archive.json"
+OUTPUT_HTML = "firealarms.html"
+TEMPLATE_DIR = "templates"
+KEYWORDS = ["yangın", "orman yangını", "alev", "kıvılcım", "duman", "tutuşma"]
+
+RSS_FEEDS = [
+    ("TRT Haber", "https://www.trthaber.com/sondakika.rss"),
+    ("AA", "https://www.aa.com.tr/tr/rss/default?cat=1"),  # General News
+    ("İHA", "https://www.iha.com.tr/rss/ana-sayfa"),
+]
+
+# ---- Load or Init Archive ----
+def load_archive(path):
+    if os.path.exists(path):
+        with open(path, "r", encoding="utf-8") as f:
+            return json.load(f)
+    return {}
+
+def save_archive(data, path):
+    with open(path, "w", encoding="utf-8") as f:
+        json.dump(data, f, ensure_ascii=False, indent=2)
+
+# ---- Archive Link via Wayback Machine ----
+def archive_url(url):
+    try:
+        save_api = WaybackMachineSaveAPI(url, user_agent="Mozilla/5.0")
+        return save_api.save().archive_url
+    except WaybackError:
+        return None
+
+# ---- Filter Relevant News ----
+def is_fire_related(title):
+    title_lower = title.lower()
+    return any(keyword in title_lower for keyword in KEYWORDS)
+
+# ---- Parse and Update ----
+def update_archive():
+    archive = load_archive(ARCHIVE_FILE)
+    today = datetime.utcnow().strftime("%Y-%m-%d")
+
+    for source, feed_url in RSS_FEEDS:
+        feed = feedparser.parse(feed_url)
+        for entry in feed.entries:
+            title = entry.title
+            link = entry.link
+            date_str = entry.get("published", today)[:10]
+            year = date_str[:4]
+
+            if not is_fire_related(title):
+                continue
+
+            # Avoid duplicates
+            existing = archive.get(year, [])
+            if any(link == item["link"] for item in existing):
+                continue
+
+            print(f"[{source}] Archiving: {title}")
+            archived = archive_url(link)
+
+            item = {
+                "date": date_str,
+                "title": title,
+                "link": link,
+                "archive_url": archived,
+                "source": source,
+            }
+
+            archive.setdefault(year, []).append(item)
+
+    save_archive(archive, ARCHIVE_FILE)
+    return archive
+
+# ---- Generate HTML ----
+def render_html(archive):
+    env = Environment(loader=FileSystemLoader(TEMPLATE_DIR))
+    template = env.get_template("fire_template.html")
+    html = template.render(archive=archive)
+
+    with open(OUTPUT_HTML, "w", encoding="utf-8") as f:
+        f.write(html)
+
+# ---- Main ----
+if __name__ == "__main__":
+    archive = update_archive()
+    render_html(archive)
+    print("✅ firealarms.html generated.")
