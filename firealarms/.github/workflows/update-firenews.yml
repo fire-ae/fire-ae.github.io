@@ -18,7 +18,7 @@ jobs:
           python-version: 3.11
 
       - name: Install Dependencies
-        run: pip install feedparser waybackpy
+        run: pip install feedparser waybackpy jinja2
 
       - name: Generate FireAlarms HTML
         run: python generate_firenews.py
