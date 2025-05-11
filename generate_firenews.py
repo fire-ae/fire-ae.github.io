@@ -2,7 +2,7 @@ import json
 import os
 from datetime import datetime
 import feedparser
-from waybackpy import WaybackMachineSaveAPI, WaybackError
+from waybackpy import WaybackMachineSaveAPI
 from jinja2 import Environment, FileSystemLoader
 
 # ---- Configuration ----
@@ -33,8 +33,8 @@ def archive_url(url):
     try:
         save_api = WaybackMachineSaveAPI(url, user_agent="Mozilla/5.0")
         return save_api.save().archive_url
-    except WaybackError:
-        return None
+    except Exception as e:
+        print(f"Archive error: {e}")
 
 # ---- Filter Relevant News ----
 def is_fire_related(title):
