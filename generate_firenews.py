@@ -8,7 +8,7 @@ import shutil
 
 
 # ---- Configuration ----
-ARCHIVE_FILE = "fire_archive.json"
+ARCHIVE_FILE = "fire_news_archive.json"
 OUTPUT_HTML = "firealarms.html"
 TEMPLATE_DIR = "templates"
 KEYWORDS = ["yangın", "orman yangını", "alev", "kıvılcım", "duman", "tutuşma"]
