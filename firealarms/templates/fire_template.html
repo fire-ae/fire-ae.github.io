@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <title>Yangın Alarmı Arşivi – FIRE-AE</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Türkiye Yangın Alarmı Arşivi</h1>
+    <p>Bu sayfa günlük olarak RSS kaynaklarından çekilen yangın haberlerini içerir ve arşivlenmiştir.</p>
+    {% for year, entries in archive.items()|sort(reverse=true) %}
+    <details>
+        <summary><strong>{{ year }} ({{ entries|length }} haber)</strong></summary>
+        <ul>
+        {% for item in entries %}
+            <li>
+                [{{ item['date'] }}] 
+                <a href="{{ item['archive_url'] or item['link'] }}" target="_blank">{{ item['title'] }}</a> 
+                - {{ item['source'] }}
+            </li>
+        {% endfor %}
+        </ul>
+    </details>
+    {% endfor %}
+</body>
+</html>
