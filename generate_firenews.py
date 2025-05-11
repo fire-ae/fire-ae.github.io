@@ -14,8 +14,8 @@ TEMPLATE_DIR = "templates"
 KEYWORDS = ["yangın", "orman yangını", "alev", "kıvılcım", "duman", "tutuşma"]
 
 RSS_FEEDS = [
-    #("TRT Haber", "https://www.trthaber.com/sondakika.rss"),
-    ("AA", "https://www.aa.com.tr/tr/rss/default?cat=guncel"),  # General News
+    ("TRT Haber", "https://www.trthaber.com/sondakika.rss"),
+    ("AA", "https://www.aa.com.tr/tr/rss/default?cat=guncel"),
     ("İHA", "https://www.iha.com.tr/rss/ana-sayfa"),
 ]
 
