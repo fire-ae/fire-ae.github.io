@@ -70,7 +70,7 @@ def update_archive():
             # Avoid duplicates
             existing = archive.get(year, [])
             if any(link == item["link"] for item in existing):
-                print(f"The item - {item["title"]} - was already saved in the JavaScript Object Notation file.")
+                print(f'The item - {item["title"]} - was already saved in the JavaScript Object Notation file.')
                 continue
 
             print(f"[{source}] Archiving: {title}")
