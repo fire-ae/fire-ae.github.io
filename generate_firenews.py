@@ -4,6 +4,8 @@ from datetime import datetime
 import feedparser
 from waybackpy import WaybackMachineSaveAPI
 from jinja2 import Environment, FileSystemLoader
+import shutil
+
 
 # ---- Configuration ----
 ARCHIVE_FILE = "fire_archive.json"
@@ -18,11 +20,18 @@ RSS_FEEDS = [
 ]
 
 # ---- Load or Init Archive ----
-def load_archive(path):
-    if os.path.exists(path):
-        with open(path, "r", encoding="utf-8") as f:
+
+def load_archive(filename):
+    if not os.path.exists(filename):
+        return {}
+    try:
+        with open(filename, "r", encoding="utf-8") as f:
             return json.load(f)
-    return {}
+    except (json.JSONDecodeError, IOError):
+        backup_name = filename + ".bak"
+        shutil.copyfile(filename, backup_name)
+        print(f"[WARN] Corrupt archive detected. Backup saved to {backup_name}. Resetting archive.")
+        return {}
 
 def save_archive(data, path):
     with open(path, "w", encoding="utf-8") as f:
