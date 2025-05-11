@@ -64,11 +64,13 @@ def update_archive():
             year = date_str[:4]
 
             if not is_fire_related(title):
+                print("No fire-related news was parsed.")
                 continue
 
             # Avoid duplicates
             existing = archive.get(year, [])
             if any(link == item["link"] for item in existing):
+                print(f"The item - {item["title"]} - was already saved in the JavaScript Object Notation file.")
                 continue
 
             print(f"[{source}] Archiving: {title}")
