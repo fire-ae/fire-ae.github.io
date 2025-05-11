@@ -72,8 +72,9 @@ def update_archive():
                 continue
 
             print(f"[{source}] Archiving: {title}")
-            archived = archive_url(link)
-
+            #archived = archive_url(link)
+            # i bombed the server with lots of trials, lets just do for a while without archiving there
+            archived = link
             item = {
                 "date": date_str,
                 "title": title,
