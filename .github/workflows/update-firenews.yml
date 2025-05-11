@@ -23,10 +23,10 @@ jobs:
       - name: Generate FireAlarms HTML
         run: python generate_firenews.py
 
-      - name: Commit and Push Changes
+      - name: Push changes
         run: |
           git config --global user.name "github-actions"
-          git config --global user.email "actions@github.com"
-          git add firealarms.html fire_archive.json
-          git commit -m "Daily update of firealarms.html"
-          git push
+          git config --global user.email "action@github.com"
+          git add firealarms.html fire_news_archive.json
+          git commit -m "Daily update of firealarms.html" || echo "No changes to commit"
+          git push https://x-access-token:${{ secrets.GH_TOKEN }}@github.com/fire-ae/fire-ae.github.io.git HEAD:main
