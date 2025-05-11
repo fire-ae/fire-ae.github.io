@@ -1,5 +1,6 @@
 name: Update FireAlarms Page
-
+permissions:
+  contents: write
 on:
   schedule:
     - cron: '0 4 * * *'  # Runs daily at 04:00 UTC
@@ -31,5 +32,3 @@ jobs:
           git add firealarms.html fire_news_archive.json
           git commit -m "Daily update of firealarms.html" || echo "No changes to commit"
           git push https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/fire-ae/fire-ae.github.io.git HEAD:main
-        env:
-          GHTOKEN: ${{ secrets.GITHUB_TOKEN }}
