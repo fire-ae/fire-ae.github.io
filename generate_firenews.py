@@ -1,10 +1,11 @@
 import json
 import os
 from datetime import datetime
-import feedparser
-from waybackpy import WaybackMachineSaveAPI
+import feedparser # parses RSS feeds
+from waybackpy import WaybackMachineSaveAPI # Currently ignored
 from jinja2 import Environment, FileSystemLoader
 import shutil
+from email.utils import parsedate_to_datetime
 
 
 # ---- Configuration ----
@@ -18,6 +19,15 @@ RSS_FEEDS = [
     ("AA", "https://www.aa.com.tr/tr/rss/default?cat=guncel"),
     ("İHA", "https://www.iha.com.tr/rss/ana-sayfa"),
 ]
+
+# Date parsing
+
+def parse_date(date_str):
+    try:
+        dt = parsedate_to_datetime(date_str)
+    except Exception:
+        dt = datetime.utcnow()
+    return dt.strftime("%Y-%m-%d, %A")  # Example: "2025-05-11, Sunday"
 
 # ---- Load or Init Archive ----
 
@@ -60,8 +70,8 @@ def update_archive():
         for entry in feed.entries:
             title = entry.title
             link = entry.link
-            date_str = entry.get("published", today)[:10]
-            year = date_str[:4]
+            date_str = parse_date(entry.get("published", today))
+            year = date_str  # use full date as key, not just the year
 
             if not is_fire_related(title):
                 print("No fire-related news was parsed.")
