@@ -71,32 +71,32 @@ body {
 }
 
 /* ===================== SERVICES PAGE SIDEBAR ===================== */
-.services-sidebar {
+/* Services page sticky sidebar navbar */
+body.services-page .services-sidebar {
     position: fixed;
-    left: 0;
     top: 50%;
+    left: 0;
     transform: translateY(-50%);
     background-color: rgba(0,0,0,0.85);
-    border-radius: 10px;
-    padding: 10px;
+    padding: 10px 15px;
+    border-radius: 0 10px 10px 0;
     display: flex;
     flex-direction: column;
     gap: 10px;
-    z-index: 9999;
+    max-width: max-content; /* only as wide as its content */
+    z-index: 999;
 }
 
-.services-sidebar a {
-    color: #f7dc0f;
+body.services-page .services-sidebar a {
+    color: #fff;
     text-decoration: none;
+    white-space: nowrap;
     font-weight: bold;
-    padding: 6px 12px;
-    border-radius: 6px;
-    transition: background-color 0.3s, transform 0.3s;
+    transition: color 0.3s;
 }
 
-.services-sidebar a:hover {
-    background-color: #b86902;
-    transform: translateX(5px);
+body.services-page .services-sidebar a:hover {
+    color: #f7dc0f;
 }
 
 /* ===================== FADE-IN ELEMENTS ===================== */
