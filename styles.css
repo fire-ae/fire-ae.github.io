@@ -215,6 +215,56 @@ a:hover {
   pointer-events: none; /* so it doesn't block page clicks */
 }
 
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 15px;
+    background-color: rgba(0, 0, 0, 0.4);
+    border: 2px solid #d6d6d6;
+    border-radius: 10px;
+    box-shadow: 0 0 8px rgba(255, 255, 255, 0.3);
+}
+
+.contact-form label {
+    font-weight: bold;
+    color: #d6d6d6;
+}
+
+.contact-form input,
+.contact-form select,
+.contact-form textarea {
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 1px solid #d6d6d6;
+    border-radius: 6px;
+    padding: 8px;
+    color: #d6d6d6;
+    font-size: 15px;
+}
+
+.contact-form input:focus,
+.contact-form select:focus,
+.contact-form textarea:focus {
+    outline: none;
+    border-color: #b86902;
+    box-shadow: 0 0 4px #b86902;
+}
+
+.contact-form button {
+    background-color: #b86902;
+    color: #fff;
+    font-weight: bold;
+    border: none;
+    border-radius: 6px;
+    padding: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+    background-color: #8a5004;
+}
+
 @keyframes fadeInUp {
     to {
         opacity: 1;
