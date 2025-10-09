@@ -183,12 +183,38 @@ Keywords: Astronomy, Astrophysics, Planetary Science, Science Education, Enginee
         </ul>
 </div>
     <br>
-    Email: <a href="mailto:info@fire-ae.org">Send email</a>
-    <br>
     Follow us on <a href="https://www.linkedin.com/company/102201413/">LinkedIn</a> 
     <br>
     Follow us on <a href="https://www.youtube.com/@fire-ae">YouTube</a>
     <br>
+</div>
+
+<div class="page-container">
+  <h2>Contact FIRE-AE</h2>
+
+  <form id="contactForm" action="https://formspree.io/f/xpwyjgal" method="POST" class="contact-form">
+    <label for="name">Name</label>
+    <input type="text" id="name" name="name" required>
+
+    <label for="email">Email</label>
+    <input type="email" id="email" name="_replyto" required>
+
+    <label for="type">Message Type</label>
+    <select id="type" name="type" required>
+      <option value="">Select...</option>
+      <option value="Service Inquiry">Service Inquiry</option>
+      <option value="Training Request">Training Request</option>
+      <option value="Offer">Offer</option>
+      <option value="Call to Consortium">Call to Consortium</option>
+    </select>
+
+    <label for="message">Message</label>
+    <textarea id="message" name="message" rows="5" required></textarea>
+
+    <button type="submit">Send</button>
+  </form>
+
+  <p id="response"></p>
 </div>
     <a href="#" class="top">Back to Top &#8593;</a>
 </body>
