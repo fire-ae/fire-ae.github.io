@@ -172,19 +172,30 @@ document.addEventListener("DOMContentLoaded", function() {
 <canvas id="meteorCanvas" aria-hidden="true"></canvas>
 <script src="animations.js" defer></script>
 <!-- Fade-in JS -->
-<script>
+    <br>
+     <script>
 document.addEventListener("DOMContentLoaded", function () {
     const faders = document.querySelectorAll('.fade-in');
-    const observer = new IntersectionObserver(entries => {
+
+    const appearOptions = {
+        threshold: 0.1,
+        rootMargin: "0px 0px -50px 0px"
+    };
+
+    const appearOnScroll = new IntersectionObserver(function (entries) {
         entries.forEach(entry => {
-            if (entry.isIntersecting) entry.target.classList.add('appear');
+            if (entry.isIntersecting) {
+                entry.target.classList.add("appear");
+            } else {
+                entry.target.classList.remove("appear");
+            }
         });
-    }, { threshold: 0.1 });
-    faders.forEach(fader => observer.observe(fader));
+    }, appearOptions);
+
+    faders.forEach(fader => appearOnScroll.observe(fader));
 });
 </script>
-<!-- Back to top -->
-<a href="#" class="top">Back to Top &#8593;</a>
-
+    <a href="#" class="top">Back to Top &#8593;</a>
+</div>
 </body>
 </html>
