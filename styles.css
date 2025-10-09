@@ -57,35 +57,33 @@ body {
    SERVICES SIDEBAR (MID-LEFT)
    ========================= */
 .services-sidebar {
-    position: fixed; /* fixed ensures proper anchor alignment */
-    top: 50%;
+    position: fixed;
+    top: 80px; /* adjust to your navbar height */
     left: 0;
-    transform: translateY(-50%);
-    background: rgba(50,50,50,0.9);
-    padding: 10px;
-    border-radius: 8px;
-    max-width: 200px;
-    z-index: 999;
+    width: 200px;
+    height: 100%;
+    background-color: #111;
+    padding: 20px;
+    overflow-y: auto;
+    z-index: 1000;
 }
 
 .services-sidebar ul {
     list-style: none;
     padding: 0;
-    margin: 0;
 }
 
-.services-sidebar li {
-    margin: 8px 0;
+.services-sidebar ul li {
+    margin-bottom: 15px;
 }
 
-.services-sidebar a {
-    color: #fff;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-.services-sidebar a:hover {
+.services-sidebar ul li a {
     color: #f7dc0f;
+    text-decoration: none;
+}
+
+.services-sidebar ul li a:hover {
+    text-decoration: underline;
 }
 
 /* Anchor offset to prevent sticky sidebar overlapping content */
@@ -107,7 +105,10 @@ body {
     border-radius: 0; /* remove round boxes */
     box-shadow: none;
 }
-
+/* Main content shift */
+.page-container {
+    margin-left: 220px;
+    padding: 20px;
 /* fade-in for any element */
 .fade-in {
     opacity: 0;
@@ -196,7 +197,17 @@ img {
         text-align: left;
         padding: 10px 0;
     }
-    .services-sidebar {
-        display: none; /* hide sidebar on small screens */
+
+       .services-sidebar {
+        position: relative;
+        width: 100%;
+        height: auto;
+        top: 0;
+        padding: 10px;
+    }
+
+    .page-container {
+        margin-left: 0;
+        padding: 10px;
     }
 }
