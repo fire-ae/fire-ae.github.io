@@ -90,8 +90,8 @@ body {
 :target::before {
     content: "";
     display: block;
-    height: 60px; /* adjust this to match sidebar height if needed */
-    margin-top: -60px;
+    height: 160px; /* adjust this to match sidebar height if needed */
+    margin-top: -260px;
     visibility: hidden;
 }
 /* =========================
