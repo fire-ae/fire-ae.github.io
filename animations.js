@@ -35,19 +35,19 @@
     }
 
     reset(initial = false) {
-      // Spawn randomly just off-screen or inside
       const side = Math.random();
       this.x = side < 0.6 ? Math.random() * w : (side < 0.8 ? -30 : w + 30);
-      this.y = Math.random() * h * 0.7; // avoid bottom-heavy spawn
-      // direction and speed
-      const angle = (Math.PI / 8) + (Math.random() * Math.PI / 4); // mostly diagonal
+      this.y = Math.random() * h * 0.7;
+      const angle = (Math.PI / 8) + (Math.random() * Math.PI / 4);
       const dir = (Math.random() < 0.5) ? 1 : -1;
       this.vx = dir * (SPEED_MIN + Math.random() * (SPEED_MAX - SPEED_MIN)) * Math.cos(angle);
       this.vy = (SPEED_MIN + Math.random() * (SPEED_MAX - SPEED_MIN)) * Math.sin(angle) * 0.6;
-      // visual
-      this.headRadius = 1 + Math.random() * 2; // slightly bigger yellow sphere
-      this.trail = []; // array of {x,y,alpha}
-      // initial trail warm-up if initial so they appear instantly
+
+      this.headRadiusBase = 1 + Math.random() * 2;
+      this.trail = [];
+      this.age = 0;
+      this.maxAge = 108 + Math.random() * 24; // 1.8–2.2 seconds at 60fps
+
       if (initial) {
         for (let i = 0; i < TRAIL_LENGTH; i++) {
           this.trail.push({ x: this.x - this.vx * i * 2, y: this.y - this.vy * i * 2, a: 0.05 + (i / TRAIL_LENGTH) * 0.6 });
@@ -56,24 +56,30 @@
     }
 
     step(dt) {
-      // dt in seconds
+      this.age++;
       this.x += this.vx * dt * 60;
       this.y += this.vy * dt * 60;
 
-      // push current head to trail
       this.trail.unshift({ x: this.x, y: this.y, a: 0.9 });
       if (this.trail.length > TRAIL_LENGTH) this.trail.length = TRAIL_LENGTH;
 
-      // fade trail alpha slightly
       for (let i = 0; i < this.trail.length; i++) {
-        // older points are dimmer
         this.trail[i].a = Math.max(0, 0.03 + (1 - i / this.trail.length) * 0.9);
       }
 
-      // respawn if fully out of bounds
+      // Head grows then shrinks
+      const half = this.maxAge / 2;
+      if (this.age < half) {
+        this.headRadius = this.headRadiusBase * (0.5 + (this.age / half));
+      } else {
+        this.headRadius = this.headRadiusBase * (1.5 - (this.age - half) / half);
+      }
+
+      if (this.age > this.maxAge) this.reset(false);
+
+      // respawn if out-of-bounds
       if (this.x < -100 || this.x > w + 100 || this.y < -100 || this.y > h + 100) {
         this.reset(false);
-        // bias spawn to edge so they drift across screen
         if (Math.random() < 0.6) {
           this.x = Math.random() * w;
           this.y = -20 - Math.random() * 40;
@@ -84,7 +90,6 @@
     }
 
     draw(ctx) {
-      // draw trail as thin white lines with decreasing alpha and width
       ctx.lineCap = 'round';
       for (let i = 0; i < this.trail.length - 1; i++) {
         const p0 = this.trail[i];
@@ -98,7 +103,6 @@
         ctx.stroke();
       }
 
-      // soft glow for head
       const grad = ctx.createRadialGradient(this.x, this.y, 0, this.x, this.y, this.headRadius * 3);
       grad.addColorStop(0, 'rgba(255,240,160,0.95)');
       grad.addColorStop(0.3, 'rgba(255,200,80,0.6)');
@@ -108,19 +112,18 @@
       ctx.arc(this.x, this.y, this.headRadius * 3, 0, Math.PI * 2);
       ctx.fill();
 
-      // solid yellow head
-      ctx.fillStyle = 'rgba(255,220,100,1)';
-      ctx.beginPath();
-      ctx.arc(this.x, this.y, this.headRadius, 0, Math.PI * 2);
-      ctx.fill();
+      if (this.headRadius > 0.2) {
+        ctx.fillStyle = 'rgba(255,220,100,1)';
+        ctx.beginPath();
+        ctx.arc(this.x, this.y, this.headRadius, 0, Math.PI * 2);
+        ctx.fill();
+      }
     }
   }
 
-  // create meteors
-  const meteors = Array.from({ length: COUNT }, (_, i) => new Meteor());
+  const meteors = Array.from({ length: COUNT }, () => new Meteor());
 
   function clearCanvas() {
-    // keep it fully transparent background => do not dim page
     ctx.clearRect(0, 0, w, h);
   }
 
@@ -128,7 +131,6 @@
     const dtMs = now - lastTime;
     lastTime = now;
     accum += dtMs;
-    // throttle to FPS_LIMIT to save CPU
     if (accum < interval) {
       requestAnimationFrame(loop);
       return;
@@ -138,7 +140,6 @@
 
     clearCanvas();
 
-    // step & draw
     for (let m of meteors) {
       m.step(dt);
       m.draw(ctx);
@@ -147,8 +148,6 @@
     requestAnimationFrame(loop);
   }
 
-  // Ensure canvas sits above content visually but doesn't block interactions
-  // If your CSS already sets #meteorCanvas, this will override safely.
   canvas.style.position = 'fixed';
   canvas.style.top = '0';
   canvas.style.left = '0';
@@ -156,8 +155,7 @@
   canvas.style.height = '100%';
   canvas.style.pointerEvents = 'none';
   canvas.style.zIndex = '9999';
-  canvas.style.mixBlendMode = 'screen'; // subtle blending with page (optional)
+  canvas.style.mixBlendMode = 'screen';
 
-  // Start
   requestAnimationFrame(loop);
 })();
