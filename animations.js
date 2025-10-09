@@ -1,12 +1,12 @@
 // animations.js
 (() => {
   const CANVAS_ID = 'meteorCanvas';
-  const COUNT = 15;
+  const COUNT = 2;
   const SPEED_MIN = 14.8;
   const SPEED_MAX = 17.8;
   const TRAIL_LENGTH = 240;
   const FPS_LIMIT = 60;
-  const DURATION = 5000; // total duration in ms
+ // const DURATION = 5000; // total duration in ms
 
   const canvas = document.getElementById(CANVAS_ID);
   if (!canvas) return;
@@ -117,7 +117,7 @@ this.vy = (SPEED_MIN + Math.random() * (SPEED_MAX - SPEED_MIN)) * Math.sin(baseA
     accum = 0;
 
     clearCanvas();
-
+/*
     let elapsed = now - startTime;
     let alphaMultiplier = 1;
     if (elapsed > DURATION) {
@@ -129,7 +129,7 @@ this.vy = (SPEED_MIN + Math.random() * (SPEED_MAX - SPEED_MIN)) * Math.sin(baseA
     if(elapsed < DURATION) {
       for (let m of meteors) m.step(dt);
     }
-
+*/
     requestAnimationFrame(loop);
   }
 
