@@ -5,7 +5,28 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>FIRE Araştırma Eğitim Ltd. Şti.</title>
 <link rel="stylesheet" href="styles.css">
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+    const faders = document.querySelectorAll('.fade-in');
 
+    const appearOptions = {
+        threshold: 0.1,
+        rootMargin: "0px 0px -50px 0px"
+    };
+
+    const appearOnScroll = new IntersectionObserver(function (entries) {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add("appear");
+            } else {
+                entry.target.classList.remove("appear");
+            }
+        });
+    }, appearOptions);
+
+    faders.forEach(fader => appearOnScroll.observe(fader));
+});
+</script>
 <!-- Google Translate -->
 <script type="text/javascript">
 function googleTranslateElementInit() {
@@ -161,7 +182,6 @@ document.addEventListener("DOMContentLoaded", function() {
 <canvas id="meteorCanvas" aria-hidden="true"></canvas>
 
 <!-- Scripts -->
-<script src="fade-in.js" defer></script>
     <script src="animations.js" defer></script>
 
 
