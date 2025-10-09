@@ -2,8 +2,8 @@
 (() => {
   const CANVAS_ID = 'meteorCanvas';
   const COUNT = 15;
-  const SPEED_MIN = 5.8;
-  const SPEED_MAX = 6.8;
+  const SPEED_MIN = 10.8;
+  const SPEED_MAX = 14.8;
   const TRAIL_LENGTH = 240;
   const FPS_LIMIT = 60;
 
@@ -54,7 +54,7 @@
       this.headRadiusBase = 1 + Math.random() * 2;
       this.trail = [];
       this.age = 0;
-      this.maxAge = 108 + Math.random() * 24; // 1.8–2.2 s
+      this.maxAge = 48 + Math.random() * 24; // 1.8–2.2 s
 
       if (initial) {
         for (let i = 0; i < TRAIL_LENGTH; i++) {
