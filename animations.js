@@ -1,8 +1,8 @@
 // animations.js
 (() => {
   const CANVAS_ID = 'meteorCanvas';
-  const COUNT = 15;            // number of meteors
-  const SPEED_MIN = 3.8;
+  const COUNT = 15;
+  const SPEED_MIN = 5.8;
   const SPEED_MAX = 6.8;
   const TRAIL_LENGTH = 240;
   const FPS_LIMIT = 60;
@@ -29,35 +29,32 @@
   window.addEventListener('resize', resize, { passive: true });
   resize();
 
-  // Random prevailing shower direction for this session
-  const showerAngle = Math.random() * Math.PI * 2; // main direction
-  const angleSpread = Math.PI / 12; // ±15° deviation
+  // one random global direction
+  const showerAngle = Math.random() * Math.PI * 2;
+  const angleSpread = Math.PI / 12; // ±15°
 
   class Meteor {
-    constructor() {
-      this.reset(true);
-    }
+    constructor() { this.reset(true); }
 
     reset(initial = false) {
-      // spawn mostly off-screen or inside
       const side = Math.random();
       this.x = side < 0.6 ? Math.random() * w : (side < 0.8 ? -30 : w + 30);
       this.y = Math.random() * h * 0.7;
 
-      // velocity biased around prevailing direction
       const angle = showerAngle + (Math.random() * angleSpread - angleSpread / 2);
       const speed = SPEED_MIN + Math.random() * (SPEED_MAX - SPEED_MIN);
       this.vx = Math.cos(angle) * speed;
       this.vy = Math.sin(angle) * speed;
 
+      // acceleration perpendicular to direction for gentle curve
+      const accMag = (Math.random() * 0.015 + 0.005) * (Math.random() < 0.5 ? 1 : -1);
+      this.ax = -Math.sin(angle) * accMag;
+      this.ay = Math.cos(angle) * accMag;
+
       this.headRadiusBase = 1 + Math.random() * 2;
       this.trail = [];
       this.age = 0;
       this.maxAge = 108 + Math.random() * 24; // 1.8–2.2 s
-
-      // curve parameters
-      this.curveAmp = 0.5 + Math.random();      // pixel deviation
-      this.curveFreq = 0.02 + Math.random() * 0.03; // frequency
 
       if (initial) {
         for (let i = 0; i < TRAIL_LENGTH; i++) {
@@ -72,8 +69,10 @@
 
     step(dt) {
       this.age++;
-      this.x += this.vx * dt * 60 + Math.sin(this.age * this.curveFreq) * this.curveAmp;
-      this.y += this.vy * dt * 60 + Math.cos(this.age * this.curveFreq) * this.curveAmp;
+      this.vx += this.ax; // gradual curvature
+      this.vy += this.ay;
+      this.x += this.vx * dt * 60;
+      this.y += this.vy * dt * 60;
 
       this.trail.unshift({ x: this.x, y: this.y, a: 0.9 });
       if (this.trail.length > TRAIL_LENGTH) this.trail.length = TRAIL_LENGTH;
@@ -82,7 +81,6 @@
         this.trail[i].a = Math.max(0, 0.03 + (1 - i / this.trail.length) * 0.9);
       }
 
-      // Head grows then shrinks
       const half = this.maxAge / 2;
       if (this.age < half) {
         this.headRadius = this.headRadiusBase * (0.5 + (this.age / half));
@@ -90,20 +88,9 @@
         this.headRadius = this.headRadiusBase * (1.5 - (this.age - half) / half);
       }
 
-      if (this.age > this.maxAge) this.reset(false);
-
-      // respawn if out-of-bounds
-      if (this.x < -100 || this.x > w + 100 || this.y < -100 || this.y > h + 100) {
+      if (this.age > this.maxAge ||
+          this.x < -100 || this.x > w + 100 || this.y < -100 || this.y > h + 100)
         this.reset(false);
-        if (Math.random() < 0.6) {
-          this.x = Math.random() * w;
-          this.y = -20 - Math.random() * 40;
-          const angle = showerAngle + (Math.random() * angleSpread - angleSpread / 2);
-          const speed = SPEED_MIN + Math.random() * (SPEED_MAX - SPEED_MIN);
-          this.vx = Math.cos(angle) * speed * 0.6;
-          this.vy = SPEED_MIN + Math.random() * (SPEED_MAX - SPEED_MIN);
-        }
-      }
     }
 
     draw(ctx) {
@@ -140,39 +127,26 @@
 
   const meteors = Array.from({ length: COUNT }, () => new Meteor());
 
-  function clearCanvas() {
-    ctx.clearRect(0, 0, w, h);
-  }
-
   function loop(now) {
     const dtMs = now - lastTime;
     lastTime = now;
     accum += dtMs;
-    if (accum < interval) {
-      requestAnimationFrame(loop);
-      return;
-    }
+    if (accum < interval) { requestAnimationFrame(loop); return; }
     const dt = accum / 1000;
     accum = 0;
-
-    clearCanvas();
-
-    for (let m of meteors) {
-      m.step(dt);
-      m.draw(ctx);
-    }
-
+    ctx.clearRect(0, 0, w, h);
+    for (const m of meteors) { m.step(dt); m.draw(ctx); }
     requestAnimationFrame(loop);
   }
 
-  canvas.style.position = 'fixed';
-  canvas.style.top = '0';
-  canvas.style.left = '0';
-  canvas.style.width = '100%';
-  canvas.style.height = '100%';
-  canvas.style.pointerEvents = 'none';
-  canvas.style.zIndex = '9999';
-  canvas.style.mixBlendMode = 'screen';
+  canvas.style = `
+    position:fixed;
+    top:0; left:0;
+    width:100%; height:100%;
+    pointer-events:none;
+    z-index:9999;
+    mix-blend-mode:screen;
+  `;
 
   requestAnimationFrame(loop);
 })();
