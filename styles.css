@@ -199,7 +199,20 @@ img {
     padding: 8px;
     color: #d6d6d6;
 }
+.contact-form button {
+    background-color: #f7dc0f;
+    border: none;
+    border-radius: 6px;
+    padding: 10px;
+    font-weight: bold;
+    cursor: pointer;
+    color: #000;
+    transition: background 0.3s;
+}
 
+.contact-form button:hover {
+    background-color: #ffd633;
+}
 .contact-wrapper {
     max-width: 600px;
     margin: 0 auto;
