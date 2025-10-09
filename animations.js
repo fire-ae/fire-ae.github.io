@@ -1,10 +1,10 @@
 // animations.js
 (() => {
   const CANVAS_ID = 'meteorCanvas';
-  const COUNT = 10;            // number of meteors
-  const SPEED_MIN = 0.2;       // slow range
-  const SPEED_MAX = 0.8;
-  const TRAIL_LENGTH = 12;     // how many points in the trail
+  const COUNT = 12;            // number of meteors
+  const SPEED_MIN = 0.8;       // slow range
+  const SPEED_MAX = 1.8;
+  const TRAIL_LENGTH = 120;     // how many points in the trail
   const FPS_LIMIT = 60;
 
   const canvas = document.getElementById(CANVAS_ID);
@@ -45,7 +45,7 @@
       this.vx = dir * (SPEED_MIN + Math.random() * (SPEED_MAX - SPEED_MIN)) * Math.cos(angle);
       this.vy = (SPEED_MIN + Math.random() * (SPEED_MAX - SPEED_MIN)) * Math.sin(angle) * 0.6;
       // visual
-      this.headRadius = 3 + Math.random() * 2; // slightly bigger yellow sphere
+      this.headRadius = 1 + Math.random() * 2; // slightly bigger yellow sphere
       this.trail = []; // array of {x,y,alpha}
       // initial trail warm-up if initial so they appear instantly
       if (initial) {
