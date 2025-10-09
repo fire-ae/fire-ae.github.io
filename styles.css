@@ -200,6 +200,11 @@ img {
     color: #d6d6d6;
 }
 
+.contact-wrapper {
+    max-width: 600px;
+    margin: 0 auto;
+}
+   
 /* =========================
    BACK TO TOP BUTTON
    ========================= */
