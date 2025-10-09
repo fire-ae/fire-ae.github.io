@@ -13,62 +13,62 @@ body {
     opacity: 1;
 }
 
-/* =======================================
-   NAVBAR
-======================================= */
-.navbar, .sticky-nav {
-    position: fixed; /* fix flying issues */
-    top: 0;
-    left: 0;
-    width: 100%;
+/* ===================== NAVBAR ===================== */
+.navbar-container {
+    max-width: 1020px;
+    margin: 0 auto;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.navbar {
+    background-color: #000;
     display: flex;
+    flex-wrap: wrap;         /* allow up to 2 rows */
     justify-content: flex-start;
     align-items: center;
-    background: rgba(0,0,0,0.25);
-    backdrop-filter: blur(8px);
-    z-index: 9999;
-    padding: 8px 15px;
-    transition: background 0.3s ease;
-}
-
-.navbar a {
-    display: block;
-    color: #fff;
-    text-align: center;
-    padding: 10px 15px;
-    text-decoration: none;
-    font-size: 14px;
-    max-width: 200px;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-    flex: 1 1 auto;
-    min-width: 100px;
-    transition: color 0.3s ease;
-}
-
-.navbar a:hover {
-    color: #ffcc33;
+    padding: 5px 10px;
+    gap: 5px;                /* spacing between links */
 }
 
 .navbar-logo {
-    height: 40px;
-    max-width: 120px;
-    object-fit: contain;
-    margin-right: 15px;
+    height: 40px;            /* scale down logo */
+    margin-right: 10px;
+    flex: 0 0 auto;          /* prevent logo from shrinking */
 }
 
-.sticky-nav ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
+.navbar a {
+    flex: 0 1 200px;         /* min width 200px, can shrink if needed */
+    text-align: center;
+    padding: 8px 12px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+    white-space: nowrap;     /* prevent link text wrap */
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
-.sticky-nav li {
-    display: inline;
-    margin: 0 15px;
+.navbar a:hover {
+    background-color: #111;
 }
 
+/* Sticky navbar */
+.sticky-nav {
+    position: sticky;
+    top: 0;
+    background-color: rgba(0,0,0,0.9);
+    padding: 8px 0;
+    z-index: 1000;
+    text-align: center;
+}
+
+/* Google Translate inside navbar */
+.navbar #google_translate_element {
+    margin-left: auto;        /* push to right */
+    display: inline-block;
+    padding: 5px 10px;
+}
 /* =======================================
    GLASSY CONTENT PANELS
 ======================================= */
@@ -190,59 +190,37 @@ body {
 /* =======================================
    RESPONSIVE MOBILE
 ======================================= */
+/* Mobile responsive adjustments */
 @media (max-width: 768px) {
-    .navbar a {
-        flex-basis: 100%;
-        text-align: left;
-        padding: 10px 0;
-    }
     .navbar {
-        flex-direction: column;
+        flex-direction: column;   /* stack vertically */
+        align-items: stretch;
     }
-
-    .page-container, .content, .contentshort {
-        margin: 10px auto;
-        padding: 15px;
-        border-radius: 20px;
-        box-shadow: 0 0 10px rgba(255, 255, 255, 0.04);
+    .navbar a {
+        flex-basis: 100%;         /* full width links */
+        padding: 10px 0;
+        text-align: left;
     }
-
     .navbar-logo {
-        height: 30px;
-        max-width: 90px;
+        margin: 0 auto 5px auto;  /* logo centered on top */
+    }
+    .navbar #google_translate_element {
+        width: 100%;
+        text-align: center;
+        padding: 8px 0;
     }
 }
 
 @media (max-width: 480px) {
-    .page-container, .content, .contentshort {
-        margin: 5px auto;
-        padding: 10px;
-        font-size: 14px;
-        border-radius: 25px;
-    }
-
-    .navbar-logo {
-        height: 25px;
-        max-width: 80px;
+    .navbar a {
+        font-size: 13px;
+        padding: 8px 0;
     }
 }
 
 /* =======================================
    GOOGLE TRANSLATE STYLING
 ======================================= */
-#google_translate_element {
-    display: inline-block;
-    background-color: #333 !important;
-    border-radius: 8px;
-    padding: 5px;
-}
-
-#google_translate_element select {
-    background-color: #333 !important;
-    color: #d6d6d6 !important;
-    border: 1px solid #d6d6d6 !important;
-    border-radius: 5px;
-}
 
 .goog-te-gadget-icon {
     display: none !important;
