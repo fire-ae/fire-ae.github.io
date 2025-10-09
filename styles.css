@@ -1,512 +1,258 @@
-/* My second .css attempt after so many years of not using it*/
+/* === FIRE-AE Modernized 2025 Theme === */
 
+/* --- GLOBAL LAYOUT --- */
 body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    margin: 0;
-    padding: 0;
-    color: #d6d6d6; /* Ensure full opacity for text color */
-    position: relative;
-    background: url('pia12066.jpg') repeat center center fixed;
-    background-size: cover;
-    opacity: 1;
+  font-family: "Inter", "Segoe UI", Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.7;
+  color: #e5e5e5;
+  background: radial-gradient(circle at top left, #0a0a12, #050508);
+  background-attachment: fixed;
+  overflow-x: hidden;
 }
 
+/* --- NAVIGATION --- */
 .navbar-container {
-    max-width: 1020px;
-    margin: 0 auto;
-    border-radius: 8px; /* Add rounded corners */
-    overflow: hidden; /* Ensure the content inside doesn't overflow the rounded corners */
+  max-width: 1080px;
+  margin: 0 auto;
+  border-radius: 16px;
+  overflow: hidden;
 }
 
 .navbar {
-    background-color: #000000;
-    border-bottom: 2px solid #fff;
-    display: flex;
-    flex-wrap: wrap; /* Allows items to wrap to the next line */
-    justify-content: flex-start; /* Align items to the start */
-    align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 .navbar a {
-    display: block;
-    color: #fff;
-    text-align: center;
-    padding: 10px 15px;
-    text-decoration: none;
-    font-size: 14px;
-    max-width: 200px; /* Adjust as needed */
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap; /* Prevent text wrapping */
-    flex: 1 1 auto; /* Allows items to grow and shrink */
-    min-width: 100px; /* Minimum width for each item */
-}
-
-.sticky-nav {
-    position: sticky;
-    top: 0;
-    background-color: rgba(0,0,0,0.9);
-    padding: 10px;
-    z-index: 1000;
-    text-align: center;
-}
-
-.sticky-nav ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
-
-.sticky-nav li {
-    display: inline;
-    margin: 0 15px;
-}
-
-.sticky-nav a {
-    color: #ffffff;
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 18px; /* Increased font size */
-    letter-spacing: 0.5px;
-    transition: color 0.3s ease;
-}
-
-.sticky-nav a:hover {
-    color: white;
-}
-
-.top {
-  --offset: 50px; 
-  
-  position: sticky;
-  bottom: 20px;
-  left: 20px;
-  margin-right:10px; 
-  place-self: end;
-  margin-top: calc(100vh + var(--offset));
-  
-  /* visual styling */
+  flex: 1 1 auto;
+  min-width: 100px;
+  max-width: 200px;
+  text-align: center;
+  padding: 12px 16px;
   text-decoration: none;
-  padding: 10px;
-  font-family: Arial, sans-serif;
-  color: #CC8400;
-  background: #FFFFFF;
-  border-radius: 100px;
-  white-space: nowrap;
-}
-
-.page-container, .content, .contentshort p, h1, h2, h3, a {
-    opacity: 1; /* Ensure text opacity is 100% */
+  color: #f0f0f0;
+  font-size: 15px;
+  transition: all 0.3s ease;
+  border-bottom: 2px solid transparent;
 }
 
 .navbar a:hover {
-    background-color: #000000;
+  border-bottom: 2px solid #ffb84d;
+  color: #ffb84d;
 }
 
-.navbar-logo {
-    height: 40px;
-    margin-right: 15px;
+/* --- STICKY NAV --- */
+.sticky-nav {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background: rgba(0, 0, 0, 0.85);
+  backdrop-filter: blur(8px);
+  padding: 10px 0;
 }
 
+/* --- PAGE CONTAINERS --- */
+.page-container,
+.content,
+.contentshort {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 24px;
+  color: #e5e5e5;
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(12px);
+  border-radius: 16px;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.08);
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.page-container:hover,
+.content:hover {
+  background: rgba(255, 255, 255, 0.07);
+  transform: translateY(-4px);
+}
+
+/* --- IMAGE CONTAINERS --- */
 .image-container {
-    text-align: center; /* Align the image to the center */
+  text-align: center;
 }
 
 .image-container img {
-    opacity: 0.4; /* Set the image opacity to 40% */
-    max-width: 100%; /* Optional: Ensure the image is responsive */
-    height: auto; /* Optional: Maintain the aspect ratio */
+  opacity: 0.45;
+  max-width: 100%;
+  height: auto;
+  border-radius: 12px;
 }
 
-.content {
-    max-width: 800px; /* Limit the width of your content (800px is a common choice) */
-    margin: 0 auto; /* Center the content */
-    padding: 20px; /* Add padding inside the content area */
-    color: #d6d6d6;
-    background-color: rgba(0, 0, 0, 0.4); /* 40% opacity */
-    border: 0px solid #d6d6d6;
-    border-radius: 11px; /* Optional: Add rounded corners for a softer look */
-    box-shadow: 0 0 0px rgba(255, 255, 255, 0.3); /* Optional: Add a subtle shadow for depth */
-}
-
-.contentshort {
-    max-width: 500px; /* Limit the width of your content */
-    margin: 0 auto; /* Center the content */
-    padding: 20px; /* Add padding inside the content area */
-    color: #d6d6d6;
-    background-color: rgba(0, 0, 0, 0.4); /* 40% opacity */
-    border: 0px solid #d6d6d6;
-    border-radius: 11px; /* Optional: Add rounded corners for a softer look */
-    box-shadow: 0 0 0px rgba(255, 255, 255, 0.3); /* Optional: Add a subtle shadow for depth */
-}
-
-
-.page-container {
-    max-width: 900px; /* Set a maximum width for the entire page content */
-    margin: 40px auto; /* Center the container and add space on top/bottom */
-    padding: 20px; /* Add padding inside the container */
-    color: #d6d6d6;
-    background-color: rgba(0, 0, 0, 0.4); /* 40% opacity */
-    border: 2px solid #d6d6d6;
-    border-radius: 11px; /* Rounded corners for a softer look */
-    box-shadow: 0 0 15px rgba(255, 255, 255, 0.3); /* Subtle shadow for depth */
-}
-
-.page-container h1, .page-container p, .page-container img {
-    margin-bottom: 20px; /* Add spacing between elements */
-}
-
-.page-container img {
-    max-width: 100%; /* Ensure the image is responsive */
-    height: auto; /* Maintain aspect ratio */
-    display: block; /* Center image if it's alone in a block */
-    margin: 0 auto; /* Center the image within the container */
+/* --- TEXT ELEMENTS --- */
+h1, h2, h3 {
+  color: #ffb84d;
+  letter-spacing: 0.6px;
+  margin-bottom: 12px;
 }
 
 a {
-    color: #b86902; /* Light orange color */
+  color: #ffb84d;
+  text-decoration: none;
 }
 
 a:hover {
-    color: #8a5004; /* Slightly darker orange on hover */
+  color: #ffd37f;
 }
 
+/* --- BACK TO TOP --- */
+.top {
+  position: sticky;
+  bottom: 24px;
+  right: 24px;
+  margin-left: auto;
+  padding: 10px 14px;
+  background: rgba(255, 255, 255, 0.9);
+  color: #b86902;
+  font-weight: bold;
+  border-radius: 999px;
+  text-decoration: none;
+  box-shadow: 0 0 8px rgba(255, 255, 255, 0.4);
+  transition: transform 0.2s ease;
+}
+
+.top:hover {
+  transform: scale(1.08);
+}
+
+/* --- ISSUE GRID --- */
 .issue-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr); /* 3 columns */
-    gap: 10px;
-    justify-items: center;
-    align-items: center;
-    margin-top: 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+  gap: 16px;
+  justify-items: center;
+  margin-top: 20px;
 }
 
 .issue-cover {
-    width: 210px;
-    height: 300px; /* Adjust according to image ratio */
-    filter: grayscale(100%);
-    transition: filter 0.5s ease;
-    border-radius: 10px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Optional for effect */
+  width: 100%;
+  max-width: 210px;
+  height: auto;
+  border-radius: 12px;
+  filter: grayscale(100%);
+  transition: filter 0.4s ease, transform 0.3s ease;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.4);
 }
 
 .issue-cover:hover {
-    filter: grayscale(0%);
-}
-.fade-in {
-    opacity: 0;
-    transform: translateY(20px);
-    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+  filter: grayscale(0%);
+  transform: translateY(-4px);
 }
 
-.fade-in.appear {
-    opacity: 1;
-    transform: translateY(0);
-}
-
-#meteorCanvas {
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 0;
+/* --- CONTACT FORM --- */
+#contact-form-container {
   width: 100%;
-  height: 100%;
-  display: block;
-  pointer-events: none; /* so it doesn't block page clicks */
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 1.5rem;
+  box-sizing: border-box;
 }
 
 .contact-form {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    padding: 15px;
-    background-color: rgba(0, 0, 0, 0.4);
-    border: 2px solid #d6d6d6;
-    border-radius: 10px;
-    box-shadow: 0 0 8px rgba(255, 255, 255, 0.3);
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(8px);
+  padding: 20px;
+  border-radius: 16px;
+  box-shadow: 0 0 12px rgba(255, 255, 255, 0.08);
 }
 
 .contact-form label {
-    font-weight: bold;
-    color: #d6d6d6;
+  font-weight: 600;
+  color: #f0f0f0;
 }
 
 .contact-form input,
 .contact-form select,
 .contact-form textarea {
-    background-color: rgba(255, 255, 255, 0.1);
-    border: 1px solid #d6d6d6;
-    border-radius: 6px;
-    padding: 8px;
-    color: #d6d6d6;
-    font-size: 15px;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 8px;
+  padding: 10px;
+  color: #fff;
+  font-size: 15px;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
 }
 
 .contact-form input:focus,
 .contact-form select:focus,
 .contact-form textarea:focus {
-    outline: none;
-    border-color: #b86902;
-    box-shadow: 0 0 4px #b86902;
+  outline: none;
+  border-color: #ffb84d;
+  box-shadow: 0 0 6px #ffb84d;
 }
 
 .contact-form button {
-    background-color: #b86902;
-    color: #fff;
-    font-weight: bold;
-    border: none;
-    border-radius: 6px;
-    padding: 10px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
+  background: linear-gradient(90deg, #b86902, #ffb84d);
+  color: #fff;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  padding: 12px;
+  cursor: pointer;
+  transition: transform 0.2s ease, background 0.3s ease;
 }
 
 .contact-form button:hover {
-    background-color: #8a5004;
+  transform: translateY(-2px);
+  background: linear-gradient(90deg, #ffb84d, #b86902);
 }
 
-/* === CONTACT FORM FIX === */
-#contact-form-container {
-  width: 100%;
-  max-width: 600px;          /* keeps it tidy on large screens */
-  margin: 0 auto;            /* center horizontally */
-  padding: 1.2rem;
-  box-sizing: border-box;
-}
-
-#contact-form-container form {
-  display: flex;
-  flex-direction: column;
-  gap: 0.8rem;
-}
-
-#contact-form-container input,
-#contact-form-container textarea,
-#contact-form-container button {
-  width: 100%;
-  max-width: 100%;
-  box-sizing: border-box;
-}
-
-@keyframes fadeInUp {
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-/* Default button-like styles for mobile */
-@media (max-width: 768px) {
-    body{
-        content: '';
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background: url('pia12066.jpg') repeat center center fixed;
-        background-size: cover;
-        opacity: 1; /* Adjust opacity for mobile */
-    }
-
-    .content, .contentshort, .page-container {
-        display: block;
-        padding: 15px;
-        margin: 10px auto;
-        text-align: justify;
-        color: #d6d6d6;
-        background-color: rgba(0, 0, 0, 0.4); /* Adjust background opacity */
-        border-radius: 20px;
-        border: 3px solid #d6d6d6;
-        box-shadow: 0 0 10px rgba(255, 255, 255, 0.4);
-        transition: background-color 0.3s ease, transform 0.3s ease;
-    }
-    .image-container img {
-        opacity: 0.4; /* Set the image opacity to 40% */
-        max-width: 100%; /* Optional: Ensure the image is responsive */
-        height: auto; /* Optional: Maintain the aspect ratio */
-    }
-
-    .top {
-      --offset: 50px; 
-      
-      position: sticky;
-      bottom: 20px;
-      right: 20px;
-      margin-right:10px; 
-      place-self: end;
-      margin-top: calc(100vh + var(--offset));
-      
-      /* visual styling */
-      text-decoration: none;
-      padding: 10px;
-      font-family: Arial, sans-serif;
-      color: #CC8400;
-      background: #FFFFFF;
-      border-radius: 100px;
-      white-space: nowrap;
-    }
-    /* Add a hover effect for mobile, if applicable */
-    .content:hover, .contentshort:hover, .page-container:hover {
-        background-color: rgba(0, 0, 0, 0.4); /* Slightly lighter on hover */
-        transform: scale(1.02);
-    }
-    .navbar a {
-        flex-basis: 100%; /* Make each link take up full width */
-        padding: 10px 0; /* Adjust padding for better spacing */
-        text-align: left; /* Align text to the left */
-    }
-
-    .navbar {
-        flex-direction: column; /* Stack navbar items vertically */
-    }
-    .navbar #google_translate_element {
-        width: 100%;
-        text-align: center;
-        padding: 10px 0;
-    }
-
-    #google_translate_element select {
-        width: 90%; /* Make the dropdown full width on small screens */
-        padding: 8px 12px;
-        font-size: 16px; /* Match the larger font size for mobile */
-    }
-}
-
-/* Further tweaks for very small screens */
-@media (max-width: 480px) {
-    body{
-        content: '';
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background: url('pia12066.jpg') repeat center center fixed;
-        background-size: cover;
-        opacity: 1; /* Lower opacity for very small screens */
-    }
-
-    .content, .contentshort, .page-container {
-        padding: 10px;
-        margin: 5px auto;
-        font-size: 14px;
-        background-color: rgba(0, 0, 0, 0.4); /* Adjust background opacity */
-        border-radius: 25px;
-        border: 3px solid #d6d6d6;
-        box-shadow: 0 0 10px rgba(255, 255, 255, 0.4);
-    }
-    .top {
-      --offset: 50px; 
-      
-      position: sticky;
-      bottom: 20px;
-      right: 20px;
-      margin-right:10px; 
-      place-self: end;
-      margin-top: calc(100vh + var(--offset));
-      
-      /* visual styling */
-      text-decoration: none;
-      padding: 10px;
-      font-family: Arial, sans-serif;
-      color: #CC8400;
-      background: #FFFFFF;
-      border-radius: 100px;
-      white-space: nowrap;
-    }
-    
-    .image-container img {
-        opacity: 0.4; /* Set the image opacity to 40% */
-        max-width: 100%; /* Optional: Ensure the image is responsive */
-        height: auto; /* Optional: Maintain the aspect ratio */
-    }
-    
-    .navbar a {
-        flex-basis: 100%; /* Make each link take up full width */
-        padding: 10px 0; /* Adjust padding for better spacing */
-        text-align: left; /* Align text to the left */
-    }
-
-    .navbar {
-        flex-direction: column; /* Stack navbar items vertically */
-
-    
-    .navbar #google_translate_element {
-        padding: 8px 0;
-    }
-
-    #google_translate_element select {
-        font-size: 14px;
-        padding: 6px 10px;
-    }
-    }
-
-
+/* --- GOOGLE TRANSLATE FIX --- */
 #google_translate_element {
-    display: inline-block;
-}
-    
-/* Google Translate  */
-.navbar #google_translate_element {
-    margin-left: auto; /* Pushes it to the right side of the navbar */
-    padding: 10px 15px;
-    display: inline-block;
-}
-
-.goog-te-gadget-icon {
-    display: none !important;
-}
-
-/* Style the Google Translate gadget */
-#google_translate_element {
-    background-color: #333 !important; /* Dark background */
-    border: none !important; /* Remove any borders */
-    border-radius: 8px;
+  margin-left: auto;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 8px;
+  padding: 6px;
 }
 
 #google_translate_element select {
-    background-color: #333 !important; /* Dark background for dropdown */
-    color: #d6d6d6 !important; /* Yellow text for readability */
-    border: 1px solid #d6d6d6 !important; /* Yellow border */
+  background: transparent;
+  color: #ffb84d;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 8px;
+  padding: 6px 10px;
 }
 
-#google_translate_element .goog-te-combo {
-    background-color: #333 !important; /* Dark background for dropdown */
-    color: #f7dc0f !important; /* Yellow text color */
-}
+/* --- RESPONSIVE --- */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+  }
 
-.goog-te-gadget {
-    color: #f7dc0f !important; /* Set the text color to match your theme */
-    background-color: #333 !important; /* Darken the background of the Google Translate bar */
-    border-radius: 8px;
-    padding: 5px;
-}
+  .navbar a {
+    flex: 1 1 100%;
+    text-align: left;
+    padding: 12px;
+  }
 
-.goog-te-gadget select {
-    border-radius: 5px; /* Rounded corners for dropdown */
-}
+  .content,
+  .contentshort,
+  .page-container {
+    margin: 20px auto;
+    padding: 18px;
+    border-radius: 16px;
+  }
 
-.goog-te-gadget .goog-te-combo {
-    color: #d6d6d6; /* Dropdown text color */
-    background-color: #333; /* Dark dropdown background */
-}
-
-#google_translate_element select:hover {
-    background-color: #d6d6d6; /* Hover effect to match navbar hover */
-    cursor: pointer; /* Pointer cursor to indicate it's clickable */
-}
-
-#google_translate_element select:focus {
-    outline: none; /* Remove focus outline for cleaner look */
-}
-    {
   #contact-form-container {
     padding: 1rem;
-    margin-top: 1rem !important;
   }
-  section, div {
+
+  section,
+  div {
     overflow: visible !important;
   }
-}
 }
