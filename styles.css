@@ -91,7 +91,7 @@ body {
     content: "";
     display: block;
     height: 160px; /* adjust this to match sidebar height if needed */
-    margin-top: -260px;
+    margin-top: -160px;
     visibility: hidden;
 }
 /* =========================
