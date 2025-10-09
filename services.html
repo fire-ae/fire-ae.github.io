@@ -4,28 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FIRE Araştırma Eğitim Ltd. Şti. - What FIRE-AE Delivers - Solutions, Services, Products</title>
-    <script>
-document.addEventListener("DOMContentLoaded", function () {
-    const faders = document.querySelectorAll('.fade-in');
-
-    const appearOptions = {
-        threshold: 0.1,
-        rootMargin: "0px 0px -50px 0px"
-    };
-
-    const appearOnScroll = new IntersectionObserver(function (entries) {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                entry.target.classList.add("appear");
-            } else {
-                entry.target.classList.remove("appear");
-            }
-        });
-    }, appearOptions);
-
-    faders.forEach(fader => appearOnScroll.observe(fader));
-});
-</script>
+   
     <script type="text/javascript">
         function googleTranslateElementInit() {
             new google.translate.TranslateElement({
@@ -211,7 +190,30 @@ document.addEventListener("DOMContentLoaded", function () {
     </div>
     
     <br>
+     <script>
+document.addEventListener("DOMContentLoaded", function () {
+    const faders = document.querySelectorAll('.fade-in');
+
+    const appearOptions = {
+        threshold: 0.1,
+        rootMargin: "0px 0px -50px 0px"
+    };
+
+    const appearOnScroll = new IntersectionObserver(function (entries) {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add("appear");
+            } else {
+                entry.target.classList.remove("appear");
+            }
+        });
+    }, appearOptions);
+
+    faders.forEach(fader => appearOnScroll.observe(fader));
+});
+</script>
     <a href="#" class="top">Back to Top &#8593;</a>
 </div>
+    
 </body>
 </html>
