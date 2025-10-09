@@ -160,28 +160,33 @@ document.addEventListener("DOMContentLoaded", function() {
             Dr. Arif Solmaz is a researcher and academic with a Ph.D. in astrophysics. Experience in data analysis, machine learning, scientific computing, astrophysics, robotics, and engineering. Affiliation: Istanbul Health and Technology University, Department of Mechatronics Engineering. Membership: TAD, EAS, IAU, Europlanet Society.
         </p>
     </div>
-
+<br>
+    <br>
     <!-- Contact -->
     <div class="content fade-in">
-        <h2>Contact FIRE-AE</h2>
-        <form id="contactForm" action="https://formspree.io/f/xpwyjgal" method="POST" class="contact-form">
-            <label for="name">Name</label>
-            <input type="text" id="name" name="name" required><br>
-            <label for="email">Email</label>
-            <input type="email" id="email" name="_replyto" required><br>
-            <label for="type">Message Type</label>
-            <select id="type" name="type" required>
-                <option value="">Select...</option>
-                <option value="Service Inquiry">Service Inquiry</option>
-                <option value="Training Request">Training Request</option>
-                <option value="Offer">Offer</option>
-                <option value="Call to Consortium">Call to Consortium</option>
-            </select><br>
-            <label for="message">Message</label>
-            <textarea id="message" name="message" rows="5" required></textarea><br>
-            <button type="submit">Send</button>
-        </form>
-    </div>
+    <h2>Contact FIRE-AE</h2>
+    <form id="contactForm" action="https://formspree.io/f/xpwyjgal" method="POST" class="contact-form modern">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" placeholder="Your full name" required>
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="_replyto" placeholder="Your email address" required>
+
+        <label for="type">Message Type</label>
+        <select id="type" name="type" required>
+            <option value="">Select...</option>
+            <option value="Service Inquiry">Service Inquiry</option>
+            <option value="Training Request">Training Request</option>
+            <option value="Offer">Offer</option>
+            <option value="Call to Consortium">Call to Consortium</option>
+        </select>
+
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="5" placeholder="Write your message..." required></textarea>
+
+        <button type="submit">Send Message</button>
+    </form>
+</div>
 
 </div>
 
