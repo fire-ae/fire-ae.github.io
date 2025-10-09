@@ -40,8 +40,8 @@
     reset(initial = false) {
       this.x = Math.random() * w;
       this.y = -20 - Math.random() * 40;
-      this.vx = (SPEED_MIN + Math.random() * (SPEED_MAX - SPEED_MIN)) * Math.cos(baseAngle) * (Math.random() < 0.5 ? -1 : 1);
-      this.vy = (SPEED_MIN + Math.random() * (SPEED_MAX - SPEED_MIN)) * Math.sin(baseAngle);
+this.vx = (SPEED_MIN + Math.random() * (SPEED_MAX - SPEED_MIN)) * Math.cos(baseAngle);
+this.vy = (SPEED_MIN + Math.random() * (SPEED_MAX - SPEED_MIN)) * Math.sin(baseAngle);
       this.curve = (Math.random() - 0.5) * 0.15; // slight parabolic curvature
       this.headRadius = 1 + Math.random() * 2;
       this.trail = [];
