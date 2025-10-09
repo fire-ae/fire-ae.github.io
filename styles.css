@@ -265,6 +265,29 @@ a:hover {
     background-color: #8a5004;
 }
 
+/* === CONTACT FORM FIX === */
+#contact-form-container {
+  width: 100%;
+  max-width: 600px;          /* keeps it tidy on large screens */
+  margin: 0 auto;            /* center horizontally */
+  padding: 1.2rem;
+  box-sizing: border-box;
+}
+
+#contact-form-container form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+#contact-form-container input,
+#contact-form-container textarea,
+#contact-form-container button {
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
 @keyframes fadeInUp {
     to {
         opacity: 1;
@@ -476,5 +499,14 @@ a:hover {
 
 #google_translate_element select:focus {
     outline: none; /* Remove focus outline for cleaner look */
+}
+    {
+  #contact-form-container {
+    padding: 1rem;
+    margin-top: 1rem !important;
+  }
+  section, div {
+    overflow: visible !important;
+  }
 }
 }
