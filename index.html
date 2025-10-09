@@ -65,7 +65,7 @@ document.addEventListener("DOMContentLoaded", function() {
 <main style="max-width: 1000px; margin: 0 auto; padding: 20px;">
 
     <!-- Hero / Logo -->
-    <section class="fade-in" style="margin-bottom:40px; overflow:auto;">
+    <section class="fade-in">
         <div class="image-container" style="text-align:center;">
             <img src="https://github.com/fire-ae/fire-ae.github.io/blob/main/logofires.png?raw=true" alt="FIRE Logo" style="max-width:300px;">
         </div>
@@ -75,7 +75,7 @@ document.addEventListener("DOMContentLoaded", function() {
     </section>
 
     <!-- Provided Solutions -->
-    <section class="fade-in" style="margin-bottom:40px; overflow:auto;">
+    <section class="fade-in">
         <h2>Provided Solutions</h2>
 
         <h3>Research</h3>
@@ -110,13 +110,13 @@ document.addEventListener("DOMContentLoaded", function() {
     </section>
 
     <!-- People -->
-    <section class="fade-in" style="margin-bottom:40px; overflow:auto;">
+    <section class="fade-in">
         <h2>Founder: Y. Güray Hatipoğlu</h2>
         <img src="guray.JPG" alt="Güray Hatipoğlu" width="300" height="400" style="float:left; margin-right:10px; margin-bottom:10px;">
         <p align="justify"> <br> METU, Chemistry, 2016, B.Sc. (Honors) <br> Masaryk University, RECETOX, Summer of 2017 <br> METU, Earth System Science, 2018, M.Sc. <br> METU, Earth System Science, 2018-2022, Ph.D. (terminated) </p> <br> KW: chemistry, modeling, statistics, remote sensing, astrophysics <br> <br> He was involved in field works, laboratory, modeling studies, surveying, data analysis, and reporting. He has experience in university, governmental, and private sectors. His up-to-date cv can be retrieved via <a href="ygh-dec24-en.pdf">YGH-CV-December 2024</a>. In addition to the solid chemistry background, he has deep experiences in lake water quality monitoring, passive air samples, advanced oxidation reaction for remediation, satellite remote sensing for classification and regression, and finite element and finite differences numerical modelling for irrigation water quality management. <br> Membership to Organizations: Ecological Forecasting Initiative, Europlanet Society, Planetary Research Cooperative <br> <hr> <br>
     </section>
 
-    <section class="fade-in" style="margin-bottom:40px; overflow:auto;">
+    <section class="fade-in">
         <h3>Consultants</h3>
         <br> 
         <i>The consultants advise and cowork with FIRE-AE, but are never responsible for anything done, written, 
@@ -129,7 +129,7 @@ document.addEventListener("DOMContentLoaded", function() {
     </section>
 
     <!-- Contact -->
-<section class="fade-in contact-wrapper" style="margin-bottom:40px;">
+<section class="fade-in contact-wrapper">
     <h2>Contact FIRE-AE</h2>
     <form id="contactForm" action="https://formspree.io/f/xpwyjgal" method="POST" class="contact-form">
         <label for="name">Name</label>
@@ -161,8 +161,9 @@ document.addEventListener("DOMContentLoaded", function() {
 <canvas id="meteorCanvas" aria-hidden="true"></canvas>
 
 <!-- Scripts -->
-<script src="animations.js" defer></script>
 <script src="fade-in.js" defer></script>
+    <script src="animations.js" defer></script>
+
 
 <!-- Back to top -->
 <a href="#" class="top">Back to Top &#8593;</a>
