@@ -58,10 +58,10 @@ body {
    ========================= */
 .services-sidebar {
     position: fixed;
-    top: 80px; /* adjust to your navbar height */
+    top: 160px; /* adjust to your navbar height */
     left: 0;
     width: 200px;
-    height: 100%;
+    height: 400px;
     background-color: #111;
     padding: 20px;
     overflow-y: auto;
