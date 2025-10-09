@@ -1,214 +1,140 @@
-/* ===================== GENERAL ===================== */
+/* =========================
+   GLOBAL RESET & BODY
+   ========================= */
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
     margin: 0;
     padding: 0;
     color: #d6d6d6;
-    position: relative;
-    background: url('pia12066.jpg') repeat center center fixed;
+    background: url('pia12066.jpg') center center fixed;
     background-size: cover;
-    opacity: 1;
+    overflow-x: hidden;
+    position: relative;
 }
 
-/* ===================== MAIN NAVBAR ===================== */
+/* =========================
+   MAIN NAVBAR
+   ========================= */
 .navbar-container {
-    max-width: 1020px;
-    margin: 0 auto;
-    border-radius: 8px;
-    overflow: visible; /* allow sticky to work */
+    width: 100%;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background-color: rgba(0, 0, 0, 0.9);
 }
 
 .navbar {
-    background-color: #000;
+    max-width: 1020px;
+    margin: 0 auto;
     display: flex;
-    flex-wrap: wrap;         
-    justify-content: flex-start;
+    flex-wrap: wrap;
     align-items: center;
-    padding: 5px 10px;
-    gap: 5px;
-}
-
-.navbar-logo {
-    height: 40px;            
-    margin-right: 10px;
-    flex: 0 0 auto;          
+    justify-content: flex-start;
+    padding: 10px;
 }
 
 .navbar a {
-    flex: 0 1 200px;         
-    text-align: center;
-    padding: 8px 12px;
+    display: block;
     color: #fff;
     text-decoration: none;
+    padding: 8px 12px;
     font-size: 14px;
-    white-space: nowrap;     
-    overflow: hidden;
-    text-overflow: ellipsis;
+    flex: 0 1 auto;
+    white-space: nowrap;
 }
 
 .navbar a:hover {
-    background-color: #111;
+    color: #b86902;
 }
 
-.sticky-nav {
+.navbar-logo {
+    height: 40px;
+    margin-right: 15px;
+}
+
+/* =========================
+   SERVICES SIDEBAR (MID-LEFT)
+   ========================= */
+.services-sidebar {
     position: sticky;
-    top: 0;
-    width: 100%;
-    background-color: rgba(0,0,0,0.95);
-    z-index: 1000;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 8px 15px;
-}
-
-/* Google Translate inside navbar */
-.navbar #google_translate_element {
-    margin-left: auto;
-    display: inline-block;
-    padding: 5px 10px;
-}
-
-/* ===================== SERVICES PAGE SIDEBAR ===================== */
-/* Services page sticky sidebar navbar */
-body.services-page .services-sidebar {
-    position: fixed;
-    top: 50%;
-    left: 0;
+    top: 50%; /* middle of viewport */
     transform: translateY(-50%);
-    background-color: rgba(0,0,0,0.85);
+    left: 0;
     padding: 10px 15px;
+    background-color: rgba(0,0,0,0.7);
     border-radius: 0 10px 10px 0;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    max-width: max-content; /* only as wide as its content */
-    z-index: 999;
+    z-index: 900;
+    max-width: max-content;
+    white-space: nowrap;
 }
 
-body.services-page .services-sidebar a {
+.services-sidebar a {
     color: #fff;
     text-decoration: none;
-    white-space: nowrap;
-    font-weight: bold;
-    transition: color 0.3s;
+    display: block;
+    margin: 5px 0;
 }
 
-body.services-page .services-sidebar a:hover {
-    color: #f7dc0f;
+.services-sidebar a:hover {
+    color: #b86902;
 }
 
-/* ===================== FADE-IN ELEMENTS ===================== */
+/* =========================
+   CONTENT
+   ========================= */
+.content, .contentshort {
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 10px;
+    background: rgba(0,0,0,0.0); /* remove boxy look */
+    border-radius: 0; /* remove round boxes */
+    box-shadow: none;
+}
+
+/* fade-in for any element */
 .fade-in {
     opacity: 0;
     transform: translateY(20px);
     transition: opacity 0.6s ease-out, transform 0.6s ease-out;
 }
+
 .fade-in.appear {
     opacity: 1;
     transform: translateY(0);
 }
 
-/* ===================== CONTENT STYLING ===================== */
-.content, .contentshort, .page-container {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 20px;
-    color: #d6d6d6;
-    background-color: rgba(0,0,0,0.4);
-    border-radius: 11px;
-    box-shadow: 0 0 0px rgba(255, 255, 255, 0.3);
-}
-
-.page-container {
-    max-width: 900px;
-    margin: 40px auto;
-    padding: 20px;
-    background-color: rgba(0,0,0,0.4);
-    border: 2px solid #d6d6d6;
-    border-radius: 11px;
-    box-shadow: 0 0 15px rgba(255,255,255,0.3);
-}
-
-.page-container h1, .page-container p, .page-container img {
-    margin-bottom: 20px;
-}
-
-.page-container img {
+/* =========================
+   IMAGES
+   ========================= */
+img {
     max-width: 100%;
     height: auto;
-    display: block;
-    margin: 0 auto;
 }
 
-a {
-    color: #b86902;
-}
-
-a:hover {
-    color: #8a5004;
-}
-
-.services-page img {
-    max-width: 40%;      /* adjust to 40–70% depending on layout */
-    height: auto;
-    display: block;
-    margin: 15px auto;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
-    transition: transform 0.3s ease;
-}
-
-.services-page img:hover {
-    transform: scale(1.05);
-}
-
-/* ===================== ISSUE GRID ===================== */
-.issue-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 10px;
-    justify-items: center;
-    align-items: center;
-    margin-top: 20px;
-}
-
-.issue-cover {
-    width: 210px;
-    height: 300px;
-    filter: grayscale(100%);
-    transition: filter 0.5s ease;
-    border-radius: 10px;
-    box-shadow: 0px 4px 8px rgba(0,0,0,0.2);
-}
-
-.issue-cover:hover {
-    filter: grayscale(0%);
-}
-
-/* ===================== METEOR CANVAS ===================== */
+/* =========================
+   METEOR CANVAS
+   ========================= */
 #meteorCanvas {
     position: fixed;
     top: 0;
     left: 0;
-    z-index: 0;
     width: 100%;
     height: 100%;
-    display: block;
+    z-index: 0;
     pointer-events: none;
 }
 
-/* ===================== CONTACT FORM ===================== */
+/* =========================
+   CONTACT FORM
+   ========================= */
 .contact-form {
     display: flex;
     flex-direction: column;
     gap: 10px;
     padding: 15px;
-    background-color: rgba(0,0,0,0.4);
-    border: 2px solid #d6d6d6;
+    background-color: rgba(0,0,0,0.3);
     border-radius: 10px;
-    box-shadow: 0 0 8px rgba(255,255,255,0.3);
 }
 
 .contact-form label {
@@ -224,69 +150,37 @@ a:hover {
     border-radius: 6px;
     padding: 8px;
     color: #d6d6d6;
-    font-size: 15px;
 }
 
-.contact-form input:focus,
-.contact-form select:focus,
-.contact-form textarea:focus {
-    outline: none;
-    border-color: #b86902;
-    box-shadow: 0 0 4px #b86902;
+/* =========================
+   BACK TO TOP BUTTON
+   ========================= */
+.top {
+    position: sticky;
+    bottom: 20px;
+    right: 20px;
+    padding: 10px 15px;
+    font-family: Arial, sans-serif;
+    color: #CC8400;
+    background: #FFFFFF;
+    border-radius: 50px;
+    text-decoration: none;
+    z-index: 950;
 }
 
-.contact-form button {
-    background-color: #b86902;
-    color: #fff;
-    font-weight: bold;
-    border: none;
-    border-radius: 6px;
-    padding: 10px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-.contact-form button:hover {
-    background-color: #8a5004;
-}
-
-/* ===================== MOBILE RESPONSIVE ===================== */
+/* =========================
+   MEDIA QUERIES
+   ========================= */
 @media (max-width: 768px) {
     .navbar {
         flex-direction: column;
-        align-items: stretch;
     }
     .navbar a {
         flex-basis: 100%;
         text-align: left;
         padding: 10px 0;
     }
-    .navbar-logo {
-        margin: 0 auto 5px auto;
-    }
     .services-sidebar {
-        position: fixed;
-        left: 5px;
-        top: 50%;
-        transform: translateY(-50%);
-        padding: 8px;
-    }
-    .content, .contentshort, .page-container {
-        padding: 15px;
-        margin: 10px auto;
-        border-radius: 20px;
-        border: 3px solid #d6d6d6;
-    }
-}
-
-@media (max-width: 480px) {
-    .navbar a {
-        font-size: 13px;
-        padding: 8px 0;
-    }
-    .content, .contentshort, .page-container {
-        padding: 10px;
-        margin: 5px auto;
-        border-radius: 25px;
+        display: none; /* hide sidebar on small screens */
     }
 }
