@@ -1,10 +1,10 @@
 // animations.js
 (() => {
   const CANVAS_ID = 'meteorCanvas';
-  const COUNT = 12;            // number of meteors
-  const SPEED_MIN = 0.8;       // slow range
-  const SPEED_MAX = 1.8;
-  const TRAIL_LENGTH = 120;     // how many points in the trail
+  const COUNT = 15;            // number of meteors
+  const SPEED_MIN = 3.8;       // slow range
+  const SPEED_MAX = 6.8;
+  const TRAIL_LENGTH = 240;     // how many points in the trail
   const FPS_LIMIT = 60;
 
   const canvas = document.getElementById(CANVAS_ID);
