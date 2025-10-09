@@ -166,63 +166,55 @@ img {
 }
    
 /* Contact form */
+/* Modern contact form styling */
 .contact-form.modern {
-    max-width: 600px;
-    margin: auto;
-    background-color: #1a1a1a;
-    padding: 30px;
-    border-radius: 12px;
-    box-shadow: 0 8px 20px rgba(0,0,0,0.5);
-    color: #f7dc0f;
-    font-family: 'Arial', sans-serif;
+  max-width: 600px;
+  margin: 30px auto;
+  background: #1e1e1e;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(247,220,15,0.2);
+  color: #f0f0f0;
 }
-
-.contact-form.modern label {
-    display: block;
-    margin-bottom: 6px;
-    font-weight: bold;
+.contact-form label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #f7dc0f;
 }
-
-.contact-form.modern input,
-.contact-form.modern select,
-.contact-form.modern textarea {
-    width: 100%;
-    padding: 12px 15px;
-    margin-bottom: 18px;
-    border: 1px solid #f7dc0f;
-    border-radius: 8px;
-    background-color: #333;
-    color: #f7dc0f;
-    font-size: 16px;
-    outline: none;
-    transition: border 0.3s, box-shadow 0.3s;
+.contact-form input,
+.contact-form select,
+.contact-form textarea {
+  width: 100%;
+  background: #2a2a2a;
+  border: 1px solid #555;
+  border-radius: 6px;
+  color: #fff;
+  padding: 8px;
+  margin-bottom: 12px;
 }
-
-.contact-form.modern input:focus,
-.contact-form.modern select:focus,
-.contact-form.modern textarea:focus {
-    border-color: #f0f0f0;
-    box-shadow: 0 0 10px rgba(247, 220, 15, 0.5);
+.contact-form input:focus,
+.contact-form select:focus,
+.contact-form textarea:focus {
+  border-color: #f7dc0f;
+  outline: none;
 }
-
-.contact-form.modern button {
-    background-color: #f7dc0f;
-    color: #1a1a1a;
-    border: none;
-    padding: 14px 25px;
-    font-size: 16px;
-    border-radius: 8px;
-    cursor: pointer;
-    transition: background-color 0.3s;
+.btn-submit {
+  display: block;
+  width: 100%;
+  background: #f7dc0f;
+  color: #000;
+  font-weight: bold;
+  border: none;
+  padding: 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s;
 }
-
-.contact-form.modern button:hover {
-    background-color: #e6c80a;
-}
-/* Fade-in */
-.fade-in { opacity:0; transform:translateY(20px); transition:opacity 0.8s ease-out, transform 0.8s ease-out; }
-.fade-in.appear { opacity:1; transform:translateY(0); }
-   
+.btn-submit:hover { background: #ffe44d; }
+/* Fade-in animation */
+.fade-in { opacity: 0; transition: opacity 1.2s ease-in; }
+.fade-in.appear { opacity: 1; }
 /* =========================
    BACK TO TOP BUTTON
    ========================= */
