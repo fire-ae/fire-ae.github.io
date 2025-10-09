@@ -161,7 +161,8 @@ document.addEventListener("DOMContentLoaded", function() {
         <label for="message">Message</label>
         <textarea id="message" name="message" rows="5" placeholder="Write your message..." required></textarea>
 
-        <button type="submit">Send Message</button>
+        <button type="submit" class="btn-submit">Send Message</button>
+
     </form>
 </div>
 </div>
@@ -173,23 +174,12 @@ document.addEventListener("DOMContentLoaded", function() {
 <script>
 document.addEventListener("DOMContentLoaded", function () {
     const faders = document.querySelectorAll('.fade-in');
-
-    const appearOptions = {
-        threshold: 0.1,
-        rootMargin: "0px 0px -50px 0px"
-    };
-
-    const appearOnScroll = new IntersectionObserver(function (entries) {
+    const observer = new IntersectionObserver(entries => {
         entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                entry.target.classList.add("appear");
-            } else {
-                entry.target.classList.remove("appear");
-            }
+            if (entry.isIntersecting) entry.target.classList.add('appear');
         });
-    }, appearOptions);
-
-    faders.forEach(fader => appearOnScroll.observe(fader));
+    }, { threshold: 0.1 });
+    faders.forEach(fader => observer.observe(fader));
 });
 </script>
 <!-- Back to top -->
