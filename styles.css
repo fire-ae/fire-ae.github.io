@@ -142,6 +142,36 @@ img {
     pointer-events: none;
 }
 
+.issues-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    justify-items: center;
+    margin: 20px 0;
+}
+
+.issue {
+    text-align: center;
+}
+
+.issue-cover {
+    width: 100%;
+    max-width: 200px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    transition: transform 0.3s;
+}
+
+.issue-cover:hover {
+    transform: scale(1.05);
+}
+
+.issue p {
+    margin-top: 8px;
+    font-size: 0.9rem;
+    color: #f0f0f0;
+}
+   
 /* =========================
    CONTACT FORM
    ========================= */
