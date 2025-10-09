@@ -1,258 +1,260 @@
-/* === FIRE-AE Modernized 2025 Theme === */
-
-/* --- GLOBAL LAYOUT --- */
+/* =======================================
+   BASE STYLES
+======================================= */
 body {
-  font-family: "Inter", "Segoe UI", Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-  line-height: 1.7;
-  color: #e5e5e5;
-  background: radial-gradient(circle at top left, #0a0a12, #050508);
-  background-attachment: fixed;
-  overflow-x: hidden;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    color: #d6d6d6;
+    position: relative;
+    background: url('pia12066.jpg') repeat center center fixed;
+    background-size: cover;
+    opacity: 1;
 }
 
-/* --- NAVIGATION --- */
-.navbar-container {
-  max-width: 1080px;
-  margin: 0 auto;
-  border-radius: 16px;
-  overflow: hidden;
-}
-
-.navbar {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  background: rgba(0, 0, 0, 0.6);
-  backdrop-filter: blur(10px);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+/* =======================================
+   NAVBAR
+======================================= */
+.navbar, .sticky-nav {
+    position: fixed; /* fix flying issues */
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background: rgba(0,0,0,0.25);
+    backdrop-filter: blur(8px);
+    z-index: 9999;
+    padding: 8px 15px;
+    transition: background 0.3s ease;
 }
 
 .navbar a {
-  flex: 1 1 auto;
-  min-width: 100px;
-  max-width: 200px;
-  text-align: center;
-  padding: 12px 16px;
-  text-decoration: none;
-  color: #f0f0f0;
-  font-size: 15px;
-  transition: all 0.3s ease;
-  border-bottom: 2px solid transparent;
+    display: block;
+    color: #fff;
+    text-align: center;
+    padding: 10px 15px;
+    text-decoration: none;
+    font-size: 14px;
+    max-width: 200px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    flex: 1 1 auto;
+    min-width: 100px;
+    transition: color 0.3s ease;
 }
 
 .navbar a:hover {
-  border-bottom: 2px solid #ffb84d;
-  color: #ffb84d;
+    color: #ffcc33;
 }
 
-/* --- STICKY NAV --- */
-.sticky-nav {
-  position: sticky;
-  top: 0;
-  z-index: 1000;
-  background: rgba(0, 0, 0, 0.85);
-  backdrop-filter: blur(8px);
-  padding: 10px 0;
+.navbar-logo {
+    height: 40px;
+    max-width: 120px;
+    object-fit: contain;
+    margin-right: 15px;
 }
 
-/* --- PAGE CONTAINERS --- */
-.page-container,
-.content,
-.contentshort {
-  max-width: 900px;
-  margin: 40px auto;
-  padding: 24px;
-  color: #e5e5e5;
-  background: rgba(255, 255, 255, 0.05);
-  backdrop-filter: blur(12px);
-  border-radius: 16px;
-  box-shadow: 0 0 20px rgba(255, 255, 255, 0.08);
-  transition: background 0.3s ease, transform 0.3s ease;
+.sticky-nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
 }
 
-.page-container:hover,
-.content:hover {
-  background: rgba(255, 255, 255, 0.07);
-  transform: translateY(-4px);
+.sticky-nav li {
+    display: inline;
+    margin: 0 15px;
 }
 
-/* --- IMAGE CONTAINERS --- */
-.image-container {
-  text-align: center;
+/* =======================================
+   GLASSY CONTENT PANELS
+======================================= */
+.page-container, .content, .contentshort {
+    background: rgba(255,255,255,0.03);
+    border: none;
+    border-radius: 16px;
+    box-shadow: 0 0 12px rgba(255,255,255,0.06);
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 20px;
+    color: #d6d6d6;
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.page-container:hover, .content:hover, .contentshort:hover {
+    background: rgba(255,255,255,0.05);
+    transform: none;
+}
+
+.page-container h1, .page-container p, .page-container img {
+    margin-bottom: 20px;
+}
+
+.page-container img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
 }
 
 .image-container img {
-  opacity: 0.45;
-  max-width: 100%;
-  height: auto;
-  border-radius: 12px;
+    opacity: 0.4;
+    max-width: 100%;
+    height: auto;
 }
 
-/* --- TEXT ELEMENTS --- */
-h1, h2, h3 {
-  color: #ffb84d;
-  letter-spacing: 0.6px;
-  margin-bottom: 12px;
+/* =======================================
+   FADE-IN EFFECT
+======================================= */
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
 }
 
-a {
-  color: #ffb84d;
-  text-decoration: none;
+.fade-in.appear {
+    opacity: 1;
+    transform: translateY(0);
 }
 
-a:hover {
-  color: #ffd37f;
+/* =======================================
+   METEOR CANVAS
+======================================= */
+#meteorCanvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    width: 100%;
+    height: 100%;
+    display: block;
+    pointer-events: none;
 }
 
-/* --- BACK TO TOP --- */
-.top {
-  position: sticky;
-  bottom: 24px;
-  right: 24px;
-  margin-left: auto;
-  padding: 10px 14px;
-  background: rgba(255, 255, 255, 0.9);
-  color: #b86902;
-  font-weight: bold;
-  border-radius: 999px;
-  text-decoration: none;
-  box-shadow: 0 0 8px rgba(255, 255, 255, 0.4);
-  transition: transform 0.2s ease;
-}
-
-.top:hover {
-  transform: scale(1.08);
-}
-
-/* --- ISSUE GRID --- */
-.issue-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
-  gap: 16px;
-  justify-items: center;
-  margin-top: 20px;
-}
-
-.issue-cover {
-  width: 100%;
-  max-width: 210px;
-  height: auto;
-  border-radius: 12px;
-  filter: grayscale(100%);
-  transition: filter 0.4s ease, transform 0.3s ease;
-  box-shadow: 0 0 12px rgba(0, 0, 0, 0.4);
-}
-
-.issue-cover:hover {
-  filter: grayscale(0%);
-  transform: translateY(-4px);
-}
-
-/* --- CONTACT FORM --- */
-#contact-form-container {
-  width: 100%;
-  max-width: 600px;
-  margin: 0 auto;
-  padding: 1.5rem;
-  box-sizing: border-box;
-}
-
+/* =======================================
+   CONTACT FORM
+======================================= */
 .contact-form {
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
-  background: rgba(255, 255, 255, 0.05);
-  backdrop-filter: blur(8px);
-  padding: 20px;
-  border-radius: 16px;
-  box-shadow: 0 0 12px rgba(255, 255, 255, 0.08);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 15px;
+    background-color: rgba(0, 0, 0, 0.03);
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 0 8px rgba(255, 255, 255, 0.06);
 }
 
 .contact-form label {
-  font-weight: 600;
-  color: #f0f0f0;
+    font-weight: bold;
+    color: #d6d6d6;
 }
 
 .contact-form input,
 .contact-form select,
 .contact-form textarea {
-  background: rgba(255, 255, 255, 0.1);
-  border: 1px solid rgba(255, 255, 255, 0.2);
-  border-radius: 8px;
-  padding: 10px;
-  color: #fff;
-  font-size: 15px;
-  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 1px solid #d6d6d6;
+    border-radius: 6px;
+    padding: 8px;
+    color: #d6d6d6;
+    font-size: 15px;
 }
 
 .contact-form input:focus,
 .contact-form select:focus,
 .contact-form textarea:focus {
-  outline: none;
-  border-color: #ffb84d;
-  box-shadow: 0 0 6px #ffb84d;
+    outline: none;
+    border-color: #b86902;
+    box-shadow: 0 0 4px #b86902;
 }
 
 .contact-form button {
-  background: linear-gradient(90deg, #b86902, #ffb84d);
-  color: #fff;
-  font-weight: bold;
-  border: none;
-  border-radius: 8px;
-  padding: 12px;
-  cursor: pointer;
-  transition: transform 0.2s ease, background 0.3s ease;
+    background-color: #b86902;
+    color: #fff;
+    font-weight: bold;
+    border: none;
+    border-radius: 6px;
+    padding: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
 }
 
 .contact-form button:hover {
-  transform: translateY(-2px);
-  background: linear-gradient(90deg, #ffb84d, #b86902);
+    background-color: #8a5004;
 }
 
-/* --- GOOGLE TRANSLATE FIX --- */
+/* =======================================
+   RESPONSIVE MOBILE
+======================================= */
+@media (max-width: 768px) {
+    .navbar a {
+        flex-basis: 100%;
+        text-align: left;
+        padding: 10px 0;
+    }
+    .navbar {
+        flex-direction: column;
+    }
+
+    .page-container, .content, .contentshort {
+        margin: 10px auto;
+        padding: 15px;
+        border-radius: 20px;
+        box-shadow: 0 0 10px rgba(255, 255, 255, 0.04);
+    }
+
+    .navbar-logo {
+        height: 30px;
+        max-width: 90px;
+    }
+}
+
+@media (max-width: 480px) {
+    .page-container, .content, .contentshort {
+        margin: 5px auto;
+        padding: 10px;
+        font-size: 14px;
+        border-radius: 25px;
+    }
+
+    .navbar-logo {
+        height: 25px;
+        max-width: 80px;
+    }
+}
+
+/* =======================================
+   GOOGLE TRANSLATE STYLING
+======================================= */
 #google_translate_element {
-  margin-left: auto;
-  background: rgba(255, 255, 255, 0.05);
-  border-radius: 8px;
-  padding: 6px;
+    display: inline-block;
+    background-color: #333 !important;
+    border-radius: 8px;
+    padding: 5px;
 }
 
 #google_translate_element select {
-  background: transparent;
-  color: #ffb84d;
-  border: 1px solid rgba(255, 255, 255, 0.2);
-  border-radius: 8px;
-  padding: 6px 10px;
+    background-color: #333 !important;
+    color: #d6d6d6 !important;
+    border: 1px solid #d6d6d6 !important;
+    border-radius: 5px;
 }
 
-/* --- RESPONSIVE --- */
-@media (max-width: 768px) {
-  .navbar {
-    flex-direction: column;
-  }
+.goog-te-gadget-icon {
+    display: none !important;
+}
 
-  .navbar a {
-    flex: 1 1 100%;
-    text-align: left;
-    padding: 12px;
-  }
+.goog-te-gadget {
+    color: #f7dc0f !important;
+    background-color: #333 !important;
+    border-radius: 8px;
+    padding: 5px;
+}
 
-  .content,
-  .contentshort,
-  .page-container {
-    margin: 20px auto;
-    padding: 18px;
-    border-radius: 16px;
-  }
-
-  #contact-form-container {
-    padding: 1rem;
-  }
-
-  section,
-  div {
-    overflow: visible !important;
-  }
+.goog-te-gadget select {
+    border-radius: 5px;
 }
