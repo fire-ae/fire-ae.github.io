@@ -109,17 +109,7 @@ body {
 .page-container {
     margin-left: 220px;
     padding: 20px;
-/* fade-in for any element */
-.fade-in {
-    opacity: 0;
-    transform: translateY(20px);
-    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
-}
 
-.fade-in.appear {
-    opacity: 1;
-    transform: translateY(0);
-}
 
 /* =========================
    IMAGES
@@ -176,47 +166,62 @@ img {
 /* =========================
    CONTACT FORM
    ========================= */
+.contact-wrapper {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
 .contact-form {
     display: flex;
     flex-direction: column;
     gap: 10px;
-    padding: 15px;
     background-color: rgba(0,0,0,0.3);
     border-radius: 10px;
-}
-
-.contact-form label {
-    font-weight: bold;
-    color: #d6d6d6;
+    padding: 15px;
 }
 
 .contact-form input,
 .contact-form select,
 .contact-form textarea {
+    display: block;
+    width: 100%;
     background-color: rgba(255,255,255,0.1);
     border: 1px solid #d6d6d6;
     border-radius: 6px;
     padding: 8px;
     color: #d6d6d6;
 }
+
 .contact-form button {
+    display: block;
+    width: fit-content;
+    padding: 10px 20px;
     background-color: #f7dc0f;
+    color: #000;
     border: none;
     border-radius: 6px;
-    padding: 10px;
-    font-weight: bold;
     cursor: pointer;
-    color: #000;
+    font-weight: bold;
     transition: background 0.3s;
 }
 
 .contact-form button:hover {
     background-color: #ffd633;
 }
-.contact-wrapper {
-    max-width: 600px;
-    margin: 0 auto;
+
+/* Fade-in effect */
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
 }
+
+.fade-in.appear {
+    opacity: 1;
+    transform: translateY(0);
+}
+
    
 /* =========================
    BACK TO TOP BUTTON
