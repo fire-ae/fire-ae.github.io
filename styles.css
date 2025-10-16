@@ -85,15 +85,15 @@ body {
 .services-sidebar ul li a:hover {
     text-decoration: underline;
 }
-
-/* Anchor offset to prevent sticky sidebar overlapping content */
+/*
+/* Anchor offset to prevent sticky sidebar overlapping content 
 :target::before {
     content: "";
     display: block;
-    height: 160px; /* adjust this to match sidebar height if needed */
+    height: 160px;  adjust this to match sidebar height if needed 
     margin-top: -160px;
     visibility: hidden;
-}
+}*/
 /* =========================
    CONTENT
    ========================= */
@@ -107,7 +107,7 @@ body {
 }
 /* Main content shift */
 .page-container {
-    margin-left: 220px;
+    margin-left: 0px;
     padding: 20px;
 
 /* =========================
