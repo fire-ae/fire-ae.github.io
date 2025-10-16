@@ -1,7 +1,7 @@
 // animations.js
 (() => {
   const CANVAS_ID = 'meteorCanvas';
-  const COUNT = 2;
+  const COUNT = 1;
   const SPEED_MIN = 14.8;
   const SPEED_MAX = 17.8;
   const TRAIL_LENGTH = 240;
