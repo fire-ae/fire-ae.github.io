@@ -204,7 +204,7 @@ img {
   background: #1e1e1e;
   padding: 20px;
   border-radius: 12px;
-  box-shadow: 0 0 10px rgba(247,220,15,0.2);
+  box-shadow: 0 0 10px rgba(190,190,190,0.2);
   color: #f0f0f0;
 }
 .contact-form label {
@@ -231,7 +231,7 @@ img {
   outline: none;
 }
 .btn-submit {
-    background: linear-gradient(90deg, #d6b600, #f7dc0f);
+    background: linear-gradient(90deg, #bebebe, #ffffff);
     color: #111;
     transition: all 0.3s ease;
     box-shadow: 0 5px 15px rgba(0,0,0,0.3);
@@ -254,16 +254,20 @@ img {
    BACK TO TOP BUTTON
    ========================= */
 .top {
-    position: sticky;
+    position: fixed;
     bottom: 20px;
     right: 20px;
-    padding: 10px 15px;
-    font-family: Arial, sans-serif;
-    color: #CC8400;
-    background: #FFFFFF;
+    padding: 12px 16px;
+    background: linear-gradient(45deg, #f7dc0f, #d6b600);
+    color: #111;
     border-radius: 50px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.4);
     text-decoration: none;
-    z-index: 950;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+.top:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.6);
 }
 
 /* =========================
