@@ -143,11 +143,13 @@ img {
 }
 /* Ensure images never escape their container */
 .content img, .issue-grid img {
-    max-width: 100%;
-    height: auto;
+    width: auto;          /* don’t stretch horizontally */
+    max-width: 100%;      /* but don’t exceed container width */
+    max-height: 400px;    /* limit height for very wide screens */
     display: block;
     border-radius: 8px;
-    object-fit: cover; /* keeps aspect ratio inside container */
+    object-fit: cover;    /* fills container without distortion */
+    margin: 0 auto;       /* center horizontally */
 }
 /* =========================
    METEOR CANVAS
