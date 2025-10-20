@@ -177,7 +177,7 @@ img {
   display: block;
   margin-bottom: 5px;
   font-weight: bold;
-  color: #f7dc0f;
+  color: #bebebe;
 }
 .contact-form input,
 .contact-form select,
@@ -193,13 +193,13 @@ img {
 .contact-form input:focus,
 .contact-form select:focus,
 .contact-form textarea:focus {
-  border-color: #f7dc0f;
+  border-color: #bebebe;
   outline: none;
 }
 .btn-submit {
   display: block;
   width: 100%;
-  background: #f7dc0f;
+  background: #bebebe;
   color: #000;
   font-weight: bold;
   border: none;
