@@ -144,8 +144,8 @@ img {
 /* Ensure images never escape their container */
 .content img, .issue-grid img {
     width: auto;          /* don’t stretch horizontally */
-    max-width: 100%;      /* but don’t exceed container width */
-    max-height: 400px;    /* limit height for very wide screens */
+    max-width: 200px;      /* but don’t exceed container width */
+    max-height: 200px;    /* limit height for very wide screens */
     display: block;
     border-radius: 8px;
     object-fit: cover;    /* fills container without distortion */
