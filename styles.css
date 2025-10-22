@@ -134,7 +134,7 @@ h1, h2, h3 { font-weight: 700;}
     flex-direction: column;  /* stack text and images */
     gap: 15px;               /* spacing between elements */
     max-width: 900px;
-    min-height: 400px;
+    min-height: 250px;
     margin: 20px auto;
     padding: 20px;
     background: rgba(20,20,20,0.6); /* translucent for starry bg */
@@ -214,7 +214,7 @@ img {
 /* Contact form */
 /* Modern contact form styling */
 .contact-form.modern {
-  max-width: 600px;
+  max-width: 800px;
   margin: 30px auto;
   background: #1e1e1e;
   padding: 20px;
