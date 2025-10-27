@@ -319,8 +319,10 @@ img {
 
 .service-card img {
   width: 100%;
-  border-radius: 10px;
-  margin-bottom: 1rem;
+  height: 250px;        /* or whatever height fits all neatly */
+  object-fit: cover;    /* crop edges to maintain proportion */
+  border-radius: 6px;   /* optional, for uniform rounded look */
+  display: block;
 }
 
 /* === Case Study anchored at bottom === */
