@@ -288,6 +288,63 @@ img {
     box-shadow: 0 8px 20px rgba(0,0,0,0.6);
 }
 
+/* === Service Card Grid === */
+.service-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+/* === Cards === */
+.service-card {
+  background: #1f1f1f;
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 0 12px rgba(255,255,255,0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 18px rgba(255,255,255,0.25);
+}
+
+.service-card img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+}
+
+/* === Case Study Box === */
+.case-study {
+  background: #2a2a2a;
+  border-radius: 8px;
+  padding: 0.8rem;
+  margin-top: 1rem;
+  text-align: left;
+}
+
+.case-study h4 {
+  color: #f7dc0f;
+  margin-bottom: 0.3rem;
+}
+
+.case-study .btn {
+  display: inline-block;
+  margin-top: 0.5rem;
+  background: #f7dc0f;
+  color: #222;
+  padding: 0.4rem 0.7rem;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+.case-study .btn:hover {
+  background: #ffeb3b;
+}
+
+   
 /* =========================
    MEDIA QUERIES
    ========================= */
