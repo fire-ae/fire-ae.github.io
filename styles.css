@@ -23,6 +23,8 @@ body {
 }
 h1, h2, h3 { font-weight: 700;}
 
+body a {color: #f7dc0f}
+
 /* =========================
    MAIN NAVBAR
    ========================= */
@@ -60,7 +62,7 @@ h1, h2, h3 { font-weight: 700;}
 }
 
 .navbar a:hover {
-    color: #b86902;
+    color: #f7dc0f;
 }
 .navbar a::after {
     content: '';
@@ -227,7 +229,7 @@ img {
   display: block;
   margin-bottom: 5px;
   font-weight: bold;
-  color: #bebebe;
+  color: #f0f0f0;
 }
 .contact-form input,
 .contact-form select,
@@ -243,11 +245,11 @@ img {
 .contact-form input:focus,
 .contact-form select:focus,
 .contact-form textarea:focus {
-  border-color: #bebebe;
+  border-color: #f0f0f0;
   outline: none;
 }
 .btn-submit {
-    background: linear-gradient(90deg, #bebebe, #ffffff);
+    background: linear-gradient(90deg, #f0f0f0, #ffffff);
     color: #111;
     transition: all 0.3s ease;
     box-shadow: 0 5px 15px rgba(0,0,0,0.3);
