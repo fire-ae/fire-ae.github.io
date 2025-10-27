@@ -298,11 +298,16 @@ img {
 
 /* === Cards === */
 .service-card {
+  display: flex;
+  flex-direction: column;        /* vertical stack */
+  justify-content: space-between;/* pushes bottom element down */
   background: #1f1f1f;
   border-radius: 12px;
   padding: 1.5rem;
   box-shadow: 0 0 12px rgba(255,255,255,0.1);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  overflow: hidden;              /* prevent content overflow */
+  min-height: 480px;             /* uniform card height (adjust as needed) */
 }
 
 .service-card:hover {
@@ -310,18 +315,20 @@ img {
   box-shadow: 0 0 18px rgba(255,255,255,0.25);
 }
 
+
+
 .service-card img {
   width: 100%;
   border-radius: 10px;
   margin-bottom: 1rem;
 }
 
-/* === Case Study Box === */
+/* === Case Study anchored at bottom === */
 .case-study {
   background: #2a2a2a;
   border-radius: 8px;
   padding: 0.8rem;
-  margin-top: 1rem;
+  margin-top: auto;              /* pushes box to bottom */
   text-align: left;
 }
 
