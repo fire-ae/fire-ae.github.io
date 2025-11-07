@@ -112,6 +112,20 @@ body a {color: #f7dc0f}
 .services-sidebar ul li a:hover {
     text-decoration: underline;
 }
+
+.service-card img {
+    position: relative;
+    display: block;
+}
+
+.service-card img::after {
+    content: "";
+    position: absolute;
+    inset: 0; /* shorthand for top:0; right:0; bottom:0; left:0; */
+    background: rgba(247, 220, 15, 0.25); /* light yellow, 25% opacity */
+    border-radius: 8px; /* match existing img border-radius */
+    pointer-events: none; /* overlay won't block clicks */
+}
 /*
 /* Anchor offset to prevent sticky sidebar overlapping content 
 :target::before {
