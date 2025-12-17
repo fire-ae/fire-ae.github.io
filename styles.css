@@ -400,10 +400,6 @@ img {
     max-width: 720px;
 }
 
-.bsky-post {
-    border-bottom: 1px solid #444;
-    padding: 12px 0;
-}
 
 .bsky-post time {
     font-size: 0.85em;
@@ -416,7 +412,15 @@ img {
     color: #f7dc0f;
     text-transform: uppercase;
 }
-   
+.bsky-post {
+    padding: 18px 0;
+    border-bottom: 2px solid #f7dc0f;
+}
+.bsky-post:last-child {
+    border-bottom: none;
+}
+
+
 /* =========================
    MEDIA QUERIES
    ========================= */
