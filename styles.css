@@ -395,7 +395,20 @@ img {
   background: #ffeb3b;
 }
 
-   
+.bsky-feed {
+    margin-top: 60px;
+    max-width: 720px;
+}
+
+.bsky-post {
+    border-bottom: 1px solid #444;
+    padding: 12px 0;
+}
+
+.bsky-post time {
+    font-size: 0.85em;
+    color: #aaa;
+}
 /* =========================
    MEDIA QUERIES
    ========================= */
