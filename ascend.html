@@ -153,20 +153,24 @@
 <script>
 (async () => {
   const handle = "scienceascend.bsky.social";
-
   const res = await fetch(
-    `https://public.api.bsky.app/xrpc/app.bsky.feed.getAuthorFeed?actor=${handle}&limit=5`
+    `https://public.api.bsky.app/xrpc/app.bsky.feed.getAuthorFeed?actor=${handle}&limit=10`
   );
-
   if (!res.ok) return;
-
   const data = await res.json();
   const container = document.getElementById("bsky-posts");
-
-  data.feed.forEach(({ post }) => {
+  data.feed.forEach(item => {
+    const { post, reason } = item;
+    let type = "Post";
+    if (reason?.$type === "app.bsky.feed.defs#reasonRepost") {
+      type = "Repost";
+    } else if (post.record.reply) {
+      type = "Reply";
+    }
     const div = document.createElement("div");
     div.className = "bsky-post";
     div.innerHTML = `
+      <span class="bsky-type">${type}</span>
       <p>${post.record.text}</p>
       <time>${new Date(post.indexedAt).toLocaleDateString()}</time>
     `;
