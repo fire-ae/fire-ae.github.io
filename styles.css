@@ -409,6 +409,14 @@ img {
     font-size: 0.85em;
     color: #aaa;
 }
+
+.bsky-type {
+    font-size: 0.75em;
+    font-weight: bold;
+    color: #f7dc0f;
+    text-transform: uppercase;
+}
+   
 /* =========================
    MEDIA QUERIES
    ========================= */
