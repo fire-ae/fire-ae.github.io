@@ -366,7 +366,30 @@ img {
   border-radius: 6px;   /* optional, for uniform rounded look */
   display: block;
 }
+.table-scroll {
+  width: 100%;
+  overflow-x: auto;
+}
 
+.conf-table {
+  min-width: 1600px;
+  border-collapse: collapse;
+  font-size: 0.9rem;
+}
+
+.conf-table th,
+.conf-table td {
+  border: 1px solid #ddd;
+  padding: 6px 8px;
+  white-space: nowrap;
+}
+
+.conf-table th {
+  background: #f2f2f2;
+  position: sticky;
+  top: 0;
+}
+   
 /* === Case Study anchored at bottom === */
 .case-study {
   background: #2a2a2a;
