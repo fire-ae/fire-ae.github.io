@@ -374,7 +374,7 @@ img {
 .conf-table {
   min-width: 700px;
   border-collapse: collapse;
-  font-size: 0.7rem;
+  font-size: 0.5rem;
 }
 
 .conf-table th,
