@@ -372,10 +372,10 @@ img {
 }
 
 .conf-table {
-  min-width: 700px;
-  max-width: 1400px;
+  min-width: 500px;
+  max-width: 900px;
   border-collapse: collapse;
-  font-size: 0.6rem;
+  font-size: 0.7rem;
 }
 
 .conf-table th,
