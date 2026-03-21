@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FIRE-AE Media & Merch</title>
+
+    <!-- Google Translate -->
+    <script type="text/javascript">
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement({
+                pageLanguage: 'en',
+                includedLanguages: 'tr,en,fr,lt,es,de,cs',
+                layout: google.translate.TranslateElement.InlineLayout.SIMPLE
+            }, 'google_translate_element');
+        }
+    </script>
+    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+    <!-- Style override for translate -->
+    <script>
+    document.addEventListener("DOMContentLoaded", function() {
+        const style = document.createElement('style');
+        style.textContent = `
+            .goog-te-gadget-icon { display: none !important; }
+            #google_translate_element { background-color: #333 !important; border-radius: 8px; }
+            #google_translate_element select { background-color: #333 !important; color: #f7dc0f !important; border: 1px solid #f7dc0f !important; }
+        `;
+        document.head.appendChild(style);
+    });
+    </script>
+
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-QBEVP0CB1V"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-QBEVP0CB1V');
+    </script>
+</head>
+
+<body>
+
+<!-- NAVBAR (same as yours) -->
+<div class="navbar-container">
+    <div class="navbar">
+        <a href="index.html"><img src="logofires.png" class="navbar-logo"></a>
+        <a href="corp-responsibility.html">Corporate Responsibilities</a>
+        <a href="research.html">Research Projects</a>
+        <a href="services.html">Services</a>
+        <a href="training.html">Training</a>
+        <a href="ascend.html">Periodicals</a>
+        <a href="mediamerch.html">Media & Merch</a>
+        <a href="news.html">News</a>
+        <div id="google_translate_element"></div>
+    </div>
+</div>
+
+<!-- PAGE -->
+<div class="page-container fade-in">
+
+    <h2>Outreach – Media & Merch</h2>
+
+    <p align="justify">
+        Selected astrophysical visuals adapted into physical formats for outreach and dissemination.
+        These are small-format previews of printed materials including stickers, cards, and posters.
+    </p>
+
+    <div class="service-grid">
+
+        <!-- STICKERS -->
+        <div class="service-card merch-card fade-in">
+            <div class="img-overlay">
+                <img src="sticker.jpg" alt="Astronomy Sticker">
+            </div>
+
+            <h3>🔭 Stickers</h3>
+            <p class="merch-desc">
+                Compact, high-contrast visuals designed for quick recognition and durability.
+            </p>
+        </div>
+
+        <!-- CARDS -->
+        <div class="service-card merch-card fade-in">
+            <div class="img-overlay">
+                <img src="card.jpg" alt="A6 Cards">
+            </div>
+
+            <h3>🪐 A6 Cards</h3>
+            <p class="merch-desc">
+                Small printed astrophysical plates suitable for distribution and collection.
+            </p>
+        </div>
+
+        <!-- POSTERS -->
+        <div class="service-card merch-card fade-in">
+            <div class="img-overlay">
+                <img src="poster.jpg" alt="Posters">
+            </div>
+
+            <h3>🌌 Posters (A4–A2)</h3>
+            <p class="merch-desc">
+                Larger-format prints preserving structural and chromatic characteristics.
+            </p>
+        </div>
+
+    </div>
+
+    <!-- Fade-in script (same logic as yours) -->
+    <script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const faders = document.querySelectorAll('.fade-in');
+
+        const appearOnScroll = new IntersectionObserver(function (entries, observer) {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add("appear");
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.1 });
+
+        faders.forEach(fader => appearOnScroll.observe(fader));
+    });
+    </script>
+
+    <a href="#" class="top">Back to Top &#8593;</a>
+
+</div>
+
+</body>
+</html>
