@@ -91,15 +91,15 @@ body a {color: #f7dc0f}
   content: "";
   position: absolute;
   inset: 0;
-  background: rgba(247, 220, 15, 0.25); /* translucent yellow */
+   /* background: rgba(247, 220, 15, 0.25);translucent yellow */
   pointer-events: none;
   transition: background 0.3s ease;
 }
-
+ /* 
 .img-overlay:hover::after {
-  background: rgba(247, 220, 15, 0.35); /* slight highlight on hover */
+  background: rgba(247, 220, 15, 0.35); slight highlight on hover 
 }
-
+*/
 .img-overlay img {
   display: block;
   width: 100%;
