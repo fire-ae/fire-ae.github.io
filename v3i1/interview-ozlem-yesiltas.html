@@ -1,0 +1,864 @@
+
+
+
+Claim offer
+
+I have the non-peer reviewed Science Ascend journal (ISSN: 3062-0090). https://fire-ae.org/ascend.html
+What are the important indices and revenues to advance it? Assume it will stay non-peer reviewed, biannual. It is indexed in ROAD. Is Google Scholar possible?
+
+You can think about advancement in three layers:
+
+Tier 1: Visibility (easy, realistic, valuable)
+Since Science Ascend is already registered with ISSN and appears in ROAD, these are the next logical targets: 
+
+Google Scholar
+
+Crossref DOI registration
+
+OpenAlex
+
+BASE (Bielefeld Academic Search Engine)
+
+Scilit
+
+WorldCat
+
+Zenodo archiving
+
+OpenAIRE (if metadata is exposed properly)
+
+Google Scholar is absolutely possible even without peer review. Google Scholar indexes scholarly documents, not only peer-reviewed journals. Many newsletters, repositories, conference proceedings, preprint servers, and non-peer-reviewed journals are indexed. 
+
+For Scholar, the critical requirements are:
+
+Stable article URLs
+
+PDF files accessible without login
+
+Article titles on separate landing pages
+
+Author names
+
+Publication dates
+
+Metadata Scholar can parse
+
+Currently, your PDFs are crawlable, but separate article pages with metadata would improve indexing chances substantially. 
+
+Tier 2: Credibility (moderate effort)
+Even if you remain non-peer-reviewed:
+
+Join Crossref and assign DOIs.
+
+Create a clear editorial policy.
+
+Create an ethics statement.
+
+Create an archiving policy.
+
+Maintain consistent publication schedule.
+
+These matter more than many obscure "indexes". Many journals collect dozens of meaningless indexing badges that nobody in academia recognizes. 
+
+Tier 3: Recognition (harder)
+Without peer review, you can largely forget:
+
+Scopus
+
+Web of Science
+
+ESCI
+
+SCIE
+
+Their evaluation processes explicitly examine editorial quality and review procedures. 
+
+Revenue
+For a non-peer-reviewed science magazine/journal, realistic revenue streams are:
+
+Revenue source	Realistic?	Notes
+Advertising	Medium	Astronomy software, telescopes, science publishers
+Sponsorships	High	Conferences, workshops, educational companies
+Paid print-on-demand editions	High	Amazon KDP, Lulu
+Donations	Medium	Patreon, BuyMeACoffee
+Society memberships	High	Annual supporters
+APCs	Low	Authors generally expect peer review if paying APCs
+Institutional subscriptions	Very low	Libraries usually want peer-reviewed content
+If I were positioning Science Ascend, I would not market it as a journal competing with journals. The content shown in your latest issue looks much closer to a scientific magazine / review digest / outreach publication focused on astrophysics and related sciences. 
+
+That positioning has advantages:
+
+No expectation of peer review.
+
+Easier contributor recruitment.
+
+Easier sponsorship acquisition.
+
+Better fit for interviews, literature surveys, conference announcements, and outreach articles.
+
+What I would prioritize next
+Crossref DOI membership.
+
+Individual article landing pages.
+
+Google Scholar indexing.
+
+OpenAlex inclusion.
+
+BASE inclusion.
+
+Long-term archiving (Zenodo, Internet Archive, PKP PN if applicable).
+
+Consistent publication schedule for at least 2–3 years.
+
+Those seven items would probably produce more real discoverability than obtaining another ten minor indexes.
+
+
+Crossref will want money and I don't have that. Zenodo feel ok. And I guess after each journal, will I make a separate .html page then? Metadata and table of content would be sufficient I guess. 
+
+Yes. If your budget is effectively zero, I would postpone Crossref.
+
+For Google Scholar, the ideal structure is:
+
+Issue page
+│
+├── Article 1 page (HTML)
+│   └── PDF
+│
+├── Article 2 page (HTML)
+│   └── PDF
+│
+└── Article 3 page (HTML)
+    └── PDF
+For example:
+
+ascend/v3i1.html                  (issue page)
+
+ascend/articles/dark-matter.html
+ascend/articles/exoplanets.html
+ascend/articles/cosmology.html
+Each article page should contain:
+
+Title
+
+Authors
+
+Abstract
+
+Publication date
+
+Journal name
+
+Volume/Issue
+
+PDF link
+
+A minimal page can be extremely simple:
+
+<h1>Exoplanet Atmospheres</h1>
+
+<p><b>Author:</b> Jane Doe</p>
+
+<p><b>Journal:</b> Science Ascend</p>
+
+<p><b>Volume:</b> 3</p>
+
+<p><b>Issue:</b> 1</p>
+
+<p><b>Published:</b> June 2026</p>
+
+<h2>Abstract</h2>
+
+<p>...</p>
+
+<a href="exoplanet_atmospheres.pdf">
+Download PDF
+</a>
+Scholar can often extract metadata from pages this simple.
+
+Even better is adding Scholar-recognized meta tags:
+
+<meta name="citation_title" content="Exoplanet Atmospheres">
+<meta name="citation_author" content="Jane Doe">
+<meta name="citation_journal_title" content="Science Ascend">
+<meta name="citation_volume" content="3">
+<meta name="citation_issue" content="1">
+<meta name="citation_publication_date" content="2026/06/01">
+<meta name="citation_pdf_url"
+      content="https://fire-ae.org/papers/exoplanet.pdf">
+These tags are probably the single most useful thing you can add for Google Scholar.
+
+Zenodo
+Zenodo is useful for:
+
+Long-term preservation
+
+Obtaining free DOIs for issues
+
+Additional discoverability
+
+You could upload each issue as:
+
+Science Ascend Volume 3 Issue 1
+and receive a DOI for the issue itself.
+
+My recommendation
+Given your constraints:
+
+Keep ROAD.
+
+Create article landing pages with citation metadata.
+
+Submit the site to Google Scholar.
+
+Archive each issue on Zenodo.
+
+Register a sitemap and submit it through Google Search Console.
+
+That would likely yield more visibility than chasing additional small indexes. The article landing pages are the highest-impact improvement per hour of work.
+
+
+THen we not only make a page for an issue, but articles will have respective pages of their own again? A PDF full journal is official Turkey requirement, additionally, I may direct to a different issue, but that different issue would again direct another page where, since there is no other content than one sentence intro and author-title, full text as html should be there as well
+
+Yes, that is actually much closer to how Google Scholar and academic search engines expect content to be organized.
+
+A good structure would be:
+
+Issue page
+│
+├── Full issue PDF (official publication)
+│
+├── Article 1 page
+│   ├── Metadata
+│   ├── HTML full text
+│   └── PDF (optional)
+│
+├── Article 2 page
+│   ├── Metadata
+│   ├── HTML full text
+│   └── PDF (optional)
+│
+└── Article 3 page
+    ├── Metadata
+    ├── HTML full text
+    └── PDF (optional)
+Example:
+
+Volume 3 Issue 1
+│
+├── Full Issue PDF
+│
+├── "Dark Matter in Dwarf Galaxies"
+│    → article page
+│
+├── "Transit Timing Variations"
+│    → article page
+│
+└── "Stellar Population Synthesis"
+     → article page
+The issue PDF remains the official publication satisfying Turkish requirements.
+
+The article pages are essentially discoverability pages.
+
+For Google Scholar, HTML full text is actually better than a one-sentence landing page because:
+
+Scholar can index the article body.
+
+Search engines can find keywords.
+
+Authors can discover citations.
+
+OpenAlex and similar systems have a better chance of recognizing the work.
+
+Many small journals do exactly this:
+
+Publish one official issue PDF.
+
+Split the articles into separate HTML pages.
+
+Link both directions:
+
+Issue → Article
+
+Article → Issue
+
+I would put on each article page:
+
+Title
+Authors
+Affiliations
+Abstract
+
+Full text
+
+Citation information
+
+Published in:
+Science Ascend
+Volume X, Issue Y
+
+Download full issue PDF
+The full issue PDF should remain the authoritative version.
+
+One thing I would strongly recommend: do not make article pages that only contain metadata and a PDF link. If you are already creating the pages, placing the full text in HTML gives a disproportionately large benefit for indexing while adding very little extra work, especially if your workflow already starts from Word or Markdown.
+
+In fact, for a non-peer-reviewed journal, searchable HTML articles may become more valuable than additional indexing services because Google itself becomes your primary discovery mechanism.
+
+
+The following is the header footer like part of the Science Ascend Volume 3 Issue 1:
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FIRE Araştırma Eğitim Ltd. Şti. - Science Ascend Biannual Journal</title>
+    <script type="text/javascript">
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement({
+                pageLanguage: 'en',
+                includedLanguages: 'tr,en,fr,lt,es,de,cs',
+                layout: google.translate.TranslateElement.InlineLayout.SIMPLE
+            }, 'google_translate_element');
+        }
+    </script>
+    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+    <script>
+    document.addEventListener("DOMContentLoaded", function() {
+        const style = document.createElement('style');
+        style.textContent = 
+            .goog-te-gadget-icon { display: none !important; }
+            #google_translate_element { background-color: #333 !important; border: none !important; border-radius: 8px; }
+            #google_translate_element select { background-color: #333 !important; color: #f7dc0f !important; border: 1px solid #f7dc0f !important; }
+            #google_translate_element .goog-te-combo { background-color: #333 !important; color: #f7dc0f !important; }
+            .goog-te-gadget { background-color: #333 !important; color: #f7dc0f !important; }
+        ;
+        document.head.appendChild(style);
+    });
+    </script>
+    <link rel="stylesheet" href="styles.css"> <!-- My lovely CSS file -->
+      <!-- Google Analytics -->
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-QBEVP0CB1V"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-QBEVP0CB1V');
+</script>
+  <!-- End Google Analytics -->
+</head>
+<body>
+<div class="navbar-container">
+    <div class="navbar">
+        <a href="index.html"><img src="logofires.png" alt="Logo" class="navbar-logo"></a>
+        <a href="corp-responsibility.html">Corporate Responsibilities</a>
+        <!--<a href="impact.html">Theory of Change</a>-->
+        <!--<a href="sci-res.html">Research Method</a>-->
+        <a href="research.html">Research Projects</a>
+        <a href="services.html">Services</a>
+        <a href="training.html">Training</a>
+        <!--<a href="livingkit.html">Resources</a>-->
+        <a href="ascend.html">Periodicals</a>
+        <a href="mediamerch.html">Media & Merch</a>
+        <a href="news.html">News</a>
+        <!--<a href="actlog.html">Activity Log</a>-->
+        <div id="google_translate_element"></div>
+    </div>
+</div>
+
+
+
+
+
+
+
+    
+<section class="bsky-feed">
+  <h2>Science Ascend — BlueSky Account Latest Posts</h2>
+  <div id="bsky-posts"></div>
+</section>
+</div>
+
+
+<script>
+(async () => {
+  const handle = "scienceascend.bsky.social";
+  const res = await fetch(
+    https://public.api.bsky.app/xrpc/app.bsky.feed.getAuthorFeed?actor=${handle}&limit=10
+  );
+  if (!res.ok) return;
+  const data = await res.json();
+  const container = document.getElementById("bsky-posts");
+  data.feed.forEach(item => {
+    const { post, reason } = item;
+    let type = "Post";
+    if (reason?.$type === "app.bsky.feed.defs#reasonRepost") {
+      type = "Repost";
+    } else if (post.record.reply) {
+      type = "Reply";
+    }
+    const div = document.createElement("div");
+    div.className = "bsky-post";
+    div.innerHTML = 
+      <span class="bsky-type">${type}</span>
+      <p>${post.record.text}</p>
+      <time>${new Date(post.indexedAt).toLocaleDateString()}</time>
+    ;
+    container.appendChild(div);
+  });
+})();
+</script>
+</body>
+</html>
+
+Now, this is an issue page, it will have pointers to all articles within it for other pages. The content for vol3 issue1 was this:
+
+Interview with Evgeny Smirnov
+Interview with Prof. Özlem Yeşiltaş 
+Science Outreach: The Case of Astrobot JWST in BlueSky (Y.
+Güray Hatipoğlu)
+Venus, Clouds, and Sulphur (Maarten Roos-Serote)
+Cosmic Strings: Relics of the Early Universe (Özlem Yeşiltaş)
+What is Singular Spectrum Analysis (SSA) (Y. Güray
+Hatipoğlu)
+SSA in 2025 Astronomy Literature (Y. Güray Hatipoğlu)
+Editor-in-Chief: Y. Güray Hatipoğlu
+
+Do you remember styles.css? or you may check https://fire-ae.org/styles.css 
+
+ok, give me html for full issue page first, then I will make article pages one by one, and apply your recommendations.
+
+use the exact text I sent you, don't summarize o paraphrase. We can't change the published text.
+
+Understood. No rewriting, no compression, no paraphrasing. Only structuring + fixing HTML hygiene (line breaks, whitespace, readability).
+
+Here is the verbatim article page, preserving your text exactly as-is.
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Interview with Evgeny Smirnov — Science Ascend</title>
+
+    <!-- Scholar metadata -->
+    <meta name="citation_title" content="Interview with Evgeny Smirnov">
+    <meta name="citation_author" content="Y. Güray Hatipoğlu">
+    <meta name="citation_journal_title" content="Science Ascend">
+    <meta name="citation_volume" content="3">
+    <meta name="citation_issue" content="1">
+    <meta name="citation_publication_date" content="2026/06/01">
+
+    <link rel="stylesheet" href="../styles.css">
+</head>
+
+<body>
+
+<div class="navbar-container">
+    <div class="navbar">
+        <a href="../ascend/v3i1/index.html">← Volume 3 Issue 1</a>
+    </div>
+</div>
+
+<article class="journal-article">
+
+    <h1>Interview with Evgeny Smirnov</h1>
+
+    <p><strong>Science Ascend, Volume 3 Issue 1</strong></p>
+    <p><strong>Author:</strong> Y. Güray Hatipoğlu</p>
+
+    <hr>
+
+    <pre style="white-space: pre-wrap; font-family: inherit;">
+
+Evgeny Smirnov obtained his M.Sc.
+Degree in Astronomy, Mathematics, and
+Computer Science at Saint Petersburg
+State
+University
+in
+2009,
+closely
+followed by his PhD in Astronomy &
+Mathematics in Pulkovo Observatory
+(2016).
+Furthermore,
+he
+acquired
+another M.Sc. Diplomas: Philosophy,
+Science, and Religion (The University of
+Edinburgh
+2021
+and
+Personality
+Psychology (Saint Petersburg State
+University 2022).
+In his professional life in the private
+sector, he held software engineering
+roles in StegSoft and Vstretcher. After
+that, he founded 4xxi in the project
+management and consultancy field,
+Newtonew in agile project management,
+social media management, sales, and
+Denovo on IT consultancy and AI
+research. Considering this wide range of
+experiences and expertise, the interview
+contained almost all of them in the
+questions
+around
+large
+language
+models (LLMs). The questions were
+mainly on our motivation to use LLMs,
+their
+potential
+benefit
+on
+project
+management tasks, using LLMs in
+scientific research, conducting literature
+review with them, and the place of LLMs
+and even more potentially advanced
+future
+AI
+versions
+in
+scientific
+discoveries.
+Intrinsically, he stated that LLMs can
+help us to understand who we are
+better, and LLMs also have a strong
+mathematical roots that’s why he had an
+interest in comprehending that deeply.
+In project and product management
+which are not fundamentally different
+than each other, LLMs has roles to fill
+but not roles to replace, with an
+example from User Story creation, some
+part of the documentation and direction/
+guidance to developers might be accelerated, yet
+there are lots of decision making and
+fine tuning using the information and
+data not loaded on LLMs, on the actual
+work it does not make user story
+creation by humans obsolete currently.
+Making story points and similar metrics
+more accurate has its deep challenges
+as well, specifically coming from the
+problems with the metric itself.
+Moving on to the scientific research,
+LLMs and AI has obvious advantages in
+summarizing, literature review, number
+crunching, and similar, but these are
+dangerous when the users can’t do
+these successfully by themselves and
+don’t validate the outputs. In the case of
+literature review, too, losing the context
+of
+a
+scientific
+field
+and
+new
+developments is among the dangers of
+poor utilization of LLMs. It is much
+better to use LLMs to optimize tasks you
+can already do yourself and validate
+outputs
+so
+that
+you
+save
+time/
+resources. One example research study
+he published while using automatic
+classification in some parts of the study
+is this .
+The last question was the potential of
+LLMs to make discoveries. The way we
+craft knowledge and discovery is built
+up from texts, and what LLMs generate
+is not significantly different, though they
+also contain biases we introduce to
+them. This is good as it shows us who
+we are, but the actual breakthrough will
+be when artificial general and super
+intelligence will be realized.
+As his final remarks, Evgeny Smirnov
+cautioned us that even though the
+technology of LLMs, like that of atomic
+bombs or similar things, has its dangers,
+humans have a passion to discover, get
+interested, and learn in their roots, so
+our fear should not stagnate growth.
+The interview can be watched . 
+here.
+
+    </pre>
+
+    <hr>
+
+    <footer>
+        <p><a href="index.html">← Back to Issue</a></p>
+    </footer>
+
+</article>
+
+</body>
+</html>
+If you want the next upgrade step, the real structural improvement would be:
+
+split this into semantic paragraphs + CSS styling instead of <pre>
+
+while still preserving text verbatim
+
+That is where Scholar indexing and readability both improve without touching content integrity.
+
+
+just use this one:
+
+Evgeny Smirnov obtained his M.Sc. Degree in Astronomy, Mathematics, and Computer Science at Saint Petersburg State University in 2009, closely followed by his PhD in Astronomy & Mathematics in Pulkovo Observatory (2016). Furthermore, he acquired another M.Sc. Diplomas:
+
+1) Philosophy, Science, and Religion – The University of Edinburgh (2021)
+2) Personality Psychology – Saint Petersburg State University (2022)
+
+In his professional life in the private sector, he held software engineering roles in StegSoft and Vstretcher. After that, he founded 4xxi in the project management and consultancy field, Newtonew in agile project management, social media management, sales, and Denovo on IT consultancy and AI research. Considering this wide range of experiences and expertise, the interview contained almost all of them in the questions around large language models (LLMs). The questions were mainly on our motivation to use LLMs, their potential benefit on project management tasks, using LLMs in scientific research, conducting literature review with them, and the place of LLMs and even more potentially advanced future AI versions in scientific discoveries.
+Very shortly, he explained that he had both extrinsic motivation to use LLMs that allowed him to be around 10 times more efficient compared to three years before, to the point that his two AI agents were realizing different research studies while we were doing the interview. Intrinsically, he stated that LLMs can help us to understand who we are better, and LLMs also have a strong mathematical roots that’s why he had an interest in comprehending that deeply.
+
+In project and product management which are not fundamentally different than each other, LLMs has roles to fill but not roles to replace, with an example from User Story creation, some part of the documentation and direction/guidance to developers might be accelerated, yet there are lots of decision making and fine tuning using the information and data not loaded on LLMs, on the actual work it does not make user story creation by humans obsolete currently. Making story points and similar metrics more accurate has its deep challenges as well, specifically coming from the problems with the metric itself.
+
+Moving on to the scientific research, LLMs and AI has obvious advantages in summarizing, literature review, number crunching, and similar, but these are dangerous when the users can’t do these successfully by themselves and don’t validate the outputs. In the case of literature review, too, losing the context of a scientific field and new developments is among the dangers of poor utilization of LLMs. It is much better to use LLMs to optimize tasks you can already do yourself and validate outputs so that you save time/resources. One example research study he published while using automatic classification in some parts of the study is this: https://doi.org/10.1016/j.icarus.2025.116584
+
+The last question was the potential of LLMs to make discoveries. The way we craft knowledge and discovery is built up from texts, and what LLMs generate is not significantly different, though they also contain biases we introduce to them. This is good as it shows us who we are, but the actual breakthrough will be when artificial general and super intelligence will be realized.
+
+As his final remarks, Evgeny Smirnov cautioned us that even though the technology of LLMs, like that of atomic bombs or similar things, has its dangers, humans have a passion to discover, get interested, and learn in their roots, so our fear should not stagnate growth.
+
+The interview can be watched here: https://youtu.be/wHPvHIxsgcY
+
+I also want to have my navbar in this page as well.
+
+Here is your final clean article page, fully verbatim (no paraphrasing), with:
+
+your exact text preserved
+
+navbar included
+
+Scholar metadata included
+
+proper semantic structure (no <pre> needed anymore)
+
+DOI link kept intact
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Interview with Evgeny Smirnov — Science Ascend</title>
+
+    <!-- Google Scholar metadata -->
+    <meta name="citation_title" content="Interview with Evgeny Smirnov">
+    <meta name="citation_author" content="Y. Güray Hatipoğlu">
+    <meta name="citation_journal_title" content="Science Ascend">
+    <meta name="citation_volume" content="3">
+    <meta name="citation_issue" content="1">
+    <meta name="citation_publication_date" content="2026/06/01">
+
+    <link rel="stylesheet" href="../styles.css">
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<div class="navbar-container">
+    <div class="navbar">
+        <a href="../ascend/v3i1/index.html">← Volume 3 Issue 1</a>
+        <a href="../ascend.html">Periodicals</a>
+        <a href="../index.html">Home</a>
+    </div>
+</div>
+
+<article class="journal-article">
+
+    <h1>Interview with Evgeny Smirnov</h1>
+
+    <p><strong>Science Ascend — Volume 3 Issue 1</strong></p>
+    <p><strong>Author:</strong> Y. Güray Hatipoğlu</p>
+
+    <hr>
+
+    <section class="article-body">
+
+        <p>
+        Evgeny Smirnov obtained his M.Sc. Degree in Astronomy, Mathematics, and Computer Science at Saint Petersburg State University in 2009, closely followed by his PhD in Astronomy & Mathematics in Pulkovo Observatory (2016). Furthermore, he acquired another M.Sc. Diplomas:
+        </p>
+
+        <p>
+        1) Philosophy, Science, and Religion – The University of Edinburgh (2021)<br>
+        2) Personality Psychology – Saint Petersburg State University (2022)
+        </p>
+
+        <p>
+        In his professional life in the private sector, he held software engineering roles in StegSoft and Vstretcher. After that, he founded 4xxi in the project management and consultancy field, Newtonew in agile project management, social media management, sales, and Denovo on IT consultancy and AI research. Considering this wide range of experiences and expertise, the interview contained almost all of them in the questions around large language models (LLMs). The questions were mainly on our motivation to use LLMs, their potential benefit on project management tasks, using LLMs in scientific research, conducting literature review with them, and the place of LLMs and even more potentially advanced future AI versions in scientific discoveries.
+        </p>
+
+        <p>
+        Very shortly, he explained that he had both extrinsic motivation to use LLMs that allowed him to be around 10 times more efficient compared to three years before, to the point that his two AI agents were realizing different research studies while we were doing the interview. Intrinsically, he stated that LLMs can help us to understand who we are better, and LLMs also have a strong mathematical roots that’s why he had an interest in comprehending that deeply.
+        </p>
+
+        <p>
+        In project and product management which are not fundamentally different than each other, LLMs has roles to fill but not roles to replace, with an example from User Story creation, some part of the documentation and direction/guidance to developers might be accelerated, yet there are lots of decision making and fine tuning using the information and data not loaded on LLMs, on the actual work it does not make user story creation by humans obsolete currently. Making story points and similar metrics more accurate has its deep challenges as well, specifically coming from the problems with the metric itself.
+        </p>
+
+        <p>
+        Moving on to the scientific research, LLMs and AI has obvious advantages in summarizing, literature review, number crunching, and similar, but these are dangerous when the users can’t do these successfully by themselves and don’t validate the outputs. In the case of literature review, too, losing the context of a scientific field and new developments is among the dangers of poor utilization of LLMs. It is much better to use LLMs to optimize tasks you can already do yourself and validate outputs so that you save time/resources. One example research study he published while using automatic classification in some parts of the study is this: https://doi.org/10.1016/j.icarus.2025.116584
+        </p>
+
+        <p>
+        The last question was the potential of LLMs to make discoveries. The way we craft knowledge and discovery is built up from texts, and what LLMs generate is not significantly different, though they also contain biases we introduce to them. This is good as it shows us who we are, but the actual breakthrough will be when artificial general and super intelligence will be realized.
+        </p>
+
+        <p>
+        As his final remarks, Evgeny Smirnov cautioned us that even though the technology of LLMs, like that of atomic bombs or similar things, has its dangers, humans have a passion to discover, get interested, and learn in their roots, so our fear should not stagnate growth.
+        </p>
+
+        <p>
+        The interview can be watched here: https://youtu.be/wHPvHIxsgcY
+        </p>
+
+    </section>
+
+    <hr>
+
+    <footer>
+        <p><a href="../ascend/v3i1/index.html">← Back to Issue</a></p>
+    </footer>
+
+</article>
+
+</body>
+</html>
+If next step matters (it does for indexing), the real upgrade is:
+
+add citation_pdf_url
+
+add citation_fulltext_html_url
+
+ensure each article has a stable canonical URL
+
+That is what actually triggers Scholar ingestion behavior, not styling or formatting.
+
+
+The next one: interview-ozlem-yesiltas.html
+
+Prof. Özlem Yeşiltaş. graduated from the Physics Department of Gazi University with a B.Sc, and followed with an M.Sc. and a Ph.D. in the same department. Considering that she is also a professor in the same department may look straightforward, but the reality is quite different. Even though she had expertise in mathematical physics in her graduate studies, she attended the European Fusion Development Agency (EFDA) Euratom Fusion Summer School in Culham, England, focused on fusion energy power plants. This was followed by a researcher position at the Türkiye Nuclear Energy Institute (TAEK, currently in TENMAK). Then, she attended the 7th Workshop on Quantum Physics with Non-Hermitian Operators (PHHQP VII), closer to her graduate studies, followed by a Post-Doctorate study at Concordia University related to another theoretical field, cosmic strings. A few years later, she was a visiting scientist at the Hungarian Academy of Sciences, Institute for Nuclear Research, ATOMKI, followed by Assistant, Associate, and Full Professor positions at Gazi University, her current affiliation. In short, she has been in various fields and has also participated in interdisciplinary and international teams. The interview focused on her career, important turning points, and what they contributed to her, as well as tips and recommendations on teaching, outreach, and having a healthy life-career balance.
+
+In the first part of her career, she stated that she knew she was interested in an academic career from the beginning and followed the usual steps with undergraduate and graduate studies. At times, there were good and challenging parts, though persistence was the key to finishing her studies. She also noted the usually attested “obsessive” characteristic of the academicians, which, in fact, is a must-have for having the outputs in the minimum required quality. Of course, this quality also works well in other research-based roles and in other institutes; hence, she chose to work in TAEK while also pursuing the requirements for the Associate Professor position in Türkiye. This decision also originated from her characteristics of experimenting with something not tried before and expanding her vision rather than the convenient path. While doing both experimental and theoretical parts, this experience also made her decide more clearly that the academic environment is more suitable for her.
+
+After this episode in her career, she managed to start working on quantum gravity topics, and with this, she has been working on three sub-fields under the mathematical physics field. These can be summarized as quantum gravity mathematical problems, non-Hermitian Quantum Mechanics, fermion dynamics, and how cosmic strings impact these fundamental particles, with and without gravitational fields, and lastly, integrable systems.
+
+While conveying this expert field knowledge to other audiences and students, she stated that making analogies from real life is of utmost importance. One example is the estimated similarity of cosmic string topological defects after phase change in the universe to that of solid white cracks in typical ice cubes. Even if there is not any observed evidence for this, it is appropriate to convey the idea.
+
+The ideas are, of course, in the mathematical physics domain and abstract, but they still do not prevent them from being useful in other fields after some methodological steps. One case is her published work on Black Scholes and the volatility-related utility of it in the finance domain. This equation is actually a classical differential equation, and the utility relation of this between quantum mechanics and finance is that it shows the time-dependent evolution of the system. She further elaborated on how her view of solving mathematical problems can be adapted into this option pricing and volatility dynamics, and that the interdisciplinary approach, rather than getting confined to a specific field, is better. Here is the link to the study: https://doi.org/10.1016/j.physa.2023.128909
+
+In the final question, she also states the importance of having hobbies to pursue an academic career. This is critical since focusing on similar problems or sometimes even a single problem for prolonged periods can weigh people down. In this case, she had been involved in a chorus that is successful enough to make international trips to different countries, as well as fitness, weight lifting, and kick-box sports. Specifically, she has been involved in sports and karate since her student days as a licensed member. Such activities provided her with the stability and determination to advance her career. It is also crucial that we should not be too sedentary and always have some movement, with communication between the brain, mind, and body.
+
+As the concluding remarks, she stressed that the development of a country is closely related to the relationship of the public with science, arts, and sports. Even if we can’t produce, we should at least strive to consume them better. They should definitely be spread out to the general public more than they are now in Türkiye. Even starting with 3-year-olds and higher, fundamental science and analytical thinking should be introduced to the children with appropriate methods.
+
+The interview can be watched here: https://youtu.be/asSKQYl36X8
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Interview with Prof. Özlem Yeşiltaş — Science Ascend</title>
+
+    <!-- Google Scholar metadata -->
+    <meta name="citation_title" content="Interview with Prof. Özlem Yeşiltaş">
+    <meta name="citation_author" content="Y. Güray Hatipoğlu">
+    <meta name="citation_journal_title" content="Science Ascend">
+    <meta name="citation_volume" content="3">
+    <meta name="citation_issue" content="1">
+    <meta name="citation_publication_date" content="2026/06/01">
+
+    <link rel="stylesheet" href="../styles.css">
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<div class="navbar-container">
+    <div class="navbar">
+        <a href="../ascend/v3i1/index.html">← Volume 3 Issue 1</a>
+        <a href="../ascend.html">Periodicals</a>
+        <a href="../index.html">Home</a>
+    </div>
+</div>
+
+<article class="journal-article">
+
+    <h1>Interview with Prof. Özlem Yeşiltaş</h1>
+
+    <p><strong>Science Ascend — Volume 3 Issue 1</strong></p>
+    <p><strong>Author:</strong> Y. Güray Hatipoğlu</p>
+
+    <hr>
+
+    <section class="article-body">
+
+        <p>
+        Prof. Özlem Yeşiltaş. graduated from the Physics Department of Gazi University with a B.Sc, and followed with an M.Sc. and a Ph.D. in the same department. Considering that she is also a professor in the same department may look straightforward, but the reality is quite different. Even though she had expertise in mathematical physics in her graduate studies, she attended the European Fusion Development Agency (EFDA) Euratom Fusion Summer School in Culham, England, focused on fusion energy power plants. This was followed by a researcher position at the Türkiye Nuclear Energy Institute (TAEK, currently in TENMAK). Then, she attended the 7th Workshop on Quantum Physics with Non-Hermitian Operators (PHHQP VII), closer to her graduate studies, followed by a Post-Doctorate study at Concordia University related to another theoretical field, cosmic strings. A few years later, she was a visiting scientist at the Hungarian Academy of Sciences, Institute for Nuclear Research, ATOMKI, followed by Assistant, Associate, and Full Professor positions at Gazi University, her current affiliation. In short, she has been in various fields and has also participated in interdisciplinary and international teams. The interview focused on her career, important turning points, and what they contributed to her, as well as tips and recommendations on teaching, outreach, and having a healthy life-career balance.
+        </p>
+
+        <p>
+        In the first part of her career, she stated that she knew she was interested in an academic career from the beginning and followed the usual steps with undergraduate and graduate studies. At times, there were good and challenging parts, though persistence was the key to finishing her studies. She also noted the usually attested “obsessive” characteristic of the academicians, which, in fact, is a must-have for having the outputs in the minimum required quality. Of course, this quality also works well in other research-based roles and in other institutes; hence, she chose to work in TAEK while also pursuing the requirements for the Associate Professor position in Türkiye. This decision also originated from her characteristics of experimenting with something not tried before and expanding her vision rather than the convenient path. While doing both experimental and theoretical parts, this experience also made her decide more clearly that the academic environment is more suitable for her.
+        </p>
+
+        <p>
+        After this episode in her career, she managed to start working on quantum gravity topics, and with this, she has been working on three sub-fields under the mathematical physics field. These can be summarized as quantum gravity mathematical problems, non-Hermitian Quantum Mechanics, fermion dynamics, and how cosmic strings impact these fundamental particles, with and without gravitational fields, and lastly, integrable systems.
+        </p>
+
+        <p>
+        While conveying this expert field knowledge to other audiences and students, she stated that making analogies from real life is of utmost importance. One example is the estimated similarity of cosmic string topological defects after phase change in the universe to that of solid white cracks in typical ice cubes. Even if there is not any observed evidence for this, it is appropriate to convey the idea.
+        </p>
+
+        <p>
+        The ideas are, of course, in the mathematical physics domain and abstract, but they still do not prevent them from being useful in other fields after some methodological steps. One case is her published work on Black Scholes and the volatility-related utility of it in the finance domain. This equation is actually a classical differential equation, and the utility relation of this between quantum mechanics and finance is that it shows the time-dependent evolution of the system. She further elaborated on how her view of solving mathematical problems can be adapted into this option pricing and volatility dynamics, and that the interdisciplinary approach, rather than getting confined to a specific field, is better. Here is the link to the <a href="https://doi.org/10.1016/j.physa.2023.128909">study</a>: 
+        </p>
+
+        <p>
+        In the final question, she also states the importance of having hobbies to pursue an academic career. This is critical since focusing on similar problems or sometimes even a single problem for prolonged periods can weigh people down. In this case, she had been involved in a chorus that is successful enough to make international trips to different countries, as well as fitness, weight lifting, and kick-box sports. Specifically, she has been involved in sports and karate since her student days as a licensed member. Such activities provided her with the stability and determination to advance her career. It is also crucial that we should not be too sedentary and always have some movement, with communication between the brain, mind, and body.
+        </p>
+
+        <p>
+        As the concluding remarks, she stressed that the development of a country is closely related to the relationship of the public with science, arts, and sports. Even if we can’t produce, we should at least strive to consume them better. They should definitely be spread out to the general public more than they are now in Türkiye. Even starting with 3-year-olds and higher, fundamental science and analytical thinking should be introduced to the children with appropriate methods.
+        </p>
+
+        <p>
+        The interview can be watched here: <br>
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/asSKQYl36X8?si=_D_WVZ_yfUvZzXJz" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </p>
+
+    </section>
+
+    <hr>
+
+    <footer>
+        <p><a href="../ascend/v3i1/index.html">← Back to Issue</a></p>
+    </footer>
+
+</article>
+
+</body>
+</html>
+
+
