@@ -255,7 +255,69 @@ img {
     margin-top: 8px;
     font-size: 0.9rem;
 }
-   
+
+.issue-list {
+    max-width: 1200px;
+    margin: auto;
+}
+
+.issue-row {
+    display: flex;
+    gap: 30px;
+    margin-bottom: 50px;
+    padding: 25px;
+    border: 1px solid #444;
+    border-radius: 12px;
+    background-color: rgba(255,255,255,0.03);
+}
+
+.issue-cover-large {
+    width: 220px;
+    height: auto;
+    transition: transform 0.3s ease;
+    border-radius: 8px;
+}
+
+.issue-cover-large:hover {
+    transform: scale(1.08);
+}
+
+.issue-info {
+    flex: 1;
+}
+
+.issue-buttons {
+    margin-top: 20px;
+}
+
+.issue-btn {
+    display: inline-block;
+    margin-right: 15px;
+    margin-bottom: 10px;
+    padding: 12px 20px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.issue-btn:hover {
+    transform: translateY(-2px);
+}
+
+@media (max-width: 900px) {
+
+    .issue-row {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .issue-cover-large {
+        width: 280px;
+    }
+
+}
+
 /* Contact form */
 /* Modern contact form styling */
 .contact-form.modern {
