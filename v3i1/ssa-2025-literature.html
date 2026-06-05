@@ -1,1 +1,161 @@
+<!-- ADD THIS SECTION INTO YOUR SSA ARTICLE BEFORE REFERENCES OR AS A NEW MAJOR SECTION -->
+
+<hr>
+
+<h2>The Literature Review of It in Astrophysics (2025)</h2>
+
+<p>
+The section below showcases 15 articles from 2025 that is filtered with “singular spectrum analysis” in NASA ADS and on the “astronomy” subject.
+</p>
+
+<h3>Galactic Astrophysics</h3>
+
+<p>
+Arora et al. (2025) utilized multi-channel SSA (as it implies, not 1D) in their study of the Milky Way (MW) morphology’s temporal evolution. Among their purposes is disentangling the effect of filamentary accretion and satellite perturbation (such as the Large Magellanic Cloud, LMC) on the MW halo structure. They started with basis function expansions (BFEs) to define the spherical characteristic of the Halo and its temporal evolution, as the dipole term was related to the deviation from the symmetry, while the quadrupole term was on the triaxial spherical shape’s temporal deformations. For retrieving these, they used the Latte suite within the FIRE-2 project of zoomed cosmological hydrodynamical simulations (stars based on Starburts99 stellar volution models and Planck results consistent lambda-CDM cosmology) with time-evolving BFE models. From within the BFE representation of the halo density field, time-dependent weighting amplitude coefficients were introduced as inputs to SSA, in the maximum permissible half-length of the entire time series available. In this way, they aimed to suppress the high-frequency effects and obtain more accurate results on long-term trends. They also utilized the mSSA principal components’ correlation values between them to group together (while also applying the Discrete Fourier Transformation) filament-driven groups and LMC groups. Tavangar and Johnston (2025) followed a similar approach and found the mSSA application successful. Petersen and Weinberg (2025) provided a computer software to realize a similar basis function expansion and mSSA application for discovering new dynamical correlations.
+</p>
+
+<h3>Solar and Stellar Astrophysics</h3>
+
+<p>
+Le Mouël et al. (2025) conducted a research study on the solar magnetic cycle and the impacts of planetary motions on it, and through their analysis, they also applied SSA to sunspot number (since 1750) and terrestrial length-of-day (since 1780) records. Their separate results included a shared trend component and 11 oscillatory components.
+</p>
+
+<p>
+Shen et al. (2025) also worked on sunspot numbers, and they also worked on the F10.7 index (Solar flux at 10.7 cm wavelength, radiowave calculated for 1 astronomical unit distance) with the Iterative Oblique SSA (IOSSA) technique. They obtained periodic components for each, which are mostly in good agreement.
+</p>
+
+<p>
+Shirafkan et al. (2025) had a curious framework for length-of-day (LOD) prediction via Monte Carlo SSA (MCSSA, Allen and Smith, 1996) and Autoregressive-Moving Average (ARMA) methods. They feed LOD timeseries to MCSSA first to retrieve oscillations, and the difference between the reconstructed signals and original signals are modeled with ARMA later on. They reported improvement in both the short-term and long-term forecast of LOD values with this novel method.
+</p>
+
+<p>
+Sajadian and Asadi (2025) worked with Transiting Exoplanet Survey Satellite (TESS) lightcurve data of 17 known double white dwarf systems. After denoising them with SSA, 6 of these systems yielded periodic signals noticeable by the Lomb-Scargle periodogram later. They evaluated the results with simulated pure noise periodograms in the same frequency and false alarm probability metric.
+</p>
+
+<h3>Earth–Planetary Astrophysics</h3>
+
+<p>
+Guessoum et al. (2025) employed SSA for predicting earth orientation parameters (EOPs). In their framework of a 1D convolutional neural network (CNN) prediction of EOP, they first used EOP to separate deterministic components and residuals and feed them to the 1D-CNN, then, with the effective angular momentum time series of atmospheric, oceanic, and hydrological angular momentum, the framework predicts the EOP.
+</p>
+
+<p>
+Katzenberger (2025) was working on Monsoon hysteresis and atmospheric memory, and used SSA to smooth the data in chosen window-lengths. To elaborate, SSA was applied to different parameters in the chosen window length, and the first component was retrieved as the smoothed version.
+</p>
+
+<p>
+Malkin et al. (2025) utilized a parametric and non-parametric (SSA) approach to gap-fill a 2-year-long period in polar motion time series, and even though the results of both methods were in agreement with each other within pole coordinate results of the International Earth Rotation and Reference Systems Service (IERS) C01 series, SSA was preferred as a more complete PM model basis.
+</p>
+
+<p>
+Özdemir et al. (2025) applied mSSA to GNSS time series of ground motion for the North Anatolian Fault. They also filled the gaps between the time-series data with mSSA iteratively in the 30-day time window after linearly interpolating them, using stations’ own noise dynamics. For the actual slow slip event detection, gap-filled data was fed to SSA in 5, 10, 15, 20, 25, and 30-day time windows. They combined the first component from all these by taking their mean. In other words, SSA extracted a trend.
+</p>
+
+<h3>High-Energy Physics</h3>
+
+<p>
+Peñil et al. (2025) studied a blazar case and its stochastic flares to see their impact on periodicity determination. They created a model of a sinusoidal signal with parameters selected according to Peñil et al. (2022), contaminated it with red noise and Gaussian noise, and finally injected flares, and they also used the same methods on real use cases. They used Lomb-Scargle periodogram, continuous wavelet transformation, and phase-dispersion minimization, but the singular spectrum analysis they later proposed performed better than them in flare-affected data. They also applied sigma-clipping, which yielded comparable results to SSA, but that method also introduced gaps in the lightcurve.
+</p>
+
+<p>
+Peñil et al. (2025-II) also studied the impact of gaps in the lightcurves on the results of Lomb-Scargle periodogram, Phase-dispersion minimization, and SSA with random gaps, annual variability with random gap distribution, and annual variability with periodic gap distribution. The SSA version for missing data is (Golyandina & Zhigljavsky, 2020) does not provisionally fills, but construct a weighted trajectory matrix, and decomposition is done with weighted singular value decomposition. In the end, a missing data fraction below 50 % permits the classical SSA use, but seasonal observational gaps of 1 year has a risk of spurious periodicity detection. Furthermore, when a purely noise light curve was applied, SSA with a window length of 20 % of the total LC span yielded the best results among other window length ratios of 30 % and 40 %.
+</p>
+
+<p>
+In the same year (2025) another paper from similar people (Rico et al. 2025) made a systematic periodicity and trend search on Fermi-Large Area Telescope (LAT)-detected 494 sources’ lightcurves with SSA and identified 46 candidates (21 known and 25 new discoveries of this study) for quasi-periodic gamma-ray emission blazars.
+</p>
+
+<h3>Instrumentation – Methods</h3>
+
+<p>
+Shi et al. (2025) developed the Instantaneous Phase Discontinuity method in MATLAB to denoise magnetic interference without disrupting the natural signal integrity. The suite of methods they utilized also included a classical SSA method.
+</p>
+
+<p>
+Hoffman et al. (2025) used multichannel SSA to fill gaps to increase the data quality of the Korean Pathfinder Lunar Orbiter (KPLO) magnetometer (KMAG) instrument on the together with a suite of other algorithms that removes stray magnetic fields and corrects low-frequency trends. Specifically for the mSSA case, the method extracts the significant components from each side of a gap, and makes both forward and backward projections from the start of the gap to the end, and combines them with a weighted approach (dual projection scheme (Hassani and Mahmoudvand, 2013)).
+</p>
+
+<h3>Overview</h3>
+
+<p>
+From these studies, we can see an extensive use of multichannel SSA followed by gap-filling with SSA to estimate the missing parts. Probably due to the space constraints, we did not see specific statistical properties and separability discussions over signal and noise in the researchers’ datasets, and oblique SSA was only applied once. Nevertheless, the central aim was generally denoising the data or separating the noise from the signal for better periodicity estimation, which was reported to be successful for their cases.
+</p>
+
+<!-- ADD THIS AS FINAL BIBLIOGRAPHY SECTION -->
+
+<hr>
+
+<h2>2025 Bibliography of Astronomy Studies Utilizing SSA</h2>
+
+<p>
+Arora, A., Garavito-Camargo, N., Sanderson, R. E., Weinberg, M. D., Petersen, M. S., Varela-Lavin, S., Gómez, F. A., Johnston, K. V., Laporte, C. F. P., Shipp, N., Hunt, J. A. S., Besla, G., Darragh-Ford, E., Panithanpaisal, N., Daniel, K. J., &amp; EXP Collaboration. (2025). Shaping the milky way: The interplay of mergers and cosmic filaments. ApJ, 988(2), 190. https://doi.org/10.3847/1538-4357/ade30d
+</p>
+
+<p>
+Guessoum, S., Belda, S., Modiri, S., Karbon, M., Ferrándiz, J. M., Śliwińska-Bronowicz, J., &amp; Schuh, H. (2025). Joint short-term prediction of polar motion and length of day with multi-task deep learning methods. Earth, Planets and Space, 77(1), 25. https://doi.org/10.1186/s40623-025-02150-8
+</p>
+
+<p>
+Hassani, H., &amp; Mahmoudvand, R. (2013). Multivariate singular spectrum analysis: A general view and new vector forecasting approach. International Journal of Energy and Statistics, 1(01), 55–83.
+</p>
+
+<p>
+Hoffmann, A. P., Park, H., Jo, W., Jin, H., Moldwin, M. B., Zesta, E., &amp; Garrick-Bethell, I. (2025). Enhancing magnetic field analysis on the KMAG instrument: Applying WAIC-UP for spacecraft interference removal and interpolating data gaps. Earth and Space Science, 12(11), e2025EA004427. https://doi.org/10.22541/essoar.174558993.34462664/v1
+</p>
+
+<p>
+Katzenberger, A. (2025). Anjakatzenberger/monsoon_hysteresis_reveals_atmospheric_memory: Codes for publication ‘monsoon hysteresis reveals atmospheric memory’ (Version v1.0) [Computer software]. Zenodo. https://doi.org/10.5281/zenodo.15260911
+</p>
+
+<p>
+Le Mouël, J.-L., Courtillot, V., Kossobokov, V., Gibert, D., Lopes, F., Boulé, J.-B., &amp; Zuddas, P. (2025). On the planetary forcing of the Solar dynamo: Evidence from a Lagrangian framework. arXiv E-Prints, arXiv:2511.18939. https://doi.org/10.48550/arXiv.2511.18939
+</p>
+
+<p>
+Malkin, Z., Golyandina, N., &amp; Olenev, R. (2025). Filling the gap in the IERS C01 polar motion series in 1858.9–1860.9. Journal of Geodesy, 99(7), 53. https://doi.org/10.1007/s00190-025-01978-y
+</p>
+
+<p>
+Özdemir, A., Jara, J., Doğan, U., Jolivet, R., Çakir, Z., Nocquet, J.-M., Ergintav, S., &amp; Bilham, R. (2025). Detecting millimetric slow slip events along the North Anatolian Fault with GNSS. Geophysical Research Letters, 52(10), e2024GL111428. https://doi.org/10.22541/essoar.173193625.52928746/v3
+</p>
+
+<p>
+Peñil, P., Torres-Albà, N., Rico, A., Ajello, M., Buson, S., &amp; Adhikari, S. (2025). Distortions in periodicity analysis of blazars: The impact of flares. MNRAS, 539(2), 993–1014. https://doi.org/10.1093/mnras/staf482
+</p>
+
+<p>
+Peñil, P., Ajello, M., Buson, S., Domínguez, A., Westernacher-Schneider, J. R., &amp; Zrake, J. (2022). Evidence of Periodic Variability in Gamma-ray Emitting Blazars with Fermi-LAT. arXiv preprint arXiv:2211.01894.
+</p>
+
+<p>
+Peñil, P., Torres-Albà, N., Rico, A., Buson, S., Ajello, M., Domínguez, A., &amp; Adhikari, S. (2025). Distortions in periodicity analysis of blazars II: The impact of gaps. MNRAS. https://doi.org/10.1093/mnras/staf1842
+</p>
+
+<p>
+Petersen, M., &amp; Weinberg, M. (2025). EXP: N-body expansion code [Computer software].
+</p>
+
+<p>
+Rico, A., Domínguez, A., Peñil, P., Ajello, M., Buson, S., Adhikari, S., &amp; Movahedifar, M. (2025). Singular spectrum analysis of Fermi-LAT blazar light curves: A systematic search for periodicity and trends in the time domain. A&amp;A, 697, A35. https://doi.org/10.1051/0004-6361/202452495
+</p>
+
+<p>
+Sajadian, S., &amp; Asadi, A. (2025). Probing periodic trends in the TESS light curves of the seventeen known double white dwarf systems. The Astronomical Journal, 170(3), 163. https://doi.org/10.3847/1538-3881/adf0f6
+</p>
+
+<p>
+Shen, Y., Zhao, C., Li, P., Hu, M., Zhang, B., &amp; Li, W. (2025). Multiscale periodic analysis of sunspot number data and F10.7 index. Advances in Space Research, 75(12), 8880–8896. https://doi.org/10.1016/j.asr.2025.03.064
+</p>
+
+<p>
+Shi, F., Zeng, L., Fu, Y., Zeren, Z., Liu, D., &amp; Cao, J. (2025). Instantaneous phase discontinuity: An innovative method for time-frequency overlap signal separation in denoising in situ magnetic field data. Journal of Geophysical Research: Space Physics, 130(11), e2025JA034093. https://doi.org/10.1029/2025JA034093
+</p>
+
+<p>
+Shirafkan, S., Sharifi, M. A., Modiri, S., Belda, S., Khazraei, S. M., &amp; Amiri-Simkooei, A. (2025). Short- and long-term prediction of length of day time series using a combination of MCSSA and ARMA. Earth, Planets and Space, 77(1), 35. https://doi.org/10.1186/s40623-025-02166-0
+</p>
+
+<p>
+Tavangar, K., &amp; Johnston, K. (2025). Correlating phase spirals across the galactic disk from a satellite perturber. American Astronomical Society Meeting Abstracts #245, 245, 125.02.
+</p>
+
 
