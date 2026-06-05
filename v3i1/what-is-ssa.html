@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>What is Singular Spectrum Analysis — Science Ascend</title>
+
+    <!-- Google Scholar metadata -->
+    <meta name="citation_title" content="What is Singular Spectrum Analysis">
+    <meta name="citation_author" content="Y. Güray Hatipoğlu">
+    <meta name="citation_journal_title" content="Science Ascend">
+    <meta name="citation_volume" content="3">
+    <meta name="citation_issue" content="1">
+    <meta name="citation_publication_date" content="2026/06/01">
+
+    <link rel="stylesheet" href="../styles.css">
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<div class="navbar-container">
+    <div class="navbar">
+        <a href="../ascend/v3i1/index.html">← Volume 3 Issue 1</a>
+        <a href="../ascend.html">Periodicals</a>
+        <a href="../index.html">Home</a>
+    </div>
+</div>
+
+<article class="journal-article">
+
+    <h1>What is Singular Spectrum Analysis</h1>
+
+    <p><strong>Science Ascend — Volume 3 Issue 1</strong></p>
+    <p><strong>Author:</strong> Y. Güray Hatipoğlu</p>
+
+    <hr>
+
+    <section class="article-body">
+
+        <p>
+        Singular Spectrum Analysis is a method to disentangle time-series data into linearly separable components. It does not make a priori assumptions about the data, and it is a non-parametric method. It has many different branches, and the main form (one-dimensional) has the following four steps (Golyandina & Zhigljavsky, 2020).
+        </p>
+
+        <p><strong>1-] Trajectory matrix:</strong></p>
+
+        <p>
+        With an L window length, one-dimensional time-series data becomes a multi-dimensional Hankel matrix.
+        </p>
+
+        <p>
+        The skew-diagonal elements are equal in Hankel matrices (a12 = a21).
+        </p>
+
+        <p><strong>2-] Singular Value Decomposition:</strong></p>
+
+        <p>
+        This step multiplies the X matrix above by its transpose and decompose it using Singular Value Decomposition (SVD) via XXT = UΣVT. This is, in fact, similar to considering shifted parts of the time-series as if they are another variable. Then, periodic-oscillatory signals have the same impact between two rows if the row number difference is a multiple of that periodic signal. In other words, a periodic component with a 20 unit period, will be similar in row-1 and row-21, and be reflected as a correlated part of the signal.
+        </p>
+
+        <p><strong>3-] Eigen-vector Selection:</strong></p>
+
+        <p>
+        This is where we separate the one-dimensional series into different components. There are many ways for this step, and one is grouping correlated elements into one cluster, and separating the most uncorrelated ones in different clusters, looking at the correlation between the reconstructed elements (w-correlation matrix). Furthermore, if there is a priori knowledge about the frequency of a specific signal or noise, choosing L window as a multiple of that frequency will assist in separating that component. More details on selecting L window length are in Golyandina, Nekrutkin, and Zhigljavski (2001).
+        </p>
+
+        <p><strong>4-] Reconstruction of the one-dimensional time-series data:</strong></p>
+
+        <p>
+        This is where the 1D time-series data will be reconstructed. If we retain all components, the same data will be obtained. Otherwise, there will be some data reduction. The rest is reverting SVD and having the multiplication of the Hankel matrix with its transpose, but this is not the same as before, after the data reduction as some principal components were eliminated. Lastly, the Hankel matrix will be reverted to a 1D time-series data.
+        </p>
+
+        <h3>SSA’s Practical Importance for Astrophysics</h3>
+
+        <p>
+        There are several advantages of using this method in astrophysics.
+        </p>
+
+        <ul>
+            <li>When there is no trend in data, it reproduces the same results as Fast Fourier Transformation (DFT). However, when there is a trend, SSA is more robust than DFT (Thekkeppattu, Trott, & McKinley, 2023).</li>
+            <li>The step-by-step basic SSA can be constructed easily in commonly used programming languages. For instance, in Python 3.x, only NumPy linear algorithms SVD is sufficient.</li>
+        </ul>
+
+        <p>Moreover, there are also caveats to be wary of:</p>
+
+        <ul>
+            <li>SSA assumes that the input data has the same timestep between consecutive values.</li>
+            <li>The chosen window length is critical for the periodic signal recovery process; the likelihood is drastically higher when the window length is a multiple of the period of interest.</li>
+        </ul>
+
+        <p>
+        In addition to the basic SSA, according to the studies below, we see that multichannel SSA, Iterative Oblique SSA, and Monte Carlo SSA were present in various astronomy-related studies in 2025.
+        </p>
+
+        <h3>Multichannel SSA</h3>
+
+        <p>
+        This version of SSA is not much different from the basic SSA application. This is because in the basin Trajectory Matrix (or Hankel Matrix) constructed, each row acts like a different series. When we add other 1D series, e.g., collected photometric measurements from different wavelength bandwidths of R, V, or I, they are also different series, so we may add them up by horizontally or vertically stacking.
+        </p>
+
+        <h3>Iterative-Oblique SSA</h3>
+
+        <p>
+        This algorithm is the iterative version of Nested Oblique SSA (Golyandina and Shlemov, 2013). The idea with the nested Oblique SSA is that we can’t properly extract signal from noise using an oblique-non-orthogonal coordinate system directly, while basic SSA may disentangle noise and signal, but may not be able to separate the signal components from each other, considering their separability, or simply if they are in similar frequencies etc. Oblique SSA algorithm is roughly as follows:
+        </p>
+
+        <p>
+        &gt; The input is given in L, R matrices consistent with the actual input Y. (Consistency is when L is left-orthonormal with the to-be-obtained P after the previous ordinary SVD decomposition of previously, e.g., Cholesky decomposition result, and similarly for R, it is right-orthonormal to Q obtained later.)
+        </p>
+
+        <p>
+        &gt; Calculating OL and OR,<br>
+        &gt; Calculating OLYORT,<br>
+        &gt; Finding the ordinary SVD of OLYORT,<br>
+        &gt; sigmai = sqrt(lambdai), Pi = OL+Ui and Qi = OR+Vi , superscript + means pseudo-inverse.
+        </p>
+
+        <p>
+        The iterative version has an accuracy and a maximum number of iterations to iterate over the oblique part of the aforementioned decomposition.
+        </p>
+
+        <h3>Monte Carlo SSA</h3>
+
+        <p>
+        This was born out of the need to statistically decide between actual signal components and noise while working with SSA results (Allen and Smith, 1996). The problem is that the largest eigenvalue associated component is not an evidence of a physically meaningful signal. Monte Carlo SSA does the following steps:
+        </p>
+
+        <p>
+        &gt; Autoregressive and Moving Average (ARMA) noise model parameter estimation, with AR(1).<br>
+        &gt; Simulating according to the ARMA noise model generated above<br>
+        &gt; Establishing confidence intervals in one of the available ways, one is projecting the surrogate data generated above on the same eigenvectors.<br>
+        &gt; Constructing a null hypothesis according to the confidence intervals for an eigenvalue and associated component to be considered signal or colored noise.
+        </p>
+
+<p>
+Allen, M. R., &amp; Smith, L. A. (1996). Monte Carlo SSA: Detecting irregular oscillations in the Presence of Colored Noise. Journal of Climate, 9(12), 3373-3404. https://doi.org/10.1175/1520-0442(1996)009
+</p>
+
+<p>
+Golyandina, N., Nekrutkin, V., &amp; Zhigljavsky, A.A. (2001). Analysis of Time Series Structure: SSA and Related Techniques (1st ed.). Chapman and Hall/CRC. https://doi.org/10.1201/9780367801687
+</p>
+
+<p>
+Golyandina, N., &amp; Shlemov, A. (2013). Variations of singular spectrum analysis for separability improvement: non-orthogonal decompositions of time series. arXiv preprint arXiv:1308.4022.
+</p>
+
+<p>
+Golyandina, N., &amp; Zhigljavsky, A. (2020). Singular Spectrum Analysis for Time Series. Springer Berlin Heidelberg.
+</p>
+
+<p>
+Thekkeppattu, J. N., Trott, C. M., &amp; McKinley, B. (2023). Singular spectrum analysis of time series data from low-frequency radiometers, with an application to SITARA data. Monthly Notices of the Royal Astronomical Society, 520(4), 6040-6052.
+</p>
+      
+    </section>
+
+    <hr>
+
+    <footer>
+        <p><a href="../ascend/v3i1/index.html">← Back to Issue</a></p>
+    </footer>
+
+</article>
+
+</body>
+</html>
