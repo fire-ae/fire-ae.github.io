@@ -1,53 +1,110 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
-<url>
+  <!-- Homepage -->
+  <url>
     <loc>https://fire-ae.org/</loc>
-</url>
+    <lastmod>2026-06-14</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
 
-<url>
+  <!-- Main Pages -->
+  <url>
     <loc>https://fire-ae.org/services.html</loc>
-</url>
+    <lastmod>2026-06-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
 
-<url>
+  <url>
     <loc>https://fire-ae.org/training.html</loc>
-</url>
-  
-<url>
+    <lastmod>2026-06-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://fire-ae.org/corp-responsibility.html</loc>
+    <lastmod>2026-06-14</lastmod>
+    <changefreq>biannually</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://fire-ae.org/mediamerch.html</loc>
+    <lastmod>2026-06-14</lastmod>
+    <changefreq>bimonthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+    
+
+  <!-- Journal Homepage -->
+  <url>
     <loc>https://fire-ae.org/ascend.html</loc>
-</url>
+    <lastmod>2026-06-14</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.95</priority>
+  </url>
 
-<url>
+  <!-- Volume 3 Issue 1 -->
+  <url>
     <loc>https://fire-ae.org/sa_v3i1.html</loc>
-</url>
+    <lastmod>2026-06-14</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.90</priority>
+  </url>
 
-<url>
+  <!-- Articles -->
+
+  <url>
     <loc>https://fire-ae.org/v3i1/interview-evgeny-smirnov.html</loc>
-</url>
+    <lastmod>2026-06-14</lastmod>
+    <changefreq>never</changefreq>
+    <priority>0.85</priority>
+  </url>
 
-<url>
+  <url>
     <loc>https://fire-ae.org/v3i1/interview-of-ozlem-yesiltas.html</loc>
-</url>
+    <lastmod>2026-06-14</lastmod>
+    <changefreq>never</changefreq>
+    <priority>0.85</priority>
+  </url>
 
-<url>
+  <url>
     <loc>https://fire-ae.org/v3i1/astrobot-jwst-bluesky.html</loc>
-</url>
+    <lastmod>2026-06-14</lastmod>
+    <changefreq>never</changefreq>
+    <priority>0.85</priority>
+  </url>
 
-<url>
+  <url>
     <loc>https://fire-ae.org/v3i1/venus-clouds-sulphur.html</loc>
-</url>
+    <lastmod>2026-06-14</lastmod>
+    <changefreq>never</changefreq>
+    <priority>0.85</priority>
+  </url>
 
-<url>
+  <url>
     <loc>https://fire-ae.org/v3i1/cosmic-strings.html</loc>
-</url>
+    <lastmod>2026-06-14</lastmod>
+    <changefreq>never</changefreq>
+    <priority>0.85</priority>
+  </url>
 
-<url>
+  <url>
     <loc>https://fire-ae.org/v3i1/what-is-ssa.html</loc>
-</url>
+    <lastmod>2026-06-14</lastmod>
+    <changefreq>never</changefreq>
+    <priority>0.85</priority>
+  </url>
 
-<url>
+  <url>
     <loc>https://fire-ae.org/v3i1/ssa-2025-literature.html</loc>
-</url>
+    <lastmod>2026-06-14</lastmod>
+    <changefreq>never</changefreq>
+    <priority>0.85</priority>
+  </url>
 
 </urlset>
