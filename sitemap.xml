@@ -48,6 +48,14 @@
     <priority>0.95</priority>
   </url>
 
+  <!-- Author Guidelines for the Journal -->
+  <url>
+    <loc>https://fire-ae.org/authorguidelines.html</loc>
+    <lastmod>2026-06-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.95</priority>
+  </url>
+  
   <!-- Volume 3 Issue 1 -->
   <url>
     <loc>https://fire-ae.org/sa_v3i1.html</loc>
