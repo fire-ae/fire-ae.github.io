@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>When Astronomy Cannot Be Reproduced</title>
+
+    <!-- Google Scholar metadata -->
+    <meta name="citation_title" content="When Astronomy Cannot Be Reproduced">
+    <meta name="citation_author" content="Arif Solmaz">
+    <meta name="citation_journal_title" content="Science Ascend">
+    <meta name="citation_volume" content="3">
+    <meta name="citation_issue" content="2">
+    <meta name="citation_publication_date" content="2026/07/02">
+    <meta name="citation_doi" content="10.5281/zenodo.21157751">
+    <meta name="citation_language" content="en">
+    <meta name="citation_issn" content="3062-0090">
+    <meta name="citation_pdf_url" content="https://zenodo.org/records/21157751/files/reproducibility.pdf?download=1">
+    <meta name="citation_fulltext_html_url" content="https://fire-ae.org/v3i2/reproducibility.html">
+    <meta name="citation_abstract_html_url" content="https://fire-ae.org/v3i2/reproducibility.html">
+    <meta name="citation_publisher" content="FIRE Araştırma Eğitim Ltd. Şti.">
+    <link rel="canonical"
+      href="https://fire-ae.org/v3i2/reproducibility.html">
+
+    <link rel="stylesheet" href="../styles.css">
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<div class="navbar-container">
+    <div class="navbar">
+        <a href="sa_v3i2.html">← Volume 3 Issue 2</a>
+        <a href="ascend.html">Periodicals</a>
+        <a href="index.html">Home</a>
+    </div>
+</div>
+
+<article class="journal-article">
+
+    <h1>When Astronomy Cannot Be Reproduced</h1>
+
+    <p><strong>Science Ascend — Volume 3 Issue 2</strong></p>
+    <p><strong>Author:</strong> Arif Solmaz</p>
+    <p><strong>Affiliation:</strong> İstanbul Health and Technology University, İstanbul, Türkiye</p>
+        <b>DOI:</b>
+        <a href="https://doi.org/10.5281/zenodo.21157751">
+        10.5281/zenodo.21157751
+        </a>
+    <hr>
+
+<section class="article-body">
+
+<p>When we imagine modern astronomy, we usually think of massive telescopes on mountaintops, advanced space detectors, and the beautiful cosmic images sent down by observatories such as the James Webb Space Telescope. But if we look closely at how modern astrophysics actually works, one of its most important instruments is not made of glass or mirrors. It is made of code.
+</p><p>Today, much of cosmic discovery depends on digital workflows. Data archives, Python scripts, digital notebooks, version-control systems, and online repositories have become part of the scientific method. A published astronomical image is rarely a simple camera snapshot; it is usually the result of calibration, filtering, modeling, and visualization choices.
+</p><p>This creates a serious vulnerability. When these digital layers are hidden in private folders, left undocumented, or tied to temporary commercial software licenses, the scientific result becomes difficult to inspect. Even a famous, peer-reviewed finding can become a black box: visible as a conclusion, but difficult for other scientists to repeat, test, or preserve.
+</p><p>Open-source tools are therefore much more than cheap alternatives to commercial software. They are part of the infrastructure that keeps science reliable. Examples from modern astrophysics, including the BICEP2 cosmic-dust controversy and the Event Horizon Telescope’s image of the black hole in M87, show that reproducibility is not an abstract academic ideal. It is a practical requirement for strong, trustworthy science.
+</p>
+
+  <h2>The Hidden Instruments of Modern Astronomy</h2>
+
+<p>Astronomy has always depended on tools. Historically, the telescope was the defining instrument of discovery. But in 2026, the telescope is often only the first stop in a long scientific chain. A modern astronomical discovery may depend just as heavily on database queries, calibration pipelines, software libraries, plotting scripts, and cloud storage platforms.
+</p><p>These digital tools are our hidden instruments. They rarely appear in press releases or headlines, but they transform raw signals from space into a scientific claim that can be examined by other researchers.
+</p><p>Consider what happens before a discovery is published. A final chart in an article is not a direct snapshot of nature. It is the product of many steps:
+</p>
+  <ol>
+<li>Raw data is downloaded from a digital archive.</li>
+<li>Bad pixels, instrumental effects, or atmospheric noise are filtered out.</li>
+<li>Physical units are converted, and data-quality flags are applied.</li>
+<li>A mathematical model is selected, a fitting algorithm is executed, and a visual plot is generated.</li>
+</ol>
+    <p>If this digital chain is visible and documented, other researchers can inspect it, learn from it, and trust it. But if the steps are hidden inside private folders, closed-source software, or undocumented manual edits, the science becomes harder to verify. Even when the raw data is public, the final result may be nearly impossible to reproduce.
+</p><p>The core issue is not that commercial or private software is inherently bad. Many proprietary tools are powerful and have served science well for decades. The real question is simpler: can the vital path from raw data to a published conclusion be inspected, taught, and preserved for the next generation? Open-source workflows matter because they make that path more transparent.
+</p>
+
+
+<h2>Reproducibility is a Workflow Problem</h2>
+<p>In computational astronomy, people sometimes mistake reproducibility for simply sharing data. But sharing a raw dataset is no longer enough. A dataset becomes scientific evidence only after it passes through a specific workflow.
+</p><p>Without a clear record of the software versions, quality filters, model assumptions, and visualization decisions used, a final table or graph is incomplete. It is like an equation with half the numbers missing.
+</p><p>This is where software dependence becomes an epistemic problem: it affects our ability to know what is true. A data workflow might run perfectly in a well-funded university today. But what happens when a graduate student leaves the team, a software license expires, a local operating system updates, or a commercial software company changes its pricing model? The analysis may become unrecoverable.
+</p>
+
+
+<p>Astrophysics research can suffer from three forms of systematic lock-in:</p>
+<ol>
+<li>License lock-in: scientific training and data analysis become restricted to institutions that can afford temporary software contracts.</li>
+<li>Format lock-in: observational data is saved in closed or poorly documented file types that future tools may not read easily.</li>
+<li>Knowledge lock-in: analysis steps exist only in the mind of one researcher, leaving little institutional memory when that person moves on.</li>
+</ol>
+  <p>Open-source tools do not magically solve all of these problems. Badly written code can still confuse collaborators, and a public GitHub repository without a clear README is not automatically reproducible. However, open-source tools make testing, migration, teaching, and preservation more realistic. They help the scientific community move from blind trust in a software box toward direct inspection of the research process.
+</p>
+
+
+
+<h2>Real Lessons from Published Astronomy</h2>
+<p>The need for open and reproducible workflows is not only a philosophical debate. The history of published astronomy already contains important examples where hidden assumptions, independent data, or open validation changed the status of a major claim.
+</p><p>One of the best-known examples is the BICEP2 case. In 2014, the BICEP2 collaboration announced evidence for B-mode polarization in the cosmic microwave background, the ancient light left over from the Big Bang. The result attracted global attention because it was interpreted as possible evidence for primordial gravitational waves from cosmic inflation.
+</p><p>However, the interpretation depended heavily on how polarized dust emission from the Milky Way was modeled. Later, a joint analysis combining BICEP2/Keck data with observations from the European Space Agency’s Planck satellite found strong evidence for Galactic dust contamination and no statistically significant evidence for primordial tensor modes. In other words, the original inflationary interpretation was no longer robust once the foreground dust was accounted for.
+</p><p>The lesson is not that the BICEP2 team was careless. The lesson is that high-level astronomical interpretation depends on external data, independent checks, and transparent workflows. The observation was real, but the cosmological interpretation required a pipeline that other scientists could test against additional data.
+</p><p>A more positive example is the Event Horizon Telescope (EHT), which produced the first image of a black hole shadow in the galaxy M87. This result achieved wide trust partly because the collaboration did not depend on only one software pipeline or one group of programmers.
+</p><p>For the 2019 M87 imaging analysis, the EHT collaboration used a two-stage procedure. First, four imaging teams worked independently and blindly, using both the established CLEAN method and regularized maximum-likelihood methods. Then the collaboration tested imaging parameters against synthetic data, comparing reconstructions with known ground-truth images. Across these tests, the ring diameter and asymmetry remained stable.
+</p><p>Later reproducibility work extended this openness by creating an open-source, containerized software package that allowed the public to reproduce the first image of M87 from available EHT artifacts. In this case, transparency did not weaken the discovery. It made the result easier to trust, teach, and revisit.
+</p>
+  
+<h2>A Systematic Problem</h2>
+<p>These are not isolated stories. Broader studies suggest that astronomy faces a persistent problem with hidden or fragile workflows.
+</p><p>Lior Shamir and collaborators examined research-source-code availability in astronomy and astrophysics and found that many authors did not make their code publicly available. In one ASCL-related effort, only about 13 percent of contacted authors agreed to share code publicly. This makes independent replication much harder than it needs to be.
+</p><p>A later study by Alice Allen, Peter Teuben, and P. Wesley Ryan examined source-code availability and link persistence in astrophysics articles. Their study identified hundreds of software instances and thousands of hyperlinks, showing that software is deeply embedded in modern astrophysics but is not always archived in stable, reusable ways. Link persistence also matters: if the web address to code or data disappears, the scientific trail becomes weaker.
+</p><p>These cases show that open-source astronomy is not simply about saving money on software licenses. It is about protecting the integrity of the scientific path. Sometimes openness protects a strong discovery from unfair doubt. Sometimes it shows that a result needs revision. In both cases, science wins.
+
+
+
+<h2>Open-Source Astronomy is Professional Infrastructure</h2>
+<p>The old idea that open-source software is merely a cheap substitute for commercial programs is outdated. Today, open-source tools form part of the professional infrastructure of global astronomical research.
+</p><p>The scientific Python ecosystem gives researchers a shared language. NumPy supports numerical computation; Matplotlib supports scientific visualization; and Jupyter Notebooks allow scientists to combine code, computational results, equations, and explanatory text in one document. These tools are not hobbyist extras. They are part of everyday scientific practice.
+</p><p>The power of open-source astronomy is especially visible in several mature projects:
+</p>
+  <ol>
+  <li>Astropy provides community-developed Python tools for astronomy, including support for FITS files, tables, coordinates, units, time systems, constants, and related infrastructure.</li>
+<li>SunPy supports open solar-physics analysis and provides tools for working with solar data.</li>
+<li>MESA, Modules for Experiments in Stellar Astrophysics, is an open-source stellar-evolution code used for modeling how stars change over time.</li>
+<li>TOPCAT gives astronomers an interactive way to inspect, filter, plot, and manipulate large astronomical tables and source catalogs.</li>
+</ol>
+    <p>The true strength of modern astronomy does not lie in any single package. It lies in the connection between them.
+</p><p>A student can inspect a catalog in TOPCAT, write a Python script using Astropy to analyze targets, document the logic in a Jupyter Notebook, and track each modification with Git. Because these tools communicate through open standards and widely used formats, they create a more resilient chain of discovery.
+</p>
+
+
+<h2>What Students and Researchers Gain</h2>
+<p>For students, open-source astronomy provides something essential: a more level playing field. A beginner with an ordinary laptop can access public archives, run public notebooks, and use the same widely available libraries as researchers at wealthy institutions. This does not make research easy, but it lowers the financial barriers to participation.
+</p><p>Open tools also teach the scientific method more directly. When a student works with code, handles file formats, manages version history, and learns to fix errors, they see how a scientific result is built. They learn that science is not only a final graph or a conclusion. It is a series of traceable decisions.
+</p><p>The benefits extend across an academic career:
+  </p>
+  <ol>
+    <li></li>For early-career researchers, open tools create portable expertise. Skills in Python, Astropy, Jupyter, and Git belong to the researcher, not to an institution’s license server. These skills remain useful across universities and also transfer into data science, engineering and scientific communication.</li>
+<li>For research groups, open workflows make collaboration easier to inspect. An advisor can check the code behind a figure. Collaborators can rerun an analysis after a sample changes. When a graduate student leaves, the next student can continue from a documented pipeline instead of rebuilding the project from memory.</li>
+  <li>For institutions, open practices build resilience. A department that trains students only inside closed software ecosystems creates fragile expertise. If funding changes or platform policies shift, the workflow may break. Teaching open formats and archived workflows helps preserve institutional knowledge.</li>
+</ol>
+
+<h2>A Practical Open Workflow: From Archive to Figure</h2>
+<p>A reproducible astronomy project does not need to be overwhelming. Even a small undergraduate project can model strong scientific habits.
+</p><p>Imagine a student project that downloads public star-catalog data and builds a color-magnitude diagram. To make the final chart transparent and reliable, the student can follow a simple workflow:
+</p>
+  <ol>
+<li>1. Data Access	Record the exact archive name, the data release version, the specific search query, and the date the data was accessed.</li>
+<li>2. Visual Inspection	Use open tools like TOPCAT to look at the columns, check the units, and find obvious errors or outlier points before writing code.</li>
+<li>3. Scripted Analysis	Move all data processing steps into clean Python scripts or Jupyter Notebooks so the entire calculation can be rerun with a single click.</li>
+<li>4. Figure Generation	Program the final publication charts directly from the code. Never make manual, unrecorded edits using a graphic design program.</li>
+<li>5. Version Control	Use Git to track every code modification, linking every new version of a chart to a specific state of the project.</li>
+<li>6. Permanent Preservation	When the work is ready, upload the code, the processed data, and clear run instructions into a stable, public repository like Zenodo.</li>
+</ol>
+<p>This workflow does not guarantee that the science will be free from mistakes. Instead, it makes mistakes easier to find and correct.
+</p><p>If a final plot looks wrong, the group can trace the code line by line. If a referee asks how a star sample was filtered, the answer is recorded in the script. If a student graduates, the project remains organized and ready for the next researcher.
+</p><p>As a project grows from a thesis to a major international survey, the same logic scales upward. A beginner may need only one notebook and a short README file. An advanced project may require environment files, automated tests, formal software releases, and archived data products. At every level, the principle remains the same: the path from raw space data to scientific claim should leave a traceable record.
+</p>
+
+<h2>Beyond Software: Platforms and Preservation</h2>
+  
+<p>Open-source practice is broader than replacing one commercial application with a free alternative. Modern scientific work also depends on cloud platforms: code-hosting sites, shared drives, browser-based text editors, project-management tools, and digital communication channels. These tools make collaboration easier, but they also introduce new forms of technical dependence.
+</p><p>A research group might host code on a commercial server, write papers in a browser-based editor, store data in a cloud drive, and discuss key decisions in a team chat. None of this is inherently wrong. The problem appears when the final scientific record has no secure exit route.
+</p><p>Accounts can be deactivated, terms of service can change, storage limits can shrink, and personal websites can disappear. Many readers have encountered older papers where links to original data or software no longer work. A workflow that relies entirely on one private account or one commercial platform is fragile.
+</p><p>Researchers therefore need to distinguish active collaboration from long-term preservation:
+</p>
+  <ol>
+  <li>During a project, teams can use convenient tools for daily work.</li>
+<li>At publication, supporting materials should become durable. Code should be released in a versioned form, important outputs should be moved to independent archives, and metadata should be clear.</li>
+<li>A shared cloud folder is not a permanent archive. A team chat thread is not scientific documentation.</li>
+</ol>
+    <p>This is why the FAIR principles matter. Digital research objects should be findable, accessible, interoperable, and reusable. In daily research, this means recording data sources, using open and documented file formats, archiving stable software releases, and making the pipeline understandable to an outside scientist.
+</p>
+
+
+<h2>A Compact Checklist for Resilient Astronomy Workflows</h2>
+<p>A workflow does not need to be perfect to be valuable. The following checklist is a practical minimum standard for student theses, small collaborations, and standard research papers.</p>
+
+  <ol>
+<li>Can the data source be identified?	Always record the exact archive name, release version, search query, and access date.</li>
+<li>Can the analysis be rerun?	Keep clean scripts or notebooks that directly generate your main figures and tables.</li>
+<li>Can the environment be reconstructed?	List your exact package versions or provide a standard text file (requirements.txt or environment.yml).</li>
+<li>Can code changes be traced?	Use Git to track edits and connect specific chart versions to specific code states.</li>
+<li>Can a new reader understand the project?	Include a short, clear README file detailing your folder structure and run instructions.</li>
+<li>Can output be regenerated?	Ensure every published figure is explicitly linked to the code that created it.</li>
+<li>Are your file formats open?	Prefer well-documented, universally accessible formats like FITS, VOTable, CSV/ECSV, Markdown, and LaTeX.</li>
+<li>Can the work survive the project?	Archive your reusable code, processed data, and notebooks in a stable repository like Zenodo.</li>
+<li>Are tools and data properly credited?	Formally cite the software libraries, digital surveys, and data archives you used.</li>
+<li>Is there a clear exit route?	Keep independent, exportable backups of your work so you never depend on a single commercial platform.</li>
+</ol>
+<p>This checklist is not paperwork for its own sake. It is a shield against common causes of scientific loss: undocumented data steps, hidden dependencies, manual plotting edits, and disappearing web platforms.
+</p>
+
+<h2>Conclusion: Open Tools as Scientific Resilience</h2>
+<p>Open-source alternatives in astronomy are no longer secondary choices or experimental hobbies. They are part of the infrastructure required for responsible modern science. They help ensure that knowledge of the universe remains inspectable and usable after local software licenses expire, commercial platforms change, or research institutions shift their budgets.
+</p><p>The goal is not ideological purity. Modern astrophysics will continue to use mixed workflows, including mission-specific pipelines, specialized commercial software, and community-developed packages. The practical question at the end of every project is simpler: can the essential parts of this work be inspected, documented, transferred, and preserved?
+</p><p>If the answer is yes, the science is stronger.
+</p><p>For students, open tools offer broader access to astronomical research and portable technical skills. For researchers, they make results easier to verify and build upon. For institutions, they reduce lock-in and preserve institutional memory. As astronomy builds larger telescopes and collects deeper surveys, the future of the field will be shaped not only by what we observe, but also by how openly and durably we turn raw data into understanding.
+</p>
+  <h2>Acknowledgements & Disclosure</h2>
+<p>The author thanks the editorial team of Science Ascend for their guidance. AI tools were used during the drafting phase to help adapt the tone and language structure for a broader science-journalism audience. The author reviewed, edited, and approved the final text.
+</p>
+
+<h2>Bibliography</h2>
+
+<ul class="references">
+
+<li>Ade, P. A. R., Aghanim, N., Ahmed, Z., Aikin, R. W., Alexander, K. D., Arnaud, M., Aumont, J., Baccigalupi, C., Banday, A. J., Barkats, D., Barreiro, R. B., Bartlett, J. G., Bartolo, N., Battaner, E., Benabed, K., Benoît, A., Benoit-Lévy, A., Benton, S. J., Bernard, J.-P., … (BICEP2/Keck and Planck Collaborations). (2015). Joint analysis of BICEP2/Keck Array and Planck data. <i>Physical Review Letters, 114</i>(10), 101301. <a href="https://doi.org/10.1103/PhysRevLett.114.101301" target="_blank">https://doi.org/10.1103/PhysRevLett.114.101301</a></li>
+
+<li>Ade, P. A. R., Aikin, R. W., Barkats, D., Benton, S. J., Bischoff, C. A., Bock, J. J., Brevik, J. A., Buder, I., Bullock, E., Dowell, C. D., Duband, L., Filippini, J. P., Fliescher, S., Golwala, S. R., Halpern, M., Hasselfield, M., Hildebrandt, S. R., Hilton, G. C., Hristov, V. V., … (BICEP2 Collaboration). (2014). Detection of B-mode polarization at degree angular scales by BICEP2. <i>Physical Review Letters, 112</i>(24), 241101. <a href="https://doi.org/10.1103/PhysRevLett.112.241101" target="_blank">https://doi.org/10.1103/PhysRevLett.112.241101</a></li>
+
+<li>Allen, A., Teuben, P. J., &amp; Ryan, P. W. (2018). Schroedinger’s code: A preliminary study on research source code availability and link persistence in astrophysics. <i>The Astrophysical Journal Supplement Series, 236</i>(1), 10. <a href="https://doi.org/10.3847/1538-4365/aab764" target="_blank">https://doi.org/10.3847/1538-4365/aab764</a></li>
+
+<li>Committee on Reproducibility and Replicability in Science, Board on Behavioral, Cognitive, and Sensory Sciences, Committee on National Statistics, Division of Behavioral and Social Sciences and Education, Nuclear and Radiation Studies Board, Division on Earth and Life Studies, Board on Mathematical Sciences and Analytics, Committee on Applied and Theoretical Statistics, Division on Engineering and Physical Sciences, Board on Research Data and Information, Committee on Science, Engineering, Medicine, and Public Policy, Policy and Global Affairs, &amp; National Academies of Sciences, Engineering, and Medicine. (2019). <i>Reproducibility and replicability in science</i>. National Academies Press. <a href="https://doi.org/10.17226/25303" target="_blank">https://doi.org/10.17226/25303</a></li>
+
+<li>Harris, C. R., Millman, K. J., Van Der Walt, S. J., Gommers, R., Virtanen, P., Cournapeau, D., Wieser, E., Taylor, J., Berg, S., Smith, N. J., Kern, R., Picus, M., Hoyer, S., Van Kerkwijk, M. H., Brett, M., Haldane, A., Del Río, J. F., Wiebe, M., Peterson, P., … Oliphant, T. E. (2020). Array programming with NumPy. <i>Nature, 585</i>(7825), 357–362. <a href="https://doi.org/10.1038/s41586-020-2649-2" target="_blank">https://doi.org/10.1038/s41586-020-2649-2</a></li>
+
+<li>Hunter, J. D. (2007). Matplotlib: A 2D graphics environment. <i>Computing in Science &amp; Engineering, 9</i>(3), 90–95. <a href="https://doi.org/10.1109/MCSE.2007.55" target="_blank">https://doi.org/10.1109/MCSE.2007.55</a></li>
+
+<li>Kluyver, T., Ragan-Kelley, B., Pérez, F., Granger, B., Bussonnier, M., Frederic, J., Kelley, K., Hamrick, J., Grout, J., Corlay, S., Ivanov, P., Avila, D., Abdalla, S., Willing, C., &amp; Jupyter Development Team. (2016). Jupyter notebooks: A publishing format for reproducible computational workflows. In <i>Positioning and Power in Academic Publishing: Players, Agents and Agendas</i>. IOS Press. <a href="https://doi.org/10.3233/978-1-61499-649-1-87" target="_blank">https://doi.org/10.3233/978-1-61499-649-1-87</a></li>
+
+<li>Nigro, C., Deil, C., Zanin, R., Hassan, T., King, J., Ruiz, J. E., Saha, L., Terrier, R., Brügge, K., Nöthe, M., Bird, R., Lin, T. T. Y., Aleksić, J., Boisson, C., Contreras, J. L., Donath, A., Jouvin, L., Kelley-Hoskins, N., Khelifi, B., … Sinha, A. (2019). Towards open and reproducible multi-instrument analysis in gamma-ray astronomy. <i>Astronomy &amp; Astrophysics, 625</i>, A10. <a href="https://doi.org/10.1051/0004-6361/201834938" target="_blank">https://doi.org/10.1051/0004-6361/201834938</a></li>
+
+<li>Patel, R., Roachell, B., Caíno-Lores, S., Ketron, R., Leonard, J., Tan, N., Vahi, K., Brown, D. A., Deelman, E., &amp; Taufer, M. (2022). Reproducibility of the first image of a black hole in the galaxy M87 from the Event Horizon Telescope Collaboration. <i>Computing in Science &amp; Engineering, 24</i>(5), 42–52. <a href="https://doi.org/10.1109/MCSE.2023.3241105" target="_blank">https://doi.org/10.1109/MCSE.2023.3241105</a></li>
+
+<li>Paxton, B., Bildsten, L., Dotter, A., Herwig, F., Lesaffre, P., &amp; Timmes, F. (2011). Modules for experiments in stellar astrophysics (MESA). <i>The Astrophysical Journal Supplement Series, 192</i>(1), 3. <a href="https://doi.org/10.1088/0067-0049/192/1/3" target="_blank">https://doi.org/10.1088/0067-0049/192/1/3</a></li>
+
+<li>Shamir, L., Wallin, J. F., Allen, A., Berriman, B., Teuben, P., Nemiroff, R. J., Mink, J., Hanisch, R. J., &amp; DuPrie, K. (2013). Practices in source code sharing in astrophysics. <i>Astronomy and Computing, 1</i>, 54–58. <a href="https://doi.org/10.1016/j.ascom.2013.04.001" target="_blank">https://doi.org/10.1016/j.ascom.2013.04.001</a></li>
+
+<li>Taylor, M. (2017). TOPCAT: Desktop exploration of tabular data for astronomy and beyond. <i>Informatics, 4</i>(3), 18. <a href="https://doi.org/10.3390/informatics4030018" target="_blank">https://doi.org/10.3390/informatics4030018</a></li>
+
+<li>The Astropy Collaboration, Price-Whelan, A. M., Lim, P. L., Earl, N., Starkman, N., Bradley, L., Shupe, D. L., Patil, A. A., Corrales, L., Brasseur, C. E., Nöthe, M., Donath, A., Tollerud, E., Morris, B. M., Ginsburg, A., Vaher, E., Weaver, B. A., Tocknell, J., Jamieson, W., … Astropy Project Contributors. (2022). The Astropy Project: Sustaining and growing a community-oriented open-source project and the latest major release (v5.0) of the core package. <i>The Astrophysical Journal, 935</i>(2), 167. <a href="https://doi.org/10.3847/1538-4357/ac7c74" target="_blank">https://doi.org/10.3847/1538-4357/ac7c74</a></li>
+
+<li>The Astropy Collaboration, Robitaille, T. P., Tollerud, E. J., Greenfield, P., Droettboom, M., Bray, E., Aldcroft, T., Davis, M., Ginsburg, A., Price-Whelan, A. M., Kerzendorf, W. E., Conley, A., Crighton, N., Barbary, K., Muna, D., Ferguson, H., Grollier, F., Parikh, M. M., Nair, P. H., … Streicher, O. (2013). Astropy: A community Python package for astronomy. <i>Astronomy &amp; Astrophysics, 558</i>, A33. <a href="https://doi.org/10.1051/0004-6361/201322068" target="_blank">https://doi.org/10.1051/0004-6361/201322068</a></li>
+
+<li>The Event Horizon Telescope Collaboration, Akiyama, K., Alberdi, A., Alef, W., Asada, K., Azulay, R., Baczko, A.-K., Ball, D., Baloković, M., Barrett, J., Bintley, D., Blackburn, L., Boland, W., Bouman, K. L., Bower, G. C., Bremer, M., Brinkerink, C. D., Brissenden, R., Britzen, S., … Yamaguchi, P. (2019). First M87 Event Horizon Telescope results. IV. Imaging the central supermassive black hole. <i>The Astrophysical Journal Letters, 875</i>(1), L4. <a href="https://doi.org/10.3847/2041-8213/ab0e85" target="_blank">https://doi.org/10.3847/2041-8213/ab0e85</a></li>
+
+<li>The SunPy Community, Barnes, W. T., Bobra, M. G., Christe, S. D., Freij, N., Hayes, L. A., Ireland, J., Mumford, S., Perez-Suarez, D., Ryan, D. F., Shih, A. Y., … (SunPy Contributors). (2020). The SunPy Project: Open source development and status of the version 1.0 core package. <i>The Astrophysical Journal, 890</i>(1), 68. <a href="https://doi.org/10.3847/1538-4357/ab4f7a" target="_blank">https://doi.org/10.3847/1538-4357/ab4f7a</a></li>
+
+<li>Wilkinson, M. D., Dumontier, M., Aalbersberg, Ij. J., Appleton, G., Axton, M., Baak, A., Blomberg, N., Boiten, J.-W., Da Silva Santos, L. B., Bourne, P. E., Bouwman, J., Brookes, A. J., Clark, T., Crosas, M., Dillo, I., Dumon, O., Edmunds, S., Evelo, C. T., Finkers, R., … Mons, B. (2016). The FAIR guiding principles for scientific data management and stewardship. <i>Scientific Data, 3</i>(1), 160018. <a href="https://doi.org/10.1038/sdata.2016.18" target="_blank">https://doi.org/10.1038/sdata.2016.18</a></li>
+
+<li>Wilson, G., Bryan, J., Cranston, K., Kitzes, J., Nederbragt, L., &amp; Teal, T. K. (2017). Good enough practices in scientific computing. <i>PLOS Computational Biology, 13</i>(6), e1005510. <a href="https://doi.org/10.1371/journal.pcbi.1005510" target="_blank">https://doi.org/10.1371/journal.pcbi.1005510</a></li>
+
+<li>Zenodo. (2026). <i>About Zenodo</i>. CERN Open Science Platform. Retrieved July 2, 2026, from <a href="https://about.zenodo.org/" target="_blank">https://about.zenodo.org/</a></li>
+
+</ul>
+  
+</section>
+
+    <hr>
+
+    <footer>
+        <p><a href="sa_v3i2.html">← Back to Issue</a></p>
+    </footer>
+
+</article>
+
+</body>
+</html>
