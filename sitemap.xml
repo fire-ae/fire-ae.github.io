@@ -55,6 +55,73 @@
     <changefreq>monthly</changefreq>
     <priority>0.95</priority>
   </url>
+
+    <!-- Volume 3 Issue 2 -->
+  <url>
+    <loc>https://fire-ae.org/sa_v3i2.html</loc>
+    <lastmod>2026-07-04</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.90</priority>
+  </url>
+
+  <!-- Volume 3 Issue 2 Articles -->
+
+  <url>
+    <loc>https://fire-ae.org/v3i2/interview-erika-pakstiene.html</loc>
+    <lastmod>2026-07-04</lastmod>
+    <changefreq>never</changefreq>
+    <priority>0.95</priority>
+  </url>
+
+    <url>
+    <loc>https://fire-ae.org/v3i2/interview-mark-wieczorek.html</loc>
+    <lastmod>2026-07-04</lastmod>
+    <changefreq>never</changefreq>
+    <priority>0.95</priority>
+  </url>
+
+    <url>
+    <loc>https://fire-ae.org/v3i2/interview-maarten-roos-serote.html</loc>
+    <lastmod>2026-07-04</lastmod>
+    <changefreq>never</changefreq>
+    <priority>0.95</priority>
+  </url>
+
+    <url>
+    <loc>https://fire-ae.org/v3i2/interview-wolfgang-kerzendorf.html</loc>
+    <lastmod>2026-07-04</lastmod>
+    <changefreq>never</changefreq>
+    <priority>0.95</priority>
+  </url>
+
+      <url>
+    <loc>https://fire-ae.org/v3i2/cosmic-strings-lecture.html</loc>
+    <lastmod>2026-07-04</lastmod>
+    <changefreq>never</changefreq>
+    <priority>0.95</priority>
+  </url>
+
+    <url>
+    <loc>https://fire-ae.org/v3i2/planetary-comparison-geology.html</loc>
+    <lastmod>2026-07-04</lastmod>
+    <changefreq>never</changefreq>
+    <priority>0.95</priority>
+  </url>
+
+    <url>
+    <loc>https://fire-ae.org/v3i2/reproducibility.html</loc>
+    <lastmod>2026-07-04</lastmod>
+    <changefreq>never</changefreq>
+    <priority>0.95</priority>
+  </url>
+
+      <url>
+    <loc>https://fire-ae.org/v3i2/venus-express.html</loc>
+    <lastmod>2026-07-04</lastmod>
+    <changefreq>never</changefreq>
+    <priority>0.95</priority>
+  </url>
+
   
   <!-- Volume 3 Issue 1 -->
   <url>
@@ -64,7 +131,7 @@
     <priority>0.90</priority>
   </url>
 
-  <!-- Articles -->
+  <!-- Volume 3 Issue 1 Articles -->
 
   <url>
     <loc>https://fire-ae.org/v3i1/interview-evgeny-smirnov.html</loc>
