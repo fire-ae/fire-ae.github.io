@@ -202,7 +202,8 @@ body a {color: #f7dc0f}
 .article-container{
    margin-left: 0px;
    margin: 40px auto;
-   padding: 150px;
+   padding-left: 150px;
+   padding-right: 30px;
 }
 
 
