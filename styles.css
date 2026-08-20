@@ -115,8 +115,8 @@ body a {color: #f7dc0f}
     position: fixed;
     top: 160px; /* adjust to your navbar height */
     left: 0;
-    width: 260px;
-    height: 700px;
+    width: 220px;
+    height: 600px;
     background-color: #111;
     padding: 20px;
     overflow-y: auto;
