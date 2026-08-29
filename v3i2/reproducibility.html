@@ -38,6 +38,34 @@
     </div>
 </div>
 
+<div class="services-sidebar">
+    <a href="#modern">The Hidden Instruments of Modern Astronomy</a>
+    <hr>
+    <a href="#reproducibilityworkflow">Reproducibility is a Workflow Problem</a>
+    <hr>
+    <a href="#lessons">Real Lessons from Published Astronomy</a>
+    <hr>
+    <a href="#problem">A Systematic Problem</a>
+    <hr>
+    <a href="#opensource">Open-Source Astronomy is Professional Infrastructure</a>
+    <hr>
+    <a href="#gain">What Students and Researchers Gain</a>
+    <hr>
+    <a href="#workflow">A Practical Open Workflow: From Archive to Figure</a>
+    <hr>
+    <a href="#platforms">Beyond Software: Platforms and Preservation</a>
+    <hr>
+    <a href="#compactchecklist">A Compact Checklist for Resilient Astronomy Workflows</a>
+    <hr>
+    <a href="#conclusion">Conclusion: Open Tools as Scientific Resilience</a>
+    <hr>
+    <a href="#acknowledgement">Acknowledgements & Disclosure</a>
+    <hr>
+    <a href="#bibliography">Bibliography</a>
+</div>
+    
+<div class="article-container">
+    
 <article class="journal-article">
 
     <h1>When Astronomy Cannot Be Reproduced</h1>
@@ -59,7 +87,7 @@
 </p><p>Open-source tools are therefore much more than cheap alternatives to commercial software. They are part of the infrastructure that keeps science reliable. Examples from modern astrophysics, including the BICEP2 cosmic-dust controversy and the Event Horizon Telescope’s image of the black hole in M87, show that reproducibility is not an abstract academic ideal. It is a practical requirement for strong, trustworthy science.
 </p>
 
-  <h2>The Hidden Instruments of Modern Astronomy</h2>
+  <a id="modern"><h2>The Hidden Instruments of Modern Astronomy</h2></a>
 
 <p>Astronomy has always depended on tools. Historically, the telescope was the defining instrument of discovery. But in 2026, the telescope is often only the first stop in a long scientific chain. A modern astronomical discovery may depend just as heavily on database queries, calibration pipelines, software libraries, plotting scripts, and cloud storage platforms.
 </p><p>These digital tools are our hidden instruments. They rarely appear in press releases or headlines, but they transform raw signals from space into a scientific claim that can be examined by other researchers.
@@ -76,7 +104,7 @@
 </p>
 
 
-<h2>Reproducibility is a Workflow Problem</h2>
+<a id="reproducibilityworkflow"><h2>Reproducibility is a Workflow Problem</h2></a>
 <p>In computational astronomy, people sometimes mistake reproducibility for simply sharing data. But sharing a raw dataset is no longer enough. A dataset becomes scientific evidence only after it passes through a specific workflow.
 </p><p>Without a clear record of the software versions, quality filters, model assumptions, and visualization decisions used, a final table or graph is incomplete. It is like an equation with half the numbers missing.
 </p><p>This is where software dependence becomes an epistemic problem: it affects our ability to know what is true. A data workflow might run perfectly in a well-funded university today. But what happens when a graduate student leaves the team, a software license expires, a local operating system updates, or a commercial software company changes its pricing model? The analysis may become unrecoverable.
@@ -94,7 +122,7 @@
 
 
 
-<h2>Real Lessons from Published Astronomy</h2>
+<a id="lessons"><h2>Real Lessons from Published Astronomy</h2></a>
 <p>The need for open and reproducible workflows is not only a philosophical debate. The history of published astronomy already contains important examples where hidden assumptions, independent data, or open validation changed the status of a major claim.
 </p><p>One of the best-known examples is the BICEP2 case. In 2014, the BICEP2 collaboration announced evidence for B-mode polarization in the cosmic microwave background, the ancient light left over from the Big Bang. The result attracted global attention because it was interpreted as possible evidence for primordial gravitational waves from cosmic inflation.
 </p><p>However, the interpretation depended heavily on how polarized dust emission from the Milky Way was modeled. Later, a joint analysis combining BICEP2/Keck data with observations from the European Space Agency’s Planck satellite found strong evidence for Galactic dust contamination and no statistically significant evidence for primordial tensor modes. In other words, the original inflationary interpretation was no longer robust once the foreground dust was accounted for.
@@ -104,7 +132,7 @@
 </p><p>Later reproducibility work extended this openness by creating an open-source, containerized software package that allowed the public to reproduce the first image of M87 from available EHT artifacts. In this case, transparency did not weaken the discovery. It made the result easier to trust, teach, and revisit.
 </p>
   
-<h2>A Systematic Problem</h2>
+<a id="problem"><h2>A Systematic Problem</h2></a>
 <p>These are not isolated stories. Broader studies suggest that astronomy faces a persistent problem with hidden or fragile workflows.
 </p><p>Lior Shamir and collaborators examined research-source-code availability in astronomy and astrophysics and found that many authors did not make their code publicly available. In one ASCL-related effort, only about 13 percent of contacted authors agreed to share code publicly. This makes independent replication much harder than it needs to be.
 </p><p>A later study by Alice Allen, Peter Teuben, and P. Wesley Ryan examined source-code availability and link persistence in astrophysics articles. Their study identified hundreds of software instances and thousands of hyperlinks, showing that software is deeply embedded in modern astrophysics but is not always archived in stable, reusable ways. Link persistence also matters: if the web address to code or data disappears, the scientific trail becomes weaker.
@@ -112,7 +140,7 @@
 
 
 
-<h2>Open-Source Astronomy is Professional Infrastructure</h2>
+<a id="opensource"><h2>Open-Source Astronomy is Professional Infrastructure</h2></a>
 <p>The old idea that open-source software is merely a cheap substitute for commercial programs is outdated. Today, open-source tools form part of the professional infrastructure of global astronomical research.
 </p><p>The scientific Python ecosystem gives researchers a shared language. NumPy supports numerical computation; Matplotlib supports scientific visualization; and Jupyter Notebooks allow scientists to combine code, computational results, equations, and explanatory text in one document. These tools are not hobbyist extras. They are part of everyday scientific practice.
 </p><p>The power of open-source astronomy is especially visible in several mature projects:
@@ -128,7 +156,7 @@
 </p>
 
 
-<h2>What Students and Researchers Gain</h2>
+<a id="gain"><h2>What Students and Researchers Gain</h2></a>
 <p>For students, open-source astronomy provides something essential: a more level playing field. A beginner with an ordinary laptop can access public archives, run public notebooks, and use the same widely available libraries as researchers at wealthy institutions. This does not make research easy, but it lowers the financial barriers to participation.
 </p><p>Open tools also teach the scientific method more directly. When a student works with code, handles file formats, manages version history, and learns to fix errors, they see how a scientific result is built. They learn that science is not only a final graph or a conclusion. It is a series of traceable decisions.
 </p><p>The benefits extend across an academic career:
@@ -139,7 +167,7 @@
   <li>For institutions, open practices build resilience. A department that trains students only inside closed software ecosystems creates fragile expertise. If funding changes or platform policies shift, the workflow may break. Teaching open formats and archived workflows helps preserve institutional knowledge.</li>
 </ol>
 
-<h2>A Practical Open Workflow: From Archive to Figure</h2>
+<a id="workflow"><h2>A Practical Open Workflow: From Archive to Figure</h2></a>
 <p>A reproducible astronomy project does not need to be overwhelming. Even a small undergraduate project can model strong scientific habits.
 </p><p>Imagine a student project that downloads public star-catalog data and builds a color-magnitude diagram. To make the final chart transparent and reliable, the student can follow a simple workflow:
 </p>
@@ -156,7 +184,7 @@
 </p><p>As a project grows from a thesis to a major international survey, the same logic scales upward. A beginner may need only one notebook and a short README file. An advanced project may require environment files, automated tests, formal software releases, and archived data products. At every level, the principle remains the same: the path from raw space data to scientific claim should leave a traceable record.
 </p>
 
-<h2>Beyond Software: Platforms and Preservation</h2>
+<a id="platforms"><h2>Beyond Software: Platforms and Preservation</h2></a>
   
 <p>Open-source practice is broader than replacing one commercial application with a free alternative. Modern scientific work also depends on cloud platforms: code-hosting sites, shared drives, browser-based text editors, project-management tools, and digital communication channels. These tools make collaboration easier, but they also introduce new forms of technical dependence.
 </p><p>A research group might host code on a commercial server, write papers in a browser-based editor, store data in a cloud drive, and discuss key decisions in a team chat. None of this is inherently wrong. The problem appears when the final scientific record has no secure exit route.
@@ -172,7 +200,7 @@
 </p>
 
 
-<h2>A Compact Checklist for Resilient Astronomy Workflows</h2>
+<a id="compactchecklist"><h2>A Compact Checklist for Resilient Astronomy Workflows</h2></a>
 <p>A workflow does not need to be perfect to be valuable. The following checklist is a practical minimum standard for student theses, small collaborations, and standard research papers.</p>
 
   <ol>
@@ -190,17 +218,17 @@
 <p>This checklist is not paperwork for its own sake. It is a shield against common causes of scientific loss: undocumented data steps, hidden dependencies, manual plotting edits, and disappearing web platforms.
 </p>
 
-<h2>Conclusion: Open Tools as Scientific Resilience</h2>
+<a id="conclusion"><h2>Conclusion: Open Tools as Scientific Resilience</h2></a>
 <p>Open-source alternatives in astronomy are no longer secondary choices or experimental hobbies. They are part of the infrastructure required for responsible modern science. They help ensure that knowledge of the universe remains inspectable and usable after local software licenses expire, commercial platforms change, or research institutions shift their budgets.
 </p><p>The goal is not ideological purity. Modern astrophysics will continue to use mixed workflows, including mission-specific pipelines, specialized commercial software, and community-developed packages. The practical question at the end of every project is simpler: can the essential parts of this work be inspected, documented, transferred, and preserved?
 </p><p>If the answer is yes, the science is stronger.
 </p><p>For students, open tools offer broader access to astronomical research and portable technical skills. For researchers, they make results easier to verify and build upon. For institutions, they reduce lock-in and preserve institutional memory. As astronomy builds larger telescopes and collects deeper surveys, the future of the field will be shaped not only by what we observe, but also by how openly and durably we turn raw data into understanding.
 </p>
-  <h2>Acknowledgements & Disclosure</h2>
+  <a id="acknowledgement"><h2>Acknowledgements & Disclosure</h2></a>
 <p>The author thanks the editorial team of Science Ascend for their guidance. AI tools were used during the drafting phase to help adapt the tone and language structure for a broader science-journalism audience. The author reviewed, edited, and approved the final text.
 </p>
 
-<h2>Bibliography</h2>
+<a id="bibliography"><h2>Bibliography</h2></a>
 
 <ul class="references">
 
@@ -253,6 +281,6 @@
     </footer>
 
 </article>
-
+</div>
 </body>
 </html>
