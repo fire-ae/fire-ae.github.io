@@ -80,6 +80,24 @@ body a {color: #f7dc0f}
     margin-right: 15px;
 }
 
+/* Shared navbar */
+.navbar-links {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.navbar-toggle {
+    display: none;
+    background: transparent;
+    color: #f7dc0f;
+    border: 1px solid rgba(255,255,255,0.3);
+    border-radius: 6px;
+    padding: 6px 12px;
+    font-size: 24px;
+    cursor: pointer;
+}
+
 .img-overlay {
   position: relative;
   display: block;
@@ -465,18 +483,65 @@ img {
     .issue-cover-large {
         width: 280px;
     }
+    .navbar {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+    }
 
+    .navbar-toggle {
+        display: block;
+    }
+
+    .navbar-links {
+        display: none;
+        flex-direction: column;
+        align-items: stretch;
+        width: 100%;
+    }
+
+    .navbar-links.open {
+        display: flex;
+    }
+
+    .navbar-links a {
+        flex-basis: auto;
+        white-space: normal;
+        text-align: left;
+        padding: 10px 12px;
+    }
 }
 
 
 @media (max-width: 768px) {
     .navbar {
-        flex-direction: column;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
     }
-    .navbar a {
-        flex-basis: 100%;
+
+    .navbar-toggle {
+        display: block;
+    }
+
+    .navbar-links {
+        display: none;
+        flex-direction: column;
+        align-items: stretch;
+        width: 100%;
+    }
+
+    .navbar-links.open {
+        display: flex;
+    }
+
+    .navbar-links a {
+        flex-basis: auto;
+        white-space: normal;
         text-align: left;
-        padding: 10px 0;
+        padding: 10px 12px;
     }
 
        .services-sidebar {
