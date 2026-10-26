@@ -159,6 +159,11 @@ body a {color: #f7dc0f}
     text-decoration: underline;
 }
 
+/* Article contents toggle: hidden on desktop */
+.sidebar-toggle {
+    display: none;
+}
+
 .service-card img {
     position: relative;
     display: block;
@@ -511,6 +516,56 @@ img {
         text-align: left;
         padding: 10px 12px;
     }
+    .services-sidebar {
+        position: relative;
+        box-sizing: border-box;
+        width: 100%;
+        height: auto;
+        max-height: none;
+        top: auto;
+        left: auto;
+        padding: 10px;
+        margin: 10px 0;
+        z-index: 10;
+    }
+
+    .sidebar-toggle {
+        display: block;
+        width: 100%;
+        padding: 10px;
+        text-align: left;
+        color: #f7dc0f;
+        background: #111;
+        border: 1px solid #444;
+        border-radius: 5px;
+        font-size: 16px;
+        cursor: pointer;
+    }
+
+    .sidebar-links {
+        display: none;
+        max-height: 60vh;
+        overflow-y: auto;
+    }
+
+    .sidebar-links.open {
+        display: block;
+    }
+
+    .sidebar-links a {
+        display: block;
+        padding: 8px;
+        color: #f7dc0f;
+        text-decoration: none;
+    }
+
+    .sidebar-links hr {
+        border: 0;
+        border-top: 1px solid #444;
+    }
+
+
+   
 }
 
 
@@ -544,12 +599,52 @@ img {
         padding: 10px 12px;
     }
 
-       .services-sidebar {
+    .services-sidebar {
         position: relative;
+        box-sizing: border-box;
         width: 100%;
         height: auto;
-        top: 0;
+        max-height: none;
+        top: auto;
+        left: auto;
         padding: 10px;
+        margin: 10px 0;
+        z-index: 10;
+    }
+
+    .sidebar-toggle {
+        display: block;
+        width: 100%;
+        padding: 10px;
+        text-align: left;
+        color: #f7dc0f;
+        background: #111;
+        border: 1px solid #444;
+        border-radius: 5px;
+        font-size: 16px;
+        cursor: pointer;
+    }
+
+    .sidebar-links {
+        display: none;
+        max-height: 60vh;
+        overflow-y: auto;
+    }
+
+    .sidebar-links.open {
+        display: block;
+    }
+
+    .sidebar-links a {
+        display: block;
+        padding: 8px;
+        color: #f7dc0f;
+        text-decoration: none;
+    }
+
+    .sidebar-links hr {
+        border: 0;
+        border-top: 1px solid #444;
     }
 
     .page-container {
