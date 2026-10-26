@@ -22,3 +22,28 @@ fetch('/navbar.html')
         });
     })
     .catch(error => console.error(error));
+
+
+// Science Ascend articles' navbars
+document.querySelectorAll('.services-sidebar').forEach(sidebar => {
+    const toggle = sidebar.querySelector('.sidebar-toggle');
+    const links = sidebar.querySelector('.sidebar-links');
+
+    if (!toggle || !links) return;
+
+    toggle.addEventListener('click', () => {
+        const isOpen = links.classList.toggle('open');
+        toggle.setAttribute('aria-expanded', String(isOpen));
+        toggle.textContent = isOpen
+            ? '✕ Close article contents'
+            : '☰ Article contents';
+    });
+
+    links.querySelectorAll('a').forEach(link => {
+        link.addEventListener('click', () => {
+            links.classList.remove('open');
+            toggle.setAttribute('aria-expanded', 'false');
+            toggle.textContent = '☰ Article contents';
+        });
+    });
+});
