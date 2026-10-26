@@ -609,31 +609,20 @@ img {
         position: relative;
         top: auto;
         left: auto;
-        width: 100%;
+        width: auto;
         height: auto;
-        max-height: none;
-        box-sizing: border-box;
-        margin: 10px 0;
+        margin: 10px;
         padding: 10px;
+        box-sizing: border-box;
     }
-   
+
     .sidebar-toggle {
         display: block;
         width: 100%;
-        padding: 10px;
-        text-align: left;
-        color: #f7dc0f;
-        background: #111;
-        border: 1px solid #444;
-        border-radius: 5px;
-        font-size: 16px;
-        cursor: pointer;
     }
 
     .sidebar-links {
         display: none;
-        max-height: 60vh;
-        overflow-y: auto;
     }
 
     .sidebar-links.open {
@@ -654,8 +643,6 @@ img {
 
     .page-container,
     .article-container {
-        width: 100%;
-        max-width: 100%;
         box-sizing: border-box;
         margin: 10px 0;
         padding: 10px;
