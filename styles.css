@@ -518,15 +518,14 @@ img {
     }
     .services-sidebar {
         position: relative;
-        box-sizing: border-box;
+        top: auto;
+        left: auto;
         width: 100%;
         height: auto;
         max-height: none;
-        top: auto;
-        left: auto;
-        padding: 10px;
+        box-sizing: border-box;
         margin: 10px 0;
-        z-index: 10;
+        padding: 10px;
     }
 
     .sidebar-toggle {
@@ -564,7 +563,14 @@ img {
         border-top: 1px solid #444;
     }
 
-
+    .page-container,
+    .article-container {
+        width: 100%;
+        max-width: 100%;
+        box-sizing: border-box;
+        margin: 10px 0;
+        padding: 10px;
+    }
    
 }
 
@@ -601,17 +607,16 @@ img {
 
     .services-sidebar {
         position: relative;
-        box-sizing: border-box;
+        top: auto;
+        left: auto;
         width: 100%;
         height: auto;
         max-height: none;
-        top: auto;
-        left: auto;
-        padding: 10px;
+        box-sizing: border-box;
         margin: 10px 0;
-        z-index: 10;
+        padding: 10px;
     }
-
+   
     .sidebar-toggle {
         display: block;
         width: 100%;
@@ -647,8 +652,12 @@ img {
         border-top: 1px solid #444;
     }
 
-    .page-container {
-        margin-left: 0;
+    .page-container,
+    .article-container {
+        width: 100%;
+        max-width: 100%;
+        box-sizing: border-box;
+        margin: 10px 0;
         padding: 10px;
     }
 }
